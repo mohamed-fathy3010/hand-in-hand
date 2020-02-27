@@ -41,12 +41,16 @@ class User extends Authenticatable implements  MustVerifyEmail
     ];
     public function info()
     {
-        return $this->hasOne(info::class);
+        return $this->hasOne(Info::class,'user_id');
     }
 
     public function sendApiEmailVerificationNotification()
     {
         $this->notify(new VerifyApiEmailNotification); // my notification
     }
-    
+
+    public function items()
+    {
+        return $this->hasMany(Item::class,'user_id');
+    }
 }

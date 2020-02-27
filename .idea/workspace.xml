@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="" />
+    <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ItemController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Engineeringtools.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Handmade.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Medicaltools.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Path 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Rectangle 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Rectangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Rectangle2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Rectangle3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/booktitle.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/e1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/interest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/path4512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_051515_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_27_110137_create_items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +45,14 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
@@ -128,25 +169,33 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1Xr63kzFlhHhNJ8hVVyegOXZmSc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laravel projects\hand in hand\app\Http\Controllers\API" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laravel projects\hand in hand\public" />
+      <recent name="D:\laravel projects\hand in hand\public\css" />
+      <recent name="D:\laravel projects\hand in hand\resources\views" />
       <recent name="D:\laravel projects\test\resources" />
       <recent name="D:\laravel projects\test\app\Http\Controllers\API" />
-      <recent name="D:\laravel projects\test\storage\app\public" />
-      <recent name="D:\laravel projects\test\storage\app\avatars" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.api.php">
@@ -201,6 +250,8 @@
       <workItem from="1582150216319" duration="676000" />
       <workItem from="1582497024249" duration="771000" />
       <workItem from="1582499499136" duration="748000" />
+      <workItem from="1582500788081" duration="3094000" />
+      <workItem from="1582775576792" duration="21556000" />
     </task>
     <servers />
   </component>
@@ -218,11 +269,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="363" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581896798132">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="363" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1581896798132" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582630119895">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1582630119895" />
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582805696662">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1582805696662" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1582776587364">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1582776587364" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1582776528423">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582776528423" />
     <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1581808484327">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -239,13 +309,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1581808484327" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582500129194">
+    <state x="184" y="26" key="SettingsEditor" timestamp="1582776534138">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582500129194" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581791708772">
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582776534138" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582776035730">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1581791708772" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582776035730" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582807439146">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582807439146" />
   </component>
 </project>

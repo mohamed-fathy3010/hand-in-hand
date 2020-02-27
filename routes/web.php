@@ -15,5 +15,6 @@
 Route::get('/', 'HomeController@index');
 
 Auth::routes(['verify'=> true]);
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/profile/{user}','profileController@index');

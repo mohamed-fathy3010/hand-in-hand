@@ -4,8 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class info extends Model
+class Info extends Model
 {
+    protected $table='info';
     //
     protected $fillable=[
         'first_name','last_name'
@@ -13,7 +14,7 @@ class info extends Model
     ];
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class,'user_id');
     }
 
 }

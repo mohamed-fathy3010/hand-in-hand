@@ -130,7 +130,7 @@ class passportController extends Controller
             $request->avatar->storeAs('avatars', $avatarName);
         }
         else {
-            $avatarName = info::where('user_id', $id)->first()->avatar;
+            $avatarName = Info::where('user_id', $id)->first()->avatar;
             if ($request->avatar !== $avatarName) {
                     $avatarName = 'default.png';
             }
@@ -140,7 +140,7 @@ class passportController extends Controller
            'email'=>$request->email,
             'password'=> bcrypt($request->password)
         ]);
-        info::where('user_id',$id)->update([
+        Info::where('user_id',$id)->update([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'grade' => $request->grade,
@@ -149,7 +149,7 @@ class passportController extends Controller
         ]);
         return $this->apiResponse('profile_update','update succeed!!');
     }
-    
+
 
 }
 
