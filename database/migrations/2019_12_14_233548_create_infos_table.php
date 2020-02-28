@@ -13,12 +13,14 @@ class CreateInfosTable extends Migration
      */
     public function up()
     {
-        Schema::create('infos', function (Blueprint $table) {
+        Schema::create('info', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('grade');
-            $table->unsignedBigInteger('user_id');
+            $table->string('avatar');
+            $table->enum('gender',['male','female']);
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
         });

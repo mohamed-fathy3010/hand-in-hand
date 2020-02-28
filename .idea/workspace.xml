@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ItemController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Engineeringtools.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Handmade.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Medicaltools.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Path 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Rectangle 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Rectangle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Rectangle2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Rectangle3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/booktitle.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/e1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/interest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/path4512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/tools.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/info.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_051515_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_27_110137_create_items_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_23_002443_add_avatar_and_gender_to_infos.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,6 +223,7 @@
       <workItem from="1582499499136" duration="748000" />
       <workItem from="1582500788081" duration="3094000" />
       <workItem from="1582775576792" duration="21556000" />
+      <workItem from="1582907783165" duration="2529000" />
     </task>
     <servers />
   </component>
@@ -313,10 +285,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582776534138" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582776035730">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582913487112">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582776035730" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582913487112" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582807439146">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
