@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_23_002443_add_avatar_and_gender_to_infos.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,6 +223,7 @@
       <workItem from="1582500788081" duration="3094000" />
       <workItem from="1582775576792" duration="21556000" />
       <workItem from="1582907783165" duration="2529000" />
+      <workItem from="1582913485978" duration="928000" />
     </task>
     <servers />
   </component>
@@ -245,6 +245,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="448" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582914342683">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="448" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1582914342683" />
     <state x="363" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581896798132">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
