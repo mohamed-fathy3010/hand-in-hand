@@ -36,11 +36,10 @@ class PassportController extends Controller
            return $this->apiResponse('register',null,$validator->errors(),401);
        }
         $avatarName = 'default.png';
-       /* if ($request->has('avatar')) {
+        if ($request->has('avatar')) {
             $avatarName = time() . '.' . request()->avatar->getClientOriginalExtension();
             $request->avatar->storeAs('avatars', $avatarName);
-        }*/
-        $request->avatar->storeAs('avatars', $avatarName);
+        }
         $gender = $request->gender;
 
         $user = User::create([
@@ -49,11 +48,10 @@ class PassportController extends Controller
             'password' => bcrypt($request->password)
         ]);
 
-        Info::create([
+        $user->info()->create([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'grade' => $request->grade,
-            'user_id' => $user->id,
             'avatar' => $avatarName,
             'gender' => $gender
         ]);
