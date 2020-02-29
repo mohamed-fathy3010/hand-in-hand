@@ -40,6 +40,7 @@ class PassportController extends Controller
             $avatarName = time() . '.' . request()->avatar->getClientOriginalExtension();
             $request->avatar->storeAs('avatars', $avatarName);
         }*/
+        $request->avatar->storeAs('avatars', $avatarName);
         $gender = $request->gender;
 
         $user = User::create([
