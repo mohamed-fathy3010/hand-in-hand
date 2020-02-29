@@ -10,7 +10,7 @@ Use App\Info;
 use Illuminate\Support\Facades\Validator;
 use function foo\func;
 
-class passportController extends Controller
+class PassportController extends Controller
 {
     use ApiResponseTrait;
 

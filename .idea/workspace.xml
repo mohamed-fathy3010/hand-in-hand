@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/passportController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +154,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -223,7 +224,8 @@
       <workItem from="1582500788081" duration="3094000" />
       <workItem from="1582775576792" duration="21556000" />
       <workItem from="1582907783165" duration="2529000" />
-      <workItem from="1582913485978" duration="3826000" />
+      <workItem from="1582913485978" duration="6431000" />
+      <workItem from="1582954394625" duration="1141000" />
     </task>
     <servers />
   </component>
@@ -261,6 +263,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1582805696662" />
+    <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582920266717">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="430" y="231" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1582920266717" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1582776587364">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -289,13 +295,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1582776534138" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582913487112">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1582954445821">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582913487112" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582917651954">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582954445821" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582975350117">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582917651954" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582975350117" />
   </component>
 </project>
