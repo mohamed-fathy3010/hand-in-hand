@@ -36,10 +36,10 @@ class PassportController extends Controller
            return $this->apiResponse('register',null,$validator->errors(),401);
        }
         $avatarName = 'default.png';
-        if ($request->has('avatar')) {
+       /* if ($request->has('avatar')) {
             $avatarName = time() . '.' . request()->avatar->getClientOriginalExtension();
             $request->avatar->storeAs('avatars', $avatarName);
-        }
+        }*/
         $gender = $request->gender;
 
         $user = User::create([
