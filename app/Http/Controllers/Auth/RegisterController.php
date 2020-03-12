@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class RegisterController extends Controller
 {
@@ -56,10 +57,12 @@ class RegisterController extends Controller
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8'],
+            'password' => ['required', 'string', 'min:8','confirmed'],
             'grade' => ['required', 'string'],
+            'gender' =>['required',Rule::in(['male','female'])]
 
         ]);
+
     }
 
     /**
@@ -78,7 +81,9 @@ class RegisterController extends Controller
        $user->info()->create([
             'first_name'=> $data['first_name'],
             'last_name'=> $data['last_name'],
-            'grade' =>$data['grade']
+            'grade' =>$data['grade'],
+            'gender'=> $data['gender'],
+//           'avatar'=>'default.png'
         ]);
         return $user;
     }

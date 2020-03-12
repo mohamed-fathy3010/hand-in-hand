@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Item;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -34,5 +35,10 @@ class ItemController extends Controller
             'image'=>$imagePath
         ]);
         return $this->apiResponse('create_item','item created');
+    }
+    public function index()
+    {
+        $items =Item::latest()->paginate(16);
+        return $this->apiResponse('items',$items);
     }
 }

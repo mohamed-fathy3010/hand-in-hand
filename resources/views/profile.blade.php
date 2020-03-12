@@ -36,16 +36,16 @@
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <div class="toggle">
+                <button class="toggle">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-                <a href="" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
+                </button>
+                <a href="/" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
             </div>
             <ul class="nav navlist" id="links" style="margin-left:450px;margin-top: 10px;position: absolute;">
-                <li class="active" style="">
-                    <a href="#" data-value="about" class="effect">Items</a></li>
+                <li class="active">
+                    <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
                 <li><a href="#" data-value="port" class="effect">Services</a></li>
                 <li><a href="#" data-value="foll" class="effect">Events</a></li>
                 <li><a href="#" data-value="cont" class="effect">Handmade</a></li>
@@ -62,10 +62,13 @@
                             <span></span>
                             <ul>
                                 <li>
-
-                                    <a href="#">link1</a>
-                                    <a href="#">link2</a>
-                                    <a href="#">link3</a>
+                                    @guest
+                                        <a href="{{url('/login')}}">login</a>
+                                        <a href="{{url('/register')}}">Register</a>
+                                    @endguest
+                                    @auth
+                                        <a href="{{url('/profile/'.auth()->id())}}">profile</a>
+                                    @endauth
                                 </li>
                             </ul>
                         </li>
@@ -78,7 +81,7 @@
     </div>
 
 </div>
-<!--end nevbar-->
+<!-- End Navbar -->
 <!--start item-->
 <div class="item">
     <div class="imge">

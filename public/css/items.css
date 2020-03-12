@@ -1,7 +1,5 @@
 /*****************Global Css *******************/
 
-/*****************Global Css *******************/
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +13,6 @@ body {
   background-color: #fff;
   padding: 0px;
   margin: 0px;
-
 
 }
 
@@ -206,6 +203,7 @@ form i{
 
 }
 
+
 .menu .toggl {
   float: right;
   padding-top: 2px;
@@ -276,8 +274,6 @@ margin-left: -60px;
 
 
 }
-
-
 /*
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 #box {
@@ -434,93 +430,11 @@ ul > li > a:hover:after {
 
 /****************** End Media Querry ******************/
 
-/** start hand image**/
-.landing{
-
-    width: 100%;
-    height:50%;
-}
-.landing-image{
-    position: absolute;
-    background-image: url('../images/home-image.jpg');
-    width: 100%;
-    height:100%;
-    background-size:cover;
-
-}
-
-#path-1{
-    fill:#00363d;
-    fill-opacity:0.91;
-}
-
-.curve-layer1 {
-
-    width: 100%;
-    height: 100%;
-overflow: hidden;
-}
-.curve-layer1-img{
-   width:70%;
-}
-  .landing .landing-image .hand .imagelogo{
- width: 100%;
- height:140%;
- margin: -648px 575px;
- position: absolute;
-transform: rotatez(0deg);
-  }
-   .landing .landing-image .hand .imagehand{
-  width: 90%;
-  height:70%;
-  margin: -900px 50px;
-  position: absolute;
-  }
-.hand{
-    position: absolute;
-    float: right;
-    width: 26%;
-    height: 30%;
-    padding-top:100px;
-    padding-left:1px ;
-
-}
-.landing .text{
- width: 400px;
- margin: -750px 52px;
-}
-.landing .text h1 ,h2{
- color: #fff;
-}
-.landing .text h2{
- padding-top: 10px;
- font-size: 20px;
- color: #fff;
- font-weight:bold;
-   line-height: 33px;
-}
-.landing .text a{
- color: #fff;
- border: 2px solid #fff;
- border-radius: 30px;
- width: 200px;
- height: 20px;
- padding: 3px 20px 5px 20px;
- font-size: 20px;
- font-weight: bold;
- top: 5px;
- text-decoration: none;
- position: relative;
- margin:0px 80px ;
- text-align: center;
-}
-/** end hand image**/
-
 
 /** start items**/
 .cotainer{
- margin-top: 650px;
- margin-left: 40px;
+ margin-top: 20px;
+ margin-left: 25px;
  padding-right:30px;
 
 }
@@ -537,8 +451,8 @@ transform: rotatez(0deg);
  color: #Ff0000;
   font-family: good times;
   font-weight: bold;
- font-size: 40px;
- margin: 40px 0 0 240px;
+ font-size: 60px;
+ margin: 70px 0 0 650px;
 }
     @font-face {
         font-family: "paraaminobenzoic";
@@ -551,24 +465,13 @@ transform: rotatez(0deg);
 .cotainer .row .paragrph{
  position: absolute;
 }
-.cotainer .row .paragrph a{
- position: absolute;
- text-align: center;
- border: 1.5px solid #fff;
- border-radius: 25px;
- font-size: 20px;
- color: #fff;
- text-decoration: none;
- padding: 4px 10px 4px  10px;
-margin: -100px 0 0 455px;
-width: 130px;
-}
+
 .cotainer .row .paragrph p{
  position: absolute;
  color: #fff;
- font-size: 15px;
- margin: -42px 0 0 213px;
- width: 400px;
+ font-size: 20px;
+ margin: -42px 0 0 713px;
+ width: 600px;
 
 }
 .cotainer .row .paragrph .paragrph1{
@@ -587,6 +490,70 @@ width: 130px;
 }
 /** end items**/
 
+/**start filter**/
+.filter{
+    margin-top: 400px;
+    position: relative;
+    text-align: center;
+}
+.filter button{
+    background-color: #ff0000;
+    border: none;
+    padding: 10px;
+    color: #ffff;
+    font-size: 17px;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+}
+.filter button i{
+ padding: 5px;
+}
+/**end filter**/
+
+
+/**start items**/
+ .cotainer .row .items1{
+	position:absolute;
+	left: 200px;
+	top: 200px;
+	transform: translate(-50%,-50%);
+	width: 240px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.items1 .imgbox{
+	height: 70px;
+	box-sizing: border-box;
+}
+ .items1 .imgbox img{
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+}
+.dateils{
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	background: #fff;
+	padding:  0 10px 10px 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+ height: 20px;
+ margin-top: -60px;
+}
+.dateils .price{
+	position: absolute;
+	top: 40px;
+ margin-left: 13px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 20px;
+}
+/**end items**/
+
 
 /** start social**/
 .end{
@@ -594,7 +561,7 @@ width: 130px;
  height: 100%;
  background-size:cover;
  position: absolute;
- margin-top: 400px;
+ margin-top: 450px;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 54, 61));
 
 }

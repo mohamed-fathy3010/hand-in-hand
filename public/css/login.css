@@ -1,183 +1,185 @@
 html {
     height: 100%;
-    overflow: hidden;
-
 }
 
-body {
-    min-height: 100%;
-    position: relative;
-    top: 0px;
-    margin: 0px;
-}
+  body {
+      min-height: 100%;
+      position: relative;
+      top: 0px;
+      margin: 0px;
+  }
 
-.input100,
-button {
-  cursor: pointer
-}
+  input,
+  button {
+    cursor: pointer
+  }
 
-.clearfix {
-  clear: both
-}
+  .clearfix {
+    clear: both
+  }
 
 
-/* Start Navbar*/
+  /* Start Navbar*/
 
-.link{
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-.navbar {
-  margin-top: 0px;
-  height: 60px;
-  background-color: #fff;
-  z-index: 1;
-  width: 100%;
-  border-bottom: 3px solid #eee;
-}
+  a:hover {
+    color: #fff;
+  }
 
-.navbar-header {
-  padding: 0 0;
-}
-
-.navbar-brand {
-
-  padding: 0 40px 0px 20px;
-  height: 20px;
-  margin-top: -17px;
-  margin-left: -80px;
-  line-height: 60px;
-  display: block;
-  position: absolute;
-}
-
-.navbar-brand img {
- width: 55px;
- height: 55px;
-}
-
-.toggle {
-  float: right;
-  width: 57px;
-  height: 40px;
-  padding-top: 2px;
-  position: relative;
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-right:-300px;
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.toggle:hover {
-  background: #fff;
-}
-
-.toggle:active {
-  background: #fff;
-}
-
-.toggle:focus {
-  outline: none;
-}
-
-.toggle > span {
-  display: block;
-  border-radius: 2px;
-  height: 5px;
-  width: 34px;
-  background: #fff;
-  margin: auto;
-  margin-bottom: 3px;
-}
-
-.navlist {
-  height: 0;
-  float: right;
-  overflow: hidden;
-  background: #fff;
-  padding: 0 ;
-  transition: height .5s;
-  padding-left: 0px;
-  border-radius: 0 0 10px;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  top: auto;
-}
-
-.nav > li:first-child {
-  padding-top: 5px;
-}
-
-.nav > li {
-  list-style: none;
-  display: block;
-   text-align: center;
-}
-
-.nav > li > .link {
-  text-align: center;
-  margin-left: 15px;
-  line-height: 30px;
-  background: #fff;
-  text-align: right;
-  color: #00363d;
-  font-weight: bold;
-  display: block;
-  height: 35px;
-  text-decoration: none;
-
-}
-
-@media(min-width:768px) {
   .navbar {
+    margin-top: 0px;
     height: 60px;
     background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 3px solid #eee;
   }
+
   .navbar-header {
-    float: left;
+    padding: 0 0;
   }
-  .toggle {
-    display: none;
-  }
-  .navlist {
+
+  .navbar-brand {
+
+    padding: 0 40px 0px 20px;
+    height: 20px;
+    margin-top: -17px;
+    margin-left: -80px;
+    line-height: 60px;
     display: block;
-    height: 0 !important;
-    padding-bottom:25px !important;
-    background: transparent !important;
-    width: auto;
-    margin: 0px 100px;
-    padding: 0;
-    overflow: visible;
-    top:0
+    position: absolute;
   }
-  .nav {
-    margin: 0;
-    padding: 0;
+
+  .navbar-brand img {
+   width: 55px;
+   height: 55px;
   }
+
+  .toggle {
+    float: right;
+    width: 57px;
+    height: 40px;
+    padding-top: 2px;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right:-300px;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+  .toggle:hover {
+    background: #fff;
+  }
+
+  .toggle:active {
+    background: #fff;
+  }
+
+  .toggle:focus {
+    outline: none;
+  }
+
+  .toggle > span {
+    display: block;
+    border-radius: 2px;
+    height: 5px;
+    width: 34px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 3px;
+  }
+
+  .navlist {
+    height: 0;
+    float: right;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 ;
+    transition: height .5s;
+    padding-left: 0px;
+    border-radius: 0 0 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: auto;
+  }
+
+  .nav > li:first-child {
+    padding-top: 5px;
+  }
+
   .nav > li {
-    float: left;
     list-style: none;
-    padding: 5px;
+    display: block;
+     text-align: center;
   }
-  .nav > li > .link {
-    border-radius: 5px !important;
-    background: transparent;
-    padding: 0 15px;
-    border: none;
+
+  .nav > li > a {
+    text-align: center;
+    margin-left: 15px;
+    line-height: 30px;
+    background: #fff;
+    text-align: right;
+    color: #00363d;
+    font-weight: bold;
+    display: block;
+    height: 35px;
+    text-decoration: none;
+    transition: all 1s ease;
+
   }
+  .nav > li > a:hover{
+   font-size: 20px;
+    font-weight: bolder;
+  }
+
+  @media(min-width:768px) {
+    .navbar {
+      height: 60px;
+      background-color: #fff;
+    }
+    .navbar-header {
+      float: left;
+    }
+    .toggle {
+      display: none;
+    }
+    .navlist {
+      display: block;
+      height: 0 !important;
+      padding-bottom:25px !important;
+      background: transparent !important;
+      width: auto;
+      margin: 0px 100px;
+      padding: 0;
+      overflow: visible;
+      top:0
+    }
+    .nav {
+      margin: 0;
+      padding: 0;
+    }
+    .nav > li {
+      float: left;
+      list-style: none;
+      padding: 5px;
+    }
+    .nav > li > a {
+      border-radius: 5px !important;
+      background: transparent;
+      padding: 0 15px;
+      border: none;
+    }
 
 
 .show {
   height: 220px;
   float: right;
 }
-
-
-/* Start Navbar*/
-
-
 /****************** Start Media Querry ******************/
 
 
@@ -220,56 +222,106 @@ button {
   .container {
     width: 1170px;
   }
-  .navbar .navbar-form-navbar-right
-  {
-      margin-left: 910px;
-      margin-top: 0px;
-      position: absolute;
-      
-  }
-  .navbar .navbar-form-navbar-right.input100{
-    border: none;
-     border-radius: 5px;
-     background: #eee;
-     padding: 5px;
-     position: absolute;
- }
- .navbar .navbar-form-navbar-right i{
-     width: 40px;
-     height: 32px;
-   color: #Ff0000;
-   text-align: center;
-   padding: 5px;
-   margin-right:0px;
-     border-radius:5px;
-     border: 1px solid #ccc;
-      box-shadow: 3px 2px 10px  #E4E4E4,
-                  -3px -2px 10px  #E4E4E4
-               ; 
- 
- }
+}
+.navbar form{
+    margin-left: 910px;
+    margin-top: 0px;
+    position: absolute;
+
+}
+.navbar form input{
+   border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+    position: absolute;
+}
+.navbar form i{
+    width: 40px;
+    height: 32px;
+  color: #Ff0000;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-left: 185px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+     box-shadow: 3px 2px 10px  #E4E4E4,
+                 -3px -2px 10px  #E4E4E4
+              ;
+
+}
 
 
-.toggl {
+.menu .toggl {
   float: right;
   padding-top: 2px;
   position: relative;
-  margin-top: 6px;
-  margin-left: 1160px;
+  margin-top: -6px;
+  margin-left: 1120px;
   cursor: pointer;
-  background-color: #fff;
+  background: none;
   border: none;
+  width: 20px;
+
 }
 
-.toggl > span {
+.menu>.toggl >ul>li>span {
   display: block;
   border-radius: 2px;
   height: 4px;
   width: 25px;
   background: #00363d;
-  margin: auto;
+  /**haver backgrounf**/ margin-left: 50px;
   margin-bottom: 3px;
-  
+
+}
+.menu .toggl ul{
+	list-style: none;
+	margin-left: -30px;
+	cursor: pointer;
+
+
+}
+.toggl ul li{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #1a1a1a;
+	float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+	display: none;
+	transition: 2s ease-in-out;
+	margin-top: 10px;
+	position: absolute;
+padding-right: 80px;
+ width: 60px;
+}
+.toggl ul ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+
+
+}
+.toggl ul ul li a{
+	display: block;
+	text-decoration: none;
+	color: #404040;
+	margin-top: 3px;
+ margin-left: 40px;
+}
+.toggl ul li:hover >ul{
+	display: block;
+	background-color: #eee;
+
+
 }
 #cont {
   margin-top:10px;
@@ -293,10 +345,10 @@ button {
 
 .login-form {
     width: 45%;
-    height: 75vh;
+    height: 68vh;
     background-color:#ffffff20;
     position: relative;
-    margin-top:-50px;
+    margin-top: -30px;
     margin-left: 20px;
     padding-top:21px;
     border-radius: 40px;
@@ -307,6 +359,10 @@ button {
 }
 .validate-form{
   margin-top: 30px;
+}
+
+input {
+    padding-left: 20px;
 }
 
 .login-form form input{
@@ -321,7 +377,7 @@ button {
 
 .login-form-email{
     position: relative;
-   
+
 }
 .input1,.input5 {
     width: 80%;
@@ -333,7 +389,7 @@ button {
     color: #fff;
     border-radius: 5px;
     background: transparent;
-  
+
 
 }
 
@@ -344,13 +400,13 @@ font-family: arial;
   position: absolute;
   display: block;
   width: 100%;
-  top:3px;
+  top: 17px;
   left: 0;
   padding:5px 70px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.795);
   pointer-events: none;
-  
+
   transition: all 0.4s;
 
 }
@@ -378,12 +434,12 @@ font-family: arial;
 }
 .field-icon {
   float: right;
-  padding-right:90px;
-  margin-top: -40px;
+  padding-right:80px;
+  margin-top: -32px;
   color: rgb(255, 13, 13);
   display: flex;
   position: relative;
-  width: 10px;
+  width: 20px;
   z-index: 2;
 }
 /*--------------------------------------------------*/
@@ -393,18 +449,19 @@ font-family: arial;
     display: block;
     height: 5vh;
     margin: auto;
-    margin-top: -22px;
+    margin-top: -14px;
     padding-right: 19px;
     margin-bottom: -10px;
 
 }
 
-.forget-pass .login-form-forgetpassword {
+.login-form-forgetpassword{
     color: rgba(255, 255, 255, 0.795);
     font-family: Arial;
     font-size: 19px;
-    text-decoration:underline;
-
+}
+.login-form-forgetpassword:hover{
+  color: rgba(255, 255, 255, 0.795);
 }
 
 
@@ -437,10 +494,12 @@ font-family: arial;
     font-family: Arial;
 }
 
- .Register .link-resister {
+.Register {
     color:#fff;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
-    text-decoration: underline;
 }
+ .Register:hover{
+  color:#fff;
+}}

@@ -26,42 +26,56 @@ $(".toggle").click(function () {
         </script>
   </head>
 <body>
-   <!-- Start Navbar -->
-        <div class="navbar elem-center">
-            <div class="container">
-               <div class="parent left-right">
-                    <div class="navbar-header">
-                      <button class="toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </button>
-                      <a  href="" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
-                    </div>
-                      <ul class="nav navlist" id="links" style="margin-left:450px;margin-top: 10px;position: absolute;">
-                        <li class="active" >
-                           <a  class="link"href="#" data-value="about" class="effect">Items</a></li>
-                        <li><a  class="link"href="#" data-value="port"class="effect">Services</a></li>
-                        <li><a class="link" href="#" data-value="foll"class="effect">Events</a></li>
-                        <li><a  class="link"href="#" data-value="cont"class="effect">Handmade</a></li>
-                      </ul>
-                        <form class="navbar-form-navbar-right">
-                       <input class="input100" type="text" placeholder="Search">
-                       <i class="fa fa-search"></i>
-                       </form>
-                       <div class="menu">
-                         <button class="toggl">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                         </button>
-                       </div>
-                </div>
-                <div class="clearfix"></div>
+<!-- Start Navbar -->
+<div class="navbar elem-center">
+    <div class="container">
+        <div class="parent left-right">
+            <div class="navbar-header">
+                <button class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
             </div>
+            <ul class="nav navlist" id="links" style="margin-left:450px;margin-top: 10px;position: absolute;">
+                <li class="active">
+                    <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
+                <li><a href="#" data-value="port" class="effect">Services</a></li>
+                <li><a href="#" data-value="foll" class="effect">Events</a></li>
+                <li><a href="#" data-value="cont" class="effect">Handmade</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" placeholder="Search">
+                <i class="fa fa-search"></i>
+            </form>
+            <div class="menu">
+                <button class="toggl">
+                    <ul>
+                        <li><span></span>
+                            <span></span>
+                            <span></span>
+                            <ul>
+                                <li>
+                                    @guest
+                                        <a href="{{url('/login')}}">login</a>
+                                        <a href="{{url('/register')}}">Register</a>
+                                    @endguest
+                                    @auth
+                                        <a href="{{url('/profile/'.auth()->id())}}">profile</a>
+                                    @endauth
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
+                </button>
+            </div>
         </div>
-        <!-- End Navbar -->
+        <div class="clearfix"></div>
+    </div>
+
+</div>
 
 
 

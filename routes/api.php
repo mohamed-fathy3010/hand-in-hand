@@ -34,3 +34,5 @@ Route::middleware('auth:api')->group(function () {
 
 Route::get('email/verify/{id}', 'VerificationController@verify')->name('verificationapi.verify');
 Route::get('email/resend', 'VerificationController@resend')->name('verificationapi.resend');
+
+Route::get('items','ItemController@index');
