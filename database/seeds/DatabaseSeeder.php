@@ -12,6 +12,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('items')->truncate();
+        DB::table('events')->truncate();
          $this->call(ItemsTableSeeder::class);
+         $this->call(EventsTableSeeder::class);
     }
 }

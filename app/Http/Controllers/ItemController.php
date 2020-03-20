@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Item;
+use eloquentFilter\QueryFilter\ModelFilters\ModelFilters;
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
-    public function index()
+    public function index(ModelFilters $modelFilters)
     {
-        $items=Item::latest()->paginate(20);
+        if (!empty($modelFilters->filters()))
+        $items=Item::filter($modelFilters)->paginate(20);
+        else
+            $items=Item::latest()->paginate(20);
         return view('items',[
             'items'=>$items,
             'first_item_style'=>"margin-left: 70px",

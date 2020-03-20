@@ -2,19 +2,20 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Item;
+use App\Event;
 use Faker\Generator as Faker;
 
-$factory->define(Item::class, function (Faker $faker) {
+$factory->define(Event::class, function (Faker $faker) {
     return [
         //
         'user_id'=>$faker->numberBetween(1,50),
-        'title'=>$faker->title(),
+        'title'=>$faker->name,
+        'about'=>$faker->paragraph,
         'description'=>$faker->sentence(),
-        'price'=>$faker->randomFloat(2,0,99999),
-        'phone'=>$faker->randomNumber(),
-        'facebook'=>$faker->url(),
         'image'=>$faker->imageUrl(),
+        'location'=>$faker->streetAddress,
+        'date'=>$faker->date(),
+        'time'=>$faker->time(),
         'created_at'=>$faker->dateTime,
         'updated_at'=>$faker->dateTime
     ];

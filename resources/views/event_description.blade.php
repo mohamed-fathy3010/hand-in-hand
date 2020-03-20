@@ -83,92 +83,71 @@
 </div>
 <!-- End Navbar -->
 
-<div class="cotainer">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="items">
-                <div class="image">
-                    <img src="{{asset('images/marginalia-education.png')}}" class="ig1"
-                         style="width: 40%;height: 110%;transform: rotatey(180deg);position: absolute;margin: 0px 0 0 0px;">
-                    <h3>ITEMS</h3>
-                </div>
-                <img src="{{asset('images/path2.png')}}" class="background1"
-                     style="width: 1300px; height: 315px;position: relative">
 
-                <div class="paragrph">
 
-                    <p>Help other students by share your un used Books or tools.</p>
-                </div>
 
-            </div>
-        </div>
+
+<!--start item-->
+<!--start item-->
+<div class="item">
+    <div class="imge">
+        <img src="{{url('storage/events/'.$event->image)}}"style="width: 100%;height: 100%;position: absolute;margin: 0px 0 0 0;" >
+        <img src="{{asset('images/Rectangle2.png')}}" style="width: 100%; height: 300px;position: relative;margin: 200px 0 0 0;border-radius: 10px;" >
+    </div>
+    <div class="ponts">
+        <i class="fa fa-arrow-left" style="margin:20px 0 0 30px ;position: absolute;"></i>
+        <button class="point"style="width:10px;margin: 30px 0px 0 0;padding-left: 60px;">
+            <ul>
+                <li><span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
+        </button>
+    </div>
+    <div class="words">
+        <h5>{{$event->title}}</h5>
+        <i class="fa fa-star-o" style="margin:-50px 0 0 1220px ;position: absolute;color: #fff;font-size: 45px;"></i>
     </div>
 </div>
 
+<br>
 
-<!--start fileter-->
-<div class="filter">
-    <button><i class="fa fa-filter"></i>Filter</button>
+<div class="About">
+    <h1>About</h1>
+    <p>{{$event->about}}</p>
 </div>
-<!--end fileter-->
 
+<span style="width: 400px;height: 3px; background:#5B5959;position: absolute;margin: 650px 0 0 450px;">
 
-<!--start items-->
-@foreach($items as $item)
-    @if($loop->first||$new_row)
-        <div class="cotainer" @if($new_row)
-        @php($new_row=false)
-        style="{{$container_style}}"
-            @endif>
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
-                    <div class="items1">
-                        <div class="imgbox">
-                            <a href="{{url('/items/'.$item->id)}}">
-                            <img src="{{url('/storage/items/'.$item->image)}}" title="engineering tools">
-                            </a>
-                        </div>
-                        <div class="dateils">
-                            <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                                height: 50px;
-                                overflow: hidden;"
-                                title="{{$item->title}}">{{$item->title}}</h4>
-                            <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
-                        </div>
-                    </div>
-                </div>
-                @else
-                    <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" style="{{$first_item_style}}">
-                        <div class="items1">
-                            <div class="imgbox">
-                                <a href="{{url('/items/'.$item->id)}}">
-                                    <img src="{{url('storage/items/'.$item->image)}}">
-                                </a>
-                            </div>
-                            <div class="dateils">
-                                <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                               height: 50px;
-                               overflow: hidden;"
-                                    title="{{$item->title}}">{{$item->title}}</h4>
-                                <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-                @if($loop->iteration%4==0||$loop->last)
-                    @php($new_row=true)
-            </div>
-        </div>
-    @endif
-@endforeach
+         </span>
+
+<div class="description">
+    <h1>Description</h1>
+    <p>{{$event->description}}</p>
+</div>
+
+<span style="width: 400px;height: 3px; background:#5B5959;position: absolute;margin: 830px 0 0 500px;">
+
+       </span>
+
+<div class="location">
+    <h1>Location</h1>
+    <p> <i class="fa fa-map-marker" aria-hidden="true"style="padding-right: 5px;"></i>{{$event->location}}</p>
+</div>
+<span style="width: 400px;height: 3px; background:#5B5959;position: absolute;margin: 990px 0 0 500px;">
+
+      </span>
+<div class="Time">
+    <h1>Time</h1>
+    <p><i class="fa fa-calendar" aria-hidden="true"style="padding-right: 5px;"></i>{{$event->date}}</p>
+    <p><i class="fa fa-clock-o" aria-hidden="true"style="padding-right: 5px;"></i> {{$event->time}}</p>
+</div>
+
+<!--end item-->
 
 
 
-<!--end items-->
 
 <!--start endwebsite-->
 <div class="end">
@@ -192,7 +171,9 @@
 </div>
 <!--end endwebsite-->
 
-<script src="{{asset('../js/jquery-1.12.4.min.js')}}"></script>
+
+<script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
+
 
 
 </body>

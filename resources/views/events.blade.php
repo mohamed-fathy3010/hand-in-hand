@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
-    <link rel="stylesheet" href="{{asset('css/items.css')}}">
+    <link rel="stylesheet" href="{{asset('css/events.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.js')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -30,7 +30,6 @@
     </script>
 </head>
 <body>
-
 <!-- Start Navbar -->
 <div class="navbar elem-center">
     <div class="container">
@@ -88,16 +87,16 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="items">
                 <div class="image">
-                    <img src="{{asset('images/marginalia-education.png')}}" class="ig1"
+                    <img src="../images/marginalia-education.png" class="ig1"
                          style="width: 40%;height: 110%;transform: rotatey(180deg);position: absolute;margin: 0px 0 0 0px;">
-                    <h3>ITEMS</h3>
+                    <h3>EVENTS</h3>
                 </div>
-                <img src="{{asset('images/path2.png')}}" class="background1"
+                <img src="../images/path2.png" class="background1"
                      style="width: 1300px; height: 315px;position: relative">
 
                 <div class="paragrph">
 
-                    <p>Help other students by share your un used Books or tools.</p>
+                    <p class="paragrph2">know the events in your university oy in your zone.</p>
                 </div>
 
             </div>
@@ -113,63 +112,34 @@
 <!--end fileter-->
 
 
-<!--start items-->
-@foreach($items as $item)
-    @if($loop->first||$new_row)
-        <div class="cotainer" @if($new_row)
-        @php($new_row=false)
-        style="{{$container_style}}"
-            @endif>
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
-                    <div class="items1">
-                        <div class="imgbox">
-                            <a href="{{url('/items/'.$item->id)}}">
-                            <img src="{{url('/storage/items/'.$item->image)}}" title="engineering tools">
-                            </a>
-                        </div>
-                        <div class="dateils">
-                            <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                                height: 50px;
-                                overflow: hidden;"
-                                title="{{$item->title}}">{{$item->title}}</h4>
-                            <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
-                        </div>
-                    </div>
-                </div>
-                @else
-                    <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" style="{{$first_item_style}}">
-                        <div class="items1">
-                            <div class="imgbox">
-                                <a href="{{url('/items/'.$item->id)}}">
-                                    <img src="{{url('storage/items/'.$item->image)}}">
-                                </a>
-                            </div>
-                            <div class="dateils">
-                                <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                               height: 50px;
-                               overflow: hidden;"
-                                    title="{{$item->title}}">{{$item->title}}</h4>
-                                <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-                @if($loop->iteration%4==0||$loop->last)
-                    @php($new_row=true)
-            </div>
+<!--start events-->
+@foreach($events as $event)
+<center>
+    <div class="interset">
+        <div class="image">
+            <a href="{{url('/events/'.$event->id)}}">
+            <span class="image1"><i class="fa fa-star" aria-hidden="true"></i></span>
+            <span class="image2"><img src="{{url('storage/events/'.$event->image)}}"></span>
+            </a>
         </div>
-    @endif
+        <div class="inter">
+            <h5>
+                {{$event->interests}}
+            </h5>
+            <h6>
+                interest
+            </h6>
+        </div>
+    </div>
+
+</center>
 @endforeach
 
 
 
-<!--end items-->
+<!--end events-->
 
+<br>
 <!--start endwebsite-->
 <div class="end">
     <div class="imag">
@@ -192,9 +162,6 @@
 </div>
 <!--end endwebsite-->
 
-<script src="{{asset('../js/jquery-1.12.4.min.js')}}"></script>
-
-
+<script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
 </body>
-
 </html>

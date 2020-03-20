@@ -121,7 +121,7 @@ class PassportController extends Controller
 
         if($validator->fails())
         {
-            return $this->apiResponse('register',null,$validator->errors(),401);
+            return $this->apiResponse('profile_update',null,$validator->errors(),401);
         }
         if($hasImage)
         {
@@ -134,7 +134,6 @@ class PassportController extends Controller
                     $avatarName = 'default.png';
             }
         }
-        $gender = $request->gender;
         User::where('id',$id)->update([
            'email'=>$request->email,
             'password'=> bcrypt($request->password)
@@ -144,7 +143,7 @@ class PassportController extends Controller
             'last_name' => $request->last_name,
             'grade' => $request->grade,
             'avatar' => $avatarName,
-            'gender' => $gender
+            'gender' =>  $request->gender
         ]);
         return $this->apiResponse('profile_update','update succeed!!');
     }

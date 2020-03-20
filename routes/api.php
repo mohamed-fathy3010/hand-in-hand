@@ -29,7 +29,11 @@ Route::group([
 Route::middleware('auth:api')->group(function () {
     Route::get('profile', 'PassportController@details');
     Route::patch('profile/update','PassportController@updateProfile');
-    Route::post('user/{user}/item','ItemController@create');
+    Route::post('item','ItemController@create');
+    Route::post('item/{item}/report','ItemController@report');
+    Route::patch('item/{item}','ItemController@update');
+    Route::delete('item/{item}','ItemController@destroy');
+
 });
 
 Route::get('email/verify/{id}', 'VerificationController@verify')->name('verificationapi.verify');
