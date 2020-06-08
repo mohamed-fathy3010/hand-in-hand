@@ -53,7 +53,7 @@ class VerificationController extends Controller
         $date = date("Y-m-d g:i:s");
         $user->email_verified_at = $date;
         $user->save();
-        return $this->apiResponse('Email verified!');
+        return $this->apiResponse('email_verification','Email verified!');
         }
     /**
      * Resend the email verification notification.

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
     <link rel="stylesheet" href="{{asset('css/events.css')}}">
+    <link rel="stylesheet" href="{{asset('css/eventresponsive.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.js')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -88,7 +89,7 @@
             <div class="items">
                 <div class="image">
                     <img src="../images/marginalia-education.png" class="ig1"
-                         style="width: 40%;height: 110%;transform: rotatey(180deg);position: absolute;margin: 0px 0 0 0px;">
+                         style="width: 40%;height: 110%;transform: rotateY(180deg);position: absolute;margin: 0px 0 0 0px;">
                     <h3>EVENTS</h3>
                 </div>
                 <img src="../images/path2.png" class="background1"
@@ -114,33 +115,31 @@
 
 <!--start events-->
 @foreach($events as $event)
-<center>
-    <div class="interset">
-        <div class="image">
-            <a href="{{url('/events/'.$event->id)}}">
-            <span class="image1"><i class="fa fa-star" aria-hidden="true"></i></span>
-            <span class="image2"><img src="{{url('storage/events/'.$event->image)}}"></span>
-            </a>
-        </div>
-        <div class="inter">
-            <h5>
-                {{$event->interests}}
-            </h5>
-            <h6>
-                interest
-            </h6>
-        </div>
-    </div>
+        <div class="interset">
+            <div class="events">
+                   <img class="image-event" src="{{url("/storage/events/{$event->image}")}}">
+            </div>
+            <div class="shadow">
+                <a href="{{url("event/{$event->id}")}}">
+                <div class="images">
+                    <span class="image-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <span class="image-2"><img src="{{asset('images/Path 1.png')}}"></span>
+                </div>
+                </a>
 
-</center>
+            </div>
+            <div class="inter">
+                <h5>
+                    {{$event->interests}}
+                </h5>
+                <h6>
+                    interests
+                </h6>
+            </div>
+        </div>
+        <div class="clearfix" id="clear"></div>
 @endforeach
 
-
-
-<!--end events-->
-
-<br>
-<!--start endwebsite-->
 <div class="end">
     <div class="imag">
         <span class="image1"><img src="{{asset('images/f.png')}}"></span>

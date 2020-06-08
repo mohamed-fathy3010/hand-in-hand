@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use  Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,10 +30,52 @@ Route::group([
 Route::middleware('auth:api')->group(function () {
     Route::get('profile', 'PassportController@details');
     Route::patch('profile/update','PassportController@updateProfile');
-    Route::post('item','ItemController@create');
-    Route::post('item/{item}/report','ItemController@report');
-    Route::patch('item/{item}','ItemController@update');
-    Route::delete('item/{item}','ItemController@destroy');
+
+    Route::post('items','ItemController@create');
+    Route::post('items/{item}/report','ItemController@report');
+    Route::post('items/{item}/request','ItemController@request');
+    Route::patch('items/{item}','ItemController@update');
+    Route::delete('items/{item}','ItemController@destroy');
+
+    Route::post('products','ProductController@create');
+    Route::post('products/{product}/report','ProductController@report');
+    Route::post('products/{product}/request','ProductController@request');
+    Route::patch('products/{product}','ProductController@update');
+    Route::delete('products/{product}','ProductController@destroy');
+
+    Route::post('events','EventController@create')->middleware('trusted');
+    Route::post('events/{event}/report','EventController@report');
+    Route::post('events/{event}/interest','EventController@interest');
+    Route::patch('events/{event}','EventController@update');
+    Route::delete('events/{event}','EventController@destroy');
+    Route::get('events/{event}/interests','EventController@interesters');
+
+    Route::post('services','ServiceController@create');
+    Route::post('services/{service}/report','ServiceController@report');
+    Route::post('services/{service}/interest','ServiceController@interest');
+    Route::patch('services/{service}','ServiceController@update');
+    Route::delete('services/{service}','ServiceController@destroy');
+    Route::get('services/{service}/interests','ServiceController@interesters');
+
+  Route::patch('deals/{deal}/accept','DealController@accept');
+  Route::patch('deals/{deal}/decline','DealController@decline');
+  Route::patch('deals/{deal}/response','DealController@respond');
+  Route::get('deals/{deal}','DealController@show');
+  Route::get('deals','DealController@index');
+
+
+  Route::get('users/{user}/notifications','NotificationController@index');
+  Route::get('notifications/{notification}');
+
+    Route::get('events/{event}','EventController@show');
+    Route::get('events','EventController@index');
+    Route::get('services','ServiceController@index');
+    Route::get('services/{service}','ServiceController@show');
+
+    Route::get('/a',function (){
+        $type = 'items';
+        return response()->json(auth()->user());
+    });
 
 });
 
@@ -40,3 +83,7 @@ Route::get('email/verify/{id}', 'VerificationController@verify')->name('verifica
 Route::get('email/resend', 'VerificationController@resend')->name('verificationapi.resend');
 
 Route::get('items','ItemController@index');
+Route::get('items/{item}','ItemController@show');
+Route::get('products/{product}','ProductController@show');
+
+

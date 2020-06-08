@@ -167,7 +167,7 @@ margin-top: 10px;
   display: block;
   height: 35px;
   text-decoration: none;
-
+transition: all 1s ease;
 }
 
 .nav > li > a:hover{
@@ -434,7 +434,7 @@ ul > li > a:hover:after {
 
 
 /** start items**/
-.cotainer{
+#event{
  margin-top: 20px;
  margin-left: 25px;
  padding-right:30px;
@@ -445,6 +445,12 @@ ul > li > a:hover:after {
  border:  2.4px solid #ccc;
  border-radius: 6px;
   position: absolute;
+
+}
+.cotainer .row .items .background1{
+ width: 1300px;
+ height: 315px;
+ position: relative;
 
 }
 
@@ -506,7 +512,7 @@ position: absolute;
     background-color: #ff0000;
     border: none;
     padding: 10px;
-    color: #ffff;
+    color: #fff;
     font-size: 17px;
     border-radius: 4px;
     letter-spacing: 1.5px;
@@ -520,112 +526,72 @@ position: absolute;
 
 
 /**start events**/
-.interset{
- width:88%;
+
+.events{
+
+ width:95%;
  height: 50%;
+ position: absolute;
+ margin-top: 100px;
+ margin-left: 20px;
+
+}
+.events .image-event{
+ width: 88%;
+height: 100%;
+}
+.shadow .images{
+ background-image: linear-gradient(to right, rgb(242, 242, 242), rgba(0, 45, 61 ,0.55));
+  width:95%;
+ height: 51%;
  background-size:cover;
  position: absolute;
  margin-top: 100px;
  margin-left: 20px;
-  background-image: url('../images/e1.png');
-
-
-}
-.interset .image{
- background-image: linear-gradient(to right, rgb(242, 242, 242), rgba(0, 45, 61 ,0.55));
-  width:110%;
- height: 100%;
- background-size:cover;
- position: absolute;
- margin-top: 0px;
  overflow: hidden;
+
 }
-.interset .image .image1 i{
-font-size: 80px;
+
+.shadow .images i{
+ font-size: 80px;
   position: absolute;
   overflow: hidden;
  margin-top: 40px;
- margin-left: 555px;
+ margin-left: 1170px;
 color: #ff0000;
 }
-.interset .image .image2 img{
+.shadow .images img{
  width: 10px;
  height: 120%;
   position: absolute;
   overflow: hidden;
  margin-top: -8px;
- margin-left: 530px;
+ margin-left: 1124px;
 
 }
 
 .interset .inter h5{
  color: #fff;
  font-size: 30px;
- margin: 130px 0 0 1230px;
+ margin: 230px 0 0 1220px;
  position: absolute;
 }
 .interset .inter h6{
  color: #fff;
  font-size: 25px;
- margin: 170px 0 0 1200px;
+ margin: 265px 0 0 1190px;
  position: absolute;
 }
 
-
-
-
-.interset1{
- width:88%;
- height: 50%;
- background-size:cover;
- position: absolute;
- margin-top: 500px;
- margin-left: 20px;
- margin-bottom: 30px;
-  background-image: url('../images/e1.png');
-
-
-}
-.interset1 .image1{
- background-image: linear-gradient(to right, rgb(242, 242, 242), rgba(0, 45, 61 ,0.55));
-  width:110%;
- height: 100%;
- background-size:cover;
- position: absolute;
- margin-top: 0px;
- overflow: hidden;
-}
-.interset1 .image1 .image4 i{
-font-size: 80px;
-  position: absolute;
-  overflow: hidden;
- margin-top: 40px;
- margin-left: 555px;
+.interset .images .image-3 i{
  color: #fff;
-
-}
-.interset1 .image1 .image2 img{
- width: 10px;
- height: 120%;
-  position: absolute;
-  overflow: hidden;
- margin-top: -8px;
- margin-left: 530px;
-
 }
 
-.interset1 .inter1 h5{
- color: #fff;
- font-size: 30px;
- margin: 130px 0 0 1230px;
- position: absolute;
+#clear{
+ height: 380px;
 }
-.interset1 .inter1 h6{
- color: #fff;
- font-size: 25px;
- margin: 170px 0 0 1200px;
- position: absolute;
-}
+
+
 /**end event**/
 
 
@@ -635,7 +601,7 @@ font-size: 80px;
  height: 100%;
  background-size:cover;
  position: absolute;
- margin-top: 860px;
+ margin-top: 500px;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 54, 61));
 
 }

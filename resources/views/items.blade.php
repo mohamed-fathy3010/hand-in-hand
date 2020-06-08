@@ -124,7 +124,7 @@
                 <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
                     <div class="items1">
                         <div class="imgbox">
-                            <a href="{{url('/items/'.$item->id)}}">
+                            <a href="{{url('/item/'.$item->id)}}">
                             <img src="{{url('/storage/items/'.$item->image)}}" title="engineering tools">
                             </a>
                         </div>

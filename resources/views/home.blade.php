@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <title>hand in hand</title>
     <link rel="shortcut icon" href="{{asset('images/HandInHand.png')}}" type="../images/HandInHand.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +32,7 @@
 </head>
 <body>
 <!-- Start Navbar -->
-<div class="navbar elem-center">
+<div id="app" class="navbar elem-center">
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
@@ -240,6 +241,38 @@
 <!--end endwebsite-->
 
 <script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
+<script src="{{asset('js/app.js')}}"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            notifications: [],
+            user: {!! Auth::check() ? Auth::user()->toJson() : 'null' !!}
+        },
+        created() {
+            @auth
+            this.getNotifications();
+            window.Echo.private('user.'+this.user.id).listen('NotificationWasPushed', e =>{
+                console.log(e)
+            });
+            @endauth
+        },
+        methods: {
+            getNotifications() {
+                axios.get('/api/users/'+this.user.id+'/notifications')
+                    .then((response) => {
+                        this.notifications = response.data;
+                        console.log(response.data);
+                    })
+                    .catch(function (error) {
+                            console.log(error);
+                        }
+                    );
+            },
+
+        }
+    })
+</script>
 </body>
 
 </html>

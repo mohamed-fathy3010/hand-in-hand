@@ -8,7 +8,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Notifications\passwordResetNotification;
-
 class User extends Authenticatable implements  MustVerifyEmail
 {
     use Notifiable,HasApiTokens;
@@ -39,14 +38,21 @@ class User extends Authenticatable implements  MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isTrusted(){
+        return $this->is_trusted;
+    }
     public function info()
     {
         return $this->hasOne(Info::class,'user_id');
     }
 
+    public function validation(){
+        return $this->hasOne(Validation::class,'user_id');
+    }
     public function sendApiEmailVerificationNotification()
     {
-        $this->notify(new VerifyApiEmailNotification); // my notification
+        $this->notify(new VerifyApiEmailNotification);
     }
 
     public function items()
@@ -57,5 +63,26 @@ class User extends Authenticatable implements  MustVerifyEmail
     public function events()
     {
         return $this->hasMany(Event::class,'user_id');
+    }
+    public function products()
+    {
+        return $this->hasMany(Product::class,'user_id');
+    }
+    public function services()
+    {
+        return $this->hasMany(Service::class,'user_id');
+    }
+
+    public function notifications()
+    {
+       return $this->hasMany(Notification::class,'user_id');
+    }
+
+    public function interests(){
+        return $this->hasMany(Interest::class,'user_id');
+    }
+
+    public function deals(){
+        return $this->hasMany(Deal::class,'buyer_id');
     }
 }

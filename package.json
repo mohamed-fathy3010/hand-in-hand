@@ -19,12 +19,17 @@
         "jquery": "^3.4.1",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
+        "popper.js": "^1.16.1",
+        "pusher-js": "^6.0.3",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "vue": "^2.6.11",
         "vue-template-compiler": "^2.6.11",
-        "webpack": "^4.41.5",
-        "popper.js": "^1.16.1",
-        "vue": "^2.6.11"
+        "webpack": "^4.41.5"
+    },
+    "dependencies": {
+        "laravel-echo": "^1.7.0",
+        "pusher": "^3.0.1"
     }
 }

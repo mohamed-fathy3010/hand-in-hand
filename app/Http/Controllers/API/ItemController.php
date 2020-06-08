@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Deal;
+use App\Events\ElementWasInterested;
+use App\Events\NotificationWasPushed;
+use App\Events\Test;
 use App\Http\Controllers\Controller;
+use App\Notification;
 use App\Report;
-use App\User;
 use App\Item;
+use App\User;
 use eloquentFilter\QueryFilter\ModelFilters\ModelFilters;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,7 +20,7 @@ class ItemController extends Controller
 {
     use ApiResponseTrait;
 
-    public function create(Request $request,User $user){
+    public function create(Request $request){
         $validator= Validator::make($request->all(), [
             'title'=>'required|string|max:256',
             'image'=>'image',
@@ -26,8 +32,12 @@ class ItemController extends Controller
         {
             return $this->apiResponse('create_item',null,$validator->errors(),401);
         }
-        $imagePath= time().'.'.$request->image->getClientOriginalExtension();
-        $request->image->storeAs('items',$imagePath);
+        $imagePath='default.png';
+       if($request->has('image'))
+       {
+           $imagePath= time().'.'.$request->image->getClientOriginalExtension();
+           $request->image->storeAs('items',$imagePath);
+       }
         auth()->user()->items()->create([
            'title'=>$request->title,
             'description'=>$request->description,
@@ -60,22 +70,25 @@ class ItemController extends Controller
     }
     private function isReported($id):bool {
         return Report::where('reportable_id',$id)
-            ->where('reportable_type','App\Item')
+            ->where('reportable_type','items')
             ->where('user_id',auth()->id())->exists();
     }
+
     public function destroy(Item $item){
-        if(auth()->id()==$item->user_id)
-        {
+        if(auth()->id()!=$item->user_id)
+          {
+              return $this->apiResponse('item_delete',null,'Unauthorized action',401);
+          }
+
             $item->delete();
             return $this->apiResponse('item_delete','item deleted!!!');
-        }
-        else{
-            return $this->apiResponse('item_delete',null,'Unauthorized action',401);
-        }
 
     }
     public function update(Request $request,Item $item)
     {
+        if(auth()->id()!=$item->user_id) {
+            return $this->apiResponse('item_update', null, 'Unauthorized action', 401);
+        }
         $hasImage=$request->hasFile('image');
         $id = auth()->id();
         $rules =[
@@ -119,4 +132,47 @@ class ItemController extends Controller
         ]);
         return $this->apiResponse('item_update','update succeed!!');
     }
+    public function show(Item $item)
+    {
+        return $this->apiResponse('item',$item);
+    }
+
+    public function request(Item $item)
+    {
+        $sender = User::with('info')->find(auth()->id());
+        $itemInfo = $item->load('user.info');
+
+        if($this->hasDeal($itemInfo,$sender->id)) {
+            return $this->apiResponse('item_deal', null, 'already requested', 401);
+        }
+        $deal = $item->deals()->create([
+            'buyer_id' =>$sender->id,
+            'owner_id' => $itemInfo->user->id
+        ]);
+        $notification = $this->makeNotification($sender,$itemInfo->user,$deal,'is interested in one of your items');
+        NotificationWasPushed::dispatch($notification);
+        return $this->apiResponse('item_deal','requested');
+
+    }
+
+    private function hasDeal($item,$buyerId):bool {
+        return Deal::where('deal_type','items')
+            ->where('deal_id',$item->id)
+            ->where('buyer_id',$buyerId)
+            ->where('owner_id',$item->user->id)->exists();
+    }
+
+    private function makeNotification($sender, $receiver, $deal,$message){
+        $first_name = $sender->info->first_name;
+        $last_name = $sender->info->last_name;
+        $body = "{$first_name} {$last_name} {$message}";
+        $url = "/deals/{$deal->id}";
+        return $receiver->notifications()->create([
+            'body'=>$body,
+            'url' => $url
+        ]);
+    }
+
+
+
 }

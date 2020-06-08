@@ -21,10 +21,22 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/items','ItemController@index');
 Route::get('/items/{item}','ItemController@show');
 
+Route::get('/products','ProductController@index');
+Route::get('/product/{product}','ProductController@show');
+
 Route::get('/events','EventController@index');
-Route::get('/events/{event}','EventController@show');
+Route::get('/event/{event}','EventController@show');
+
+Route::get('/services','ServiceController@index');
+Route::get('/service/{service}','ServiceController@show');
+
+
 
 Route::get('/profile/{user}','profileController@index');
 Route::get('/a',function (){
-
+\App\Events\Test::dispatch('hmada');
+});
+Route::get('/welcome',function ()
+{
+   return view('welcome');
 });
