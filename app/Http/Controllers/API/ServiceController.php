@@ -68,6 +68,7 @@ public function show(Service $service)
           'user_id'=>auth()->id(),
           'reason'=>$request->reason
       ]);
+      $service->increment('reports');
       return $this->apiResponse('service_report','reported!!!');
   }
     private function isReported($id):bool {
@@ -120,12 +121,14 @@ public function show(Service $service)
 
     public function interest(Service $service)
     {
+        if ($service->is_interested){
+            $service->decrement('interests');
+            $service->interestable()->where('user_id',auth()->id())->delete();
+            return $this->apiResponse('service_interest','uninterested');
+        }
         $sender = User::with('info')->find(auth()->id());
         $serviceInfo = $service->load('user.info');
-        if($this->hasInterest($serviceInfo,$sender->id)) {
-            return $this->apiResponse('service_interest', null, 'already interested', 401);
-        }
-        $count = $service->interests()->get()->count();
+        $count = $service->interestable()->get()->count();
         switch ($count){
             case 0:
                 $message = 'is interested in your service';
@@ -137,7 +140,7 @@ public function show(Service $service)
                 $message = "and ${count} other people are interested in your service";
         }
         $service->increment('interests');
-        $service->interests()->create([
+        $service->interestable()->create([
             'user_id' =>$sender->id
         ]);
         $notification = $this->makeNotification($sender,$serviceInfo->user,$service,$message);
@@ -147,11 +150,6 @@ public function show(Service $service)
         return $this->apiResponse('service_interest','interested');
     }
 
-    private function hasInterest($service,$senderId):bool {
-        return Interest::where('interest_type','services')
-            ->where('interest_id',$service->id)
-            ->where('user_id',$senderId)->exists();
-    }
 
     private function makeNotification($sender, $receiver, $service, $message){
         $first_name = $sender->info->first_name;

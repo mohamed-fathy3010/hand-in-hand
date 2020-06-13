@@ -24,5 +24,6 @@ class ValidationController extends Controller
             'body'=>$request->body,
             'image' =>$imagePath
         ]);
+        return $this->apiResponse('create_validation','created');
     }
 }

@@ -63,6 +63,7 @@ class ProductController extends Controller
             'user_id'=>auth()->id(),
             'reason'=>$request->reason
         ]);
+            $product->increment('reports');
         return $this->apiResponse('product_report','reported!!!');
     }
     private function isReported($id):bool {

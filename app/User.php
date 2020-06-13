@@ -48,7 +48,7 @@ class User extends Authenticatable implements  MustVerifyEmail
     }
 
     public function validation(){
-        return $this->hasOne(Validation::class,'user_id');
+        return $this->hasMany(Validation::class,'user_id');
     }
     public function sendApiEmailVerificationNotification()
     {

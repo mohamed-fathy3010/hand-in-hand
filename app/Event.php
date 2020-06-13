@@ -6,6 +6,7 @@ use App\filter_traits\EventsFilter;
 use eloquentFilter\QueryFilter\ModelFilters\Filterable;
 use Illuminate\Database\Eloquent\Model;
 use App\Interest;
+use Illuminate\Support\Carbon;
 
 
 class Event extends Model
@@ -21,6 +22,9 @@ class Event extends Model
     ];
     //
 
+//    public function setDateAttribute( $value ) {
+//        $this->attributes['date'] = Carbon::createFromTimestamp($value)->toDateTimeString();
+//    }
     public function getIsInterestedAttribute(){
        return \App\Interest::where('user_id',auth()->id())->
             where('interest_type','events')->where('interest_id',$this->id)->exists();

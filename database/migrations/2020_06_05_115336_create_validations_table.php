@@ -15,7 +15,7 @@ class CreateValidationsTable extends Migration
     {
         Schema::create('validations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigIncrements('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->text('image');
             $table->text('body');
             $table->boolean('status')->nullable();

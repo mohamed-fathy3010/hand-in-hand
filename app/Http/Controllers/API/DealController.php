@@ -5,9 +5,10 @@ namespace App\Http\Controllers\API;
 use App\Events\NotificationWasPushed;
 use App\Http\Controllers\Controller;
 use App\Deal;
+use App\Item;
+use App\Product;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class DealController extends Controller
@@ -128,7 +129,10 @@ class DealController extends Controller
         $deal->unsetRelation('owner')->unsetRelation('buyer');
         $deal->buyer=$buyer;
         $deal->owner=$owner;
-        $dealable = DB::table($deal->deal_type)->find($deal->deal_id);
+        if($deal->deal_type === 'items')
+        $dealable = Item::find($deal->deal_id);
+        else
+        $dealable = Product::find($deal->deal_id);
         $deal->data = $dealable;
         return $this->apiResponse('show_deal',$deal);
     }

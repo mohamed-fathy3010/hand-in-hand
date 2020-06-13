@@ -20,8 +20,7 @@ class CreateEventsTable extends Migration
             $table->text('about');
             $table->text('description');
             $table->string('location');
-            $table->string('date');
-            $table->string('time');
+            $table->timestamp('date');
             $table->string('image')->default('default.png');
             $table->timestamps();
             $table->unsignedInteger('interests')->default('0');

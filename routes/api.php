@@ -35,9 +35,13 @@ Route::middleware('auth:api')->group(function () {
     Route::post('items/{item}/report','ItemController@report');
     Route::post('items/{item}/request','ItemController@request');
     Route::patch('items/{item}','ItemController@update');
+    Route::patch('items/{item}/cancel','ItemController@cancel');
     Route::delete('items/{item}','ItemController@destroy');
+    Route::get('items','ItemController@index');
+    Route::get('items/{item}','ItemController@show');
 
     Route::post('products','ProductController@create');
+    Route::get('products','ProductController@index');
     Route::post('products/{product}/report','ProductController@report');
     Route::post('products/{product}/request','ProductController@request');
     Route::patch('products/{product}','ProductController@update');
@@ -76,14 +80,12 @@ Route::middleware('auth:api')->group(function () {
         $type = 'items';
         return response()->json(auth()->user());
     });
-
+    Route::post('/validations','ValidationController@store');
 });
 
 Route::get('email/verify/{id}', 'VerificationController@verify')->name('verificationapi.verify');
 Route::get('email/resend', 'VerificationController@resend')->name('verificationapi.resend');
 
-Route::get('items','ItemController@index');
-Route::get('items/{item}','ItemController@show');
-Route::get('products/{product}','ProductController@show');
+
 
 

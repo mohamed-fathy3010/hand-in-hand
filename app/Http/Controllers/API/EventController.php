@@ -33,12 +33,11 @@ class EventController extends Controller
             'location'=>'required',
             'description'=>'required',
             'date'=>'required',
-            'time'=>'required'
 
         ]);
         if($validator->fails())
         {
-            return $this->apiResponse('create_evetn',null,$validator->errors(),401);
+            return $this->apiResponse('create_event',null,$validator->errors(),401);
         }
         $imagePath= time().'.'.$request->image->getClientOriginalExtension();
         $request->image->storeAs('events',$imagePath);
@@ -47,7 +46,6 @@ class EventController extends Controller
             'description'=>$request->description,
             'about'=>$request->about,
             'date'=>$request->date,
-            'time'=>$request->time,
             'location'=>$request->location,
             'image'=>$imagePath
         ]);
@@ -73,6 +71,7 @@ class EventController extends Controller
             'user_id'=>auth()->id(),
             'reason'=>$request->reason
         ]);
+        $event->increment('reports');
         return $this->apiResponse('event_report','reported!!!');
     }
 
@@ -110,7 +109,6 @@ class EventController extends Controller
             'location'=>'required',
             'description'=>'required',
             'date'=>'required',
-            'time'=>'required'
         ];
         $imageRules = $rules;
         $imageRules['image']='image';
@@ -143,7 +141,6 @@ class EventController extends Controller
             'description'=>$request->description,
             'about'=>$request->about,
             'date'=>$request->date,
-            'time'=>$request->time,
             'location'=>$request->location,
             'image'=>$imageName
         ]);
@@ -152,14 +149,14 @@ class EventController extends Controller
 
     public function interest(Event $event)
     {
+        if($event->is_interested){
+            $event->decrement('interests');
+            $event->interestable()->where('user_id',auth()->id())->delete();
+            return $this->apiResponse('event_interest','uninterested');
+        }
         $sender = User::with('info')->find(auth()->id());
         $eventInfo = $event->load('user.info');
-
-        if($this->hasInterest($eventInfo,$sender->id)) {
-            return $this->apiResponse('event_interest', null, 'already interested', 401);
-        }
-
-        $count = $event->interests()->get()->count();
+        $count = $event->interestable()->get()->count();
         switch ($count){
             case 0:
                 $message = 'is interested in your event';
@@ -172,7 +169,7 @@ class EventController extends Controller
         }
 
         $event->increment('interests');
-        $event->interests()->create([
+        $event->interestable()->create([
             'user_id' =>$sender->id
         ]);
         $notification = $this->makeNotification($sender,$eventInfo->user,$event,$message);
@@ -180,11 +177,7 @@ class EventController extends Controller
         return $this->apiResponse('event_interest','interested');
     }
 
-    private function hasInterest($event,$senderId):bool {
-        return Interest::where('interest_type','events')
-            ->where('interest_id',$event->id)
-            ->where('user_id',$senderId)->exists();
-    }
+
 
     private function makeNotification($sender, $receiver, $event, $message){
         $first_name = $sender->info->first_name;
@@ -199,11 +192,4 @@ class EventController extends Controller
             ]);
     }
 
-    public function interesters(Event $event){
-        $interesters = Event::with('interests.user.info')->where('id',$event->id)->pluck('interests.user.info');
-    $interesters =Interest::where('interest_type','events')->where('interest_id',$event->id)->get();
-        $interesters =Interest::with('user.info')->where('interest_type','events')->where('interest_id',$event->id)->get();
-        $interesters->pluck('user.info');
-
-    }
 }

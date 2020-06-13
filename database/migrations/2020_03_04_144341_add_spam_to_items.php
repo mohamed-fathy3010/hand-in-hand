@@ -15,7 +15,7 @@ class AddSpamToItems extends Migration
     {
         Schema::table('items', function (Blueprint $table) {
             //
-            $table->integer('spam')->default(0);
+            $table->integer('reports')->default(0);
         });
     }
 

@@ -51,9 +51,9 @@ class ItemController extends Controller
     public function index(ModelFilters $modelFilters)
     {
         if (!empty($modelFilters->filters()))
-            $items=Item::filter($modelFilters)->paginate(16);
+            $items=Item::filter($modelFilters)->where('is_canceled',0)->paginate(16);
         else
-            $items=Item::latest()->paginate(16);
+            $items=Item::latest()->where('is_canceled',0)->paginate(16);
         return $this->apiResponse('items',$items);
     }
 
@@ -66,6 +66,7 @@ class ItemController extends Controller
                     'user_id'=>auth()->id(),
                     'reason'=>$request->reason
                 ]);
+                $item->increment('reports');
                 return $this->apiResponse('item_report','reported!!!');
     }
     private function isReported($id):bool {
@@ -173,6 +174,13 @@ class ItemController extends Controller
         ]);
     }
 
+    public function cancel(Item $item){
+        if(auth()->id()!=$item->user_id) {
+            return $this->apiResponse('item_update', null, 'Unauthorized action', 401);
+        }
+        $item->update(['is_canceled' => 1]);
+        return $this->apiResponse('item_cancel','canceled');
+    }
 
 
 }
