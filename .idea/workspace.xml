@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_10_114044_add_is_cancelled_to_items.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_12_183751_add_reports_to_services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_12_183758_add_reports_to_events.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/DealController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/DealController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/NotificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ValidationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ValidationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_04_144341_add_spam_to_items.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_04_144341_add_spam_to_items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_13_210827_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_13_210827_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_02_155035_add_column_spam_to_table_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_02_155035_add_column_spam_to_table_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_05_115336_create_validations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_05_115336_create_validations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notification.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -300,6 +287,7 @@
       <workItem from="1591786458749" duration="14612000" />
       <workItem from="1591975742741" duration="11015000" />
       <workItem from="1592054722219" duration="8934000" />
+      <workItem from="1592223507976" duration="8385000" />
     </task>
     <servers />
   </component>
@@ -341,11 +329,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1585586237328" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1592054744033">
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1592223529463">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588369546633" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592054744033" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592223529463" />
     <state x="0" y="0" width="737" height="728" key="find.popup" timestamp="1588369937517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -354,10 +342,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1584529504259" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592075356916">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592242412913">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="84" width="672" height="643" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588371103624" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1592075356916" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1592242412913" />
   </component>
 </project>

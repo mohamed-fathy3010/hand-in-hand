@@ -63,13 +63,13 @@ Route::middleware('auth:api')->group(function () {
 
   Route::patch('deals/{deal}/accept','DealController@accept');
   Route::patch('deals/{deal}/decline','DealController@decline');
-  Route::patch('deals/{deal}/response','DealController@respond');
+  Route::patch('deals/{deal}/respond','DealController@respond');
   Route::get('deals/{deal}','DealController@show');
   Route::get('deals','DealController@index');
 
 
-  Route::get('users/{user}/notifications','NotificationController@index');
-  Route::get('notifications/{notification}');
+  Route::get('notifications','NotificationController@index');
+  Route::get('notifications/{notification}','NotificationController@show');
 
     Route::get('events/{event}','EventController@show');
     Route::get('events','EventController@index');

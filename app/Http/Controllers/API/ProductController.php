@@ -55,6 +55,13 @@ class ProductController extends Controller
     }
 
     public function report(Request $request, Product $product){
+        $validator= Validator::make($request->all(), [
+            'reason' => 'required|in:spam,inappropriate'
+        ]);
+        if($validator->fails())
+        {
+            return $this->apiResponse('product_report',null,$validator->errors(),401);
+        }
         if ($this->isReported($product->id))
         {
             return $this->apiResponse('product_report',null,'this product is already reported',401);
@@ -139,9 +146,7 @@ class ProductController extends Controller
         $sender = User::with('info')->find(auth()->id());
         $productInfo = $product->load('user.info');
 
-        if($this->hasDeal($productInfo,$sender->id)) {
-            return $this->apiResponse('product_deal', null, 'already requested', 401);
-        }
+
         $deal = $product->deals()->create([
             'buyer_id' =>$sender->id,
             'owner_id' => $productInfo->user->id

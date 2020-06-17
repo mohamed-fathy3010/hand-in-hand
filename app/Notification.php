@@ -9,6 +9,10 @@ class Notification extends Model
     //
     protected $guarded = [];
 
+    public function markAsRead(){
+        return $this->update(['is_read' => 1]) ;
+    }
+
     public function interest(){
         return $this->belongsTo(Interest::class,'interest_id');
     }

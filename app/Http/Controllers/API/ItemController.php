@@ -58,6 +58,14 @@ class ItemController extends Controller
     }
 
     public function report(Request $request, Item $item){
+
+        $validator= Validator::make($request->all(), [
+            'reason' => 'required|in:spam,inappropriate'
+        ]);
+        if($validator->fails())
+        {
+            return $this->apiResponse('item_report',null,$validator->errors(),401);
+        }
                 if ($this->isReported($item->id))
                 {
                     return $this->apiResponse('item_report',null,'this item is already reported',401);

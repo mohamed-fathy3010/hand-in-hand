@@ -60,6 +60,14 @@ public function show(Service $service)
  }
 
   public function report(Request $request, Service $service){
+
+      $validator= Validator::make($request->all(), [
+          'reason' => 'required|in:spam,inappropriate'
+      ]);
+      if($validator->fails())
+      {
+          return $this->apiResponse('service_report',null,$validator->errors(),401);
+      }
       if ($this->isReported($service->id))
       {
           return $this->apiResponse('service_report',null,'this service is already reported',401);

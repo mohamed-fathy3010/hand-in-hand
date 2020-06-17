@@ -14,10 +14,18 @@ class NotificationController extends Controller
 {
     use ApiResponseTrait;
     //
-    public function index(User $user)
+    public function index()
     {
-        $notifications = Notification::where('user_id',$user->id)->latest()->get();
+        $notifications = Notification::where('user_id',auth()->id())->latest()->get();
         return $this->apiResponse('notifications',$notifications);
+    }
+
+    public function show(Notification $notification){
+        if (auth()->id() !== $notification->user_id){
+            return $this->apiResponse('show_notification',null,'unauthorized action',401);
+        }
+        $notification->markAsRead();
+        return $this->apiResponse('notification' , $notification);
     }
 
 }

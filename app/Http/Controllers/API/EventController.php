@@ -63,6 +63,14 @@ class EventController extends Controller
     }
 
     public function report(Request $request, Event $event){
+
+        $validator= Validator::make($request->all(), [
+            'reason' => 'required|in:spam,inappropriate'
+        ]);
+        if($validator->fails())
+        {
+            return $this->apiResponse('event_report',null,$validator->errors(),401);
+        }
         if ($this->isReported($event->id))
         {
             return $this->apiResponse('event_report',null,'this event is already reported',401);
