@@ -1,0 +1,1618 @@
+@media(max-width:767px){
+    body {
+        font-family: 'arial', sans-serif;
+        outline: none;
+        background-color: #fff;
+        padding: 0px;
+        margin: 0px;
+         
+      }
+      
+      input,
+      button {
+        cursor: pointer
+      }
+      
+      .clearfix {
+        clear: both
+      }
+      
+      
+      
+      /**start item**/
+      .item{
+        position: absolute;
+        width: 97%;
+        height: 400px;
+        margin-top: 0px;
+        margin: 20px 0 0px 20px;
+      }
+      .item .imge{
+           width:100%;
+          height:400px;
+          position: absolute;
+          margin-top: 0px;
+          
+      }
+      #profile{
+        width: 100%;
+       height: 100%;
+       position: absolute;
+       margin: 0px 0 0 0;
+       border-radius: 10px;
+      }
+      #linecolor{
+        width: 100%;
+       height: 200px;
+       position: relative;
+       margin: 200px 0 0 0;
+       border-radius: 10px;"
+      }
+      
+      .item .ponts{
+      position: absolute;
+      }
+      #point{
+       width:10px;
+       margin: 30px 0px 0 0;
+       padding-left: 60px;
+      }
+      .item .ponts .point {
+      float: right;
+      padding-top: 0px;
+      position: absolute;
+      margin-top:0px;
+      margin-left: 1225px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      
+      }
+      
+      .item .ponts .point >ul>li{
+        margin: -25px 1000px 0 0 ;
+      
+      }
+      
+      .item .ponts .point >ul>li>span {
+      display: block;
+      border-radius: 50%;
+      height: 7px;
+      width: 7px;
+      background: #fff;
+      /**haver backgrounf**/ margin-left: 330px;
+      margin-bottom: 3px;
+      
+      
+      }
+      .item .words{
+      position: absolute;
+      margin: 350px 0 0 20px;
+      width: 300px;
+      }
+      .item .words h5{
+        color: #fff;
+        font-size: 23px;
+        
+      }
+      
+      .Details{
+        position: absolute;
+        margin: 470px 0 0 20px ;
+      }
+      .Details h1{
+        font-size: 35px;
+        float: left;
+      }
+      .Details h3{
+        font-size: 25px;
+        height: 20px;
+        color: #ff0000;
+        float: right;
+        margin-left: 280px;
+        
+      }
+  
+#cont {
+   
+    margin-top:150px;
+    padding-bottom:35px ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  /*login*/
+  
+  .login-form {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+      margin-left: 10px;
+      padding-top:21px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;}
+  
+
+  form  center i{
+  color: #eee;
+  margin: 10px 0 0 -350x;
+  }
+  .validate-form{
+    margin:auto;
+    margin-top:20px;
+  }
+  
+  input{
+
+    padding-left: 20px;
+  }
+  
+  .login-form form input{
+  
+    display: block;
+    margin-top: 30px;
+  
+  
+  }
+  /*---------------------------------*/
+  
+  .FirstName,
+  .SecondName,
+  .login-form-educationGrade,  
+  .login-form-Email,
+  .login-form-password
+  {
+    position: relative;
+    width: 450px;
+    height: 13vh;
+    margin: auto;
+    
+    
+  }
+  .FirstName
+{
+    margin-top: 0px;
+  }
+  .SecondName{
+    margin-top: 10px;
+  }
+  .login-form-educationGrade{
+    margin-top: 10px;
+    }
+    .login-form-Email{
+    margin-top: 10px;
+    }
+    .login-form-password{
+    margin-top: 10px;
+    }
+  
+  
+  .login-form-gender{
+    position: relative;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+  }
+  .Gender{
+  font-family: arial;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top:15px ;
+  margin-left: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(248, 10, 10);
+  transition: all 0.4s;
+  pointer-events: none;
+  }
+  
+  .Male-Famel{
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top:10px ;
+  padding:0px  10px;
+  
+  
+  }
+  .Male_input{
+    float: left;
+   
+  }
+  .Female-input{
+    float: right; 
+    padding-right: 150px;
+  }
+  
+  .input1,.input2 ,.input3 ,.input4 ,.input5{
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    font-size: 16px;
+    padding:5px 0;
+    border-radius: 5px;
+    background:#b3b3b3;
+  
+  }
+  
+  #male,#female{
+    position: absolute;
+    width:40px;
+    height:18px;
+    background: transparent;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+   .male,.female{
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    background: transparent;
+    padding-left:45px;
+    padding-top:15px;
+   }
+   #gender{
+    display: none;
+   }
+  /*==================================================================
+    [ Focus input ]*/
+  .focus-input {
+    font-family: arial;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 17px;
+    left: 0;
+    padding:25px 0 0 0px;
+    font-size: 16px;
+    pointer-events: none;
+    padding-left: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    transition: all 0.4s;
+  
+  }
+  .input1:focus ~ .focus-input,
+  .input1:valid ~ .focus-input,
+  .input2:focus ~ .focus-input,
+  .input2:valid ~ .focus-input,
+  .input3:focus ~ .focus-input,
+  .input3:valid ~ .focus-input,
+  .input4:focus ~ .focus-input,
+  .input4:valid ~ .focus-input,
+  .input5:focus ~ .focus-input,
+  .input5:valid ~ .focus-input
+  {
+  margin-top:-30px ;
+  
+  }
+  /********************************- show pass-----------------------**/
+  .icone{
+    float: right;
+  }
+  .field-icon {
+    float: right;
+    padding-right :30px;
+    margin-bottom: 5px;
+    padding-top: 48px;
+    position: relative;
+    color: rgb(248, 10, 10);
+    z-index: 2;
+  }
+  
+  
+  /*-------------------------------------------*/
+  
+  
+  .login-form-button {
+    position: relative;
+    width:80%;
+    height: 10vh;
+    margin: auto;
+    
+  }
+  .login-button{
+    width: 450px;
+    height:8vh;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    background:#Ff0000;
+    border:#Ff0000;
+    border-radius: 5px;
+    margin-left: -50px;
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+  }
+  
+  /** start social**/
+.end{
+    width:100%;
+    max-width:767px;
+    height: 60%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 1200px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+     width:485px;
+    max-width:767px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 18%;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 110px;
+   }
+   .end .imag .image3 img{
+    width: 18%;
+   margin-top: 130px;
+   position: absolute;
+    margin-left:60px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 16px;
+   }
+   .end .link li .link1{
+    margin: 65px 0 0 75px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 140px 0 0 30px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 25px;
+   }
+   .end .link .social .social1{
+     margin: 102px 0 0 330px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 190px 0 0 340px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 300px;
+     margin-left:60px;
+     font-size: 15px;
+    position: absolute;
+   }    
+   /** end social**/
+    
+}
+@media(min-width:768px) and (max-width:991px){
+
+      /**start item**/
+      .item{
+        position: absolute;
+        width: 97%;
+        height: 400px;
+        margin-top: 0px;
+       
+        margin: 20px 0 0px 20px;
+        
+        
+     }
+     .item .imge{
+            width:100%;
+           height:400px;
+           position: absolute;
+           margin-top: 0px;
+           
+     }
+     #profile{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      margin: 0px 0 0 0;
+      border-radius: 10px;
+     }
+     #linecolor{
+      width: 100%;
+      height: 200px;
+      position: relative;
+      margin: 200px 0 0 0;
+      border-radius: 10px;"
+     }
+     .item .ponts{
+      position: absolute;
+     }
+     #point{
+      width:10px;
+      margin: 30px 0px 0 0;
+      padding-left: 60px;
+     }
+     .item .ponts .point {
+       float: right;
+       padding-top: 0px;
+       position: absolute;
+       margin-top:0px;
+       margin-left: 10px;
+       cursor: pointer;
+       background: none;
+       border: none;
+      
+     }
+     
+     .item .ponts .point >ul>li{
+     margin: -25px 1000px 0 0 ;
+     
+     }
+     
+     .item .ponts .point >ul>li>span {
+       display: block;
+       border-radius: 50%;
+       height: 7px;
+       width: 7px;
+       background: #fff;
+       /**haver backgrounf**/ margin-left:650px;
+       margin-bottom: 3px;
+       
+       
+     }
+     .item .words{
+      position: absolute;
+      margin: 350px 0 0 20px;
+      width: 300px;
+     }
+     .item .words h5{
+         color: #fff;
+         font-size: 23px;
+         
+     }
+        
+        .Details{
+          position: absolute;
+          margin: 450px 0 0 20px ;
+        }
+        .Details h1{
+          font-size: 35px;
+          float: left;
+        }
+        .Details h3{
+          font-size: 25px;
+          height: 20px;
+          color: #ff0000;
+          float: right;
+          margin-left: 540px;
+          
+        }
+
+#cont {
+
+margin-top:150px;
+padding-bottom:35px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/*login*/
+
+.login-form {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  margin-left: 200px;
+  padding-top:21px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;}
+
+
+.validate-form{
+margin:auto;
+margin-top:20px;
+}
+
+input{
+
+padding-left: 20px;
+}
+
+.login-form form input{
+
+display: block;
+margin-top: 30px;
+
+
+}
+/*---------------------------------*/
+
+.FirstName,
+.SecondName,
+.login-form-educationGrade,  
+.login-form-Email,
+.login-form-password
+{
+position: relative;
+width: 450px;
+height: 13vh;
+margin: auto;
+
+
+}
+.FirstName
+{
+margin-top: 0px;
+}
+.SecondName{
+margin-top: 10px;
+}
+.login-form-educationGrade{
+margin-top: 10px;
+}
+.login-form-Email{
+margin-top: 10px;
+}
+.login-form-password{
+margin-top: 10px;
+}
+
+
+.login-form-gender{
+position: relative;
+width: 80%;
+height: 10vh;
+margin: auto;
+}
+.Gender{
+font-family: arial;
+position: absolute;
+display: block;
+width: 100%;
+margin-top:15px ;
+margin-left: -30px;
+font-size: 20px;
+font-weight: bold;
+color: rgb(248, 10, 10);
+transition: all 0.4s;
+pointer-events: none;
+}
+
+.Male-Famel{
+position: absolute;
+display: block;
+width: 100%;
+margin-top:10px ;
+padding:0px  10px;
+
+
+}
+.Male_input{
+float: left;
+
+}
+.Female-input{
+float: right; 
+padding-right: 150px;
+}
+
+.input1,.input2 ,.input3 ,.input4 ,.input5{
+width: 100%;
+height: 8vh;
+margin: auto;
+font-size: 16px;
+padding:5px 0;
+border-radius: 5px;
+background:#b3b3b3;
+
+}
+#male,#female{
+position: absolute;
+width:40px;
+height:18px;
+background: transparent;
+padding-top: 5px;
+color: rgba(255, 255, 255, 0.795);
+}
+.male,.female{
+position: absolute;
+width: 100%;
+font-size: 18px;
+color: #000;
+background: transparent;
+padding-left:45px;
+padding-top:15px;
+}
+#gender{
+display: none;
+}
+/*==================================================================
+[ Focus input ]*/
+.focus-input {
+  font-family: arial;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 17px;
+  left: 0;
+  padding:25px 0 0 0px;
+  font-size: 16px;
+  pointer-events: none;
+  padding-left: 20px;
+  color: #ff0000;
+  font-weight: bold;
+  transition: all 0.4s;
+
+}
+.input1:focus ~ .focus-input,
+.input1:valid ~ .focus-input,
+.input2:focus ~ .focus-input,
+.input2:valid ~ .focus-input,
+.input3:focus ~ .focus-input,
+.input3:valid ~ .focus-input,
+.input4:focus ~ .focus-input,
+.input4:valid ~ .focus-input,
+.input5:focus ~ .focus-input,
+.input5:valid ~ .focus-input
+{
+margin-top:-30px ;
+
+}
+/********************************- show pass-----------------------**/
+.icone{
+float: right;
+}
+.field-icon {
+float: right;
+padding-right :30px;
+margin-bottom: 5px;
+padding-top: 48px;
+position: relative;
+color: rgb(248, 10, 10);
+z-index: 2;
+}
+
+
+/*-------------------------------------------*/
+
+
+.login-form-button {
+position: relative;
+width:80%;
+height: 10vh;
+margin: auto;
+
+}
+.login-button{
+width: 450px;
+height:8vh;
+color: #fff;
+text-align: center;
+font-family: Arial;
+font-size: 18px;
+font-weight: bold;
+background:#Ff0000;
+border:#Ff0000;
+border-radius: 5px;
+margin-left: -50px;
+box-shadow: 1px 1px 1px #000;
+cursor: pointer;
+}
+
+/** start social**/
+.end{
+    width:755px;
+    max-width:991px;
+    height: 65%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 1200px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+      .end .imag{
+        background-image: url('../images/backtoschool-07Converted.png');
+        width:755px;
+       max-width:991px;
+       height: 100%;
+       background-size:cover;
+       position: absolute;
+       margin-top: 0px;
+       overflow: hidden;
+      }
+      
+      .end .imag .image1 img{
+       width: 100%;
+        position: absolute;
+        overflow: hidden;
+       margin-top: 100px;
+      }
+      
+      .end .imag .image2 img{
+       width: 15%;
+       margin-top: 30px;
+       position: absolute;
+       margin-left: 130px;
+      }
+      .end .imag .image3 img{
+       width: 15%;
+      margin-top: 130px;
+      position: absolute;
+       margin-left:60px;
+      }
+      .end .link li{
+       list-style: none;
+      }
+      .end .link li a{
+       color: #000;
+       font-size: 19px;
+      }
+      .end .link li .link1{
+       margin: 55px 0 0 100px;
+       position: absolute;
+       text-decoration: none;
+      }
+      .end .link li .link2{
+       margin: 153px 0 0 35px;
+       position: absolute;
+       text-decoration: none;
+      }
+      .end .link .social i{
+       font-size: 30px;
+      }
+      .end .link .social .social1{
+        margin: 116px 0 0 518px;
+       position: absolute;
+      }
+      .end .link .social .social2{
+        margin: 255px 0 0 530px;
+       position: absolute;
+      }
+      .end .link .social  p{
+       color: #fff;
+       margin-top: 320px;
+        margin-left:150px;
+        font-size: 18px;
+       position: absolute;
+      }
+/** end social**/
+ 
+}
+@media(min-width:992px) and (max-width:1200px){
+    /**start item**/
+    .item{
+        position: absolute;
+        width: 97%;
+        height: 400px;
+        margin-top: 0px;
+        
+        margin: 20px 0 0px 20px;
+        
+        
+        }
+        .item .imge{
+          width:100%;
+         height:400px;
+         position: absolute;
+         margin-top: 0px;
+         
+        }
+        #profile{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          margin: 0px 0 0 0;
+          border-radius: 10px;
+          }
+          #linecolor{
+          width: 100%;
+          height: 200px;
+          position: relative;
+          margin: 200px 0 0 0;
+          border-radius: 10px;
+          }
+       .item .ponts{
+       position: absolute;
+       }
+       .item .ponts .point {
+       float: right;
+       padding-top: 0px;
+       position: absolute;
+       margin-top:0px;
+       margin-left: 1000px;
+       cursor: pointer;
+       background: none;
+       border: none;
+       
+       }
+       
+       .item .ponts .point >ul>li{
+        margin: -25px 1000px 0 0 ;
+        
+        }
+        
+        .item .ponts .point >ul>li>span {
+        display: block;
+        border-radius: 50%;
+        height: 7px;
+        width: 7px;
+        background: #fff;
+        /**haver backgrounf**/ margin-left:800px;
+        margin-bottom: 3px;
+        
+        
+        }
+       .item .words{
+       position: absolute;
+       margin: 350px 0 0 20px;
+       width: 300px;
+       }
+       .item .words h5{
+         color: #fff;
+         font-size: 23px;
+         
+       }
+       
+       .Details{
+         position: absolute;
+         margin: 450px 0 0 20px ;
+       }
+       .Details h1{
+         font-size: 35px;
+         float: left;
+       }
+       .Details h3{
+         font-size: 25px;
+         height: 20px;
+         color: #ff0000;
+         float: right;
+         margin-left: 800px;
+         
+       }
+       
+#cont {
+
+    margin-top:150px;
+    padding-bottom:35px ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    
+    /*login*/
+    
+    .login-form {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+      margin-left: 200px;
+      padding-top:21px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;}
+    
+    
+    form  center i{
+    color: #eee;
+    margin: 10px 0 0 -350x;
+    }
+    .validate-form{
+    margin:auto;
+    margin-top:20px;
+    }
+    
+    input{
+    
+    padding-left: 20px;
+    }
+    
+    .login-form form input{
+    
+    display: block;
+    margin-top: 30px;
+    
+    
+    }
+    /*---------------------------------*/
+    
+    .FirstName,
+    .SecondName,
+    .login-form-educationGrade,  
+    .login-form-Email,
+    .login-form-password
+    {
+    position: relative;
+    width: 600px;
+    height: 13vh;
+    margin: auto;
+    
+    
+    }
+    .FirstName
+    {
+    margin-top: 0px;
+    }
+    .SecondName{
+    margin-top: 10px;
+    }
+    .login-form-educationGrade{
+    margin-top: 10px;
+    }
+    .login-form-Email{
+    margin-top: 10px;
+    }
+    .login-form-password{
+    margin-top: 10px;
+    }
+    
+    
+    .login-form-gender{
+    position: relative;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    }
+    .Gender{
+    font-family: arial;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top:15px ;
+    margin-left: -30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(248, 10, 10);
+    transition: all 0.4s;
+    pointer-events: none;
+    }
+    
+    .Male-Famel{
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top:10px ;
+    padding:0px  10px;
+    
+    
+    }
+    .Male_input{
+    float: left;
+    
+    }
+    .Female-input{
+    float: right; 
+    padding-right: 150px;
+    }
+    
+    .input1,.input2 ,.input3 ,.input4 ,.input5{
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    font-size: 16px;
+    padding:5px 0;
+    border-radius: 5px;
+    background:#b3b3b3;
+    
+    }
+    #male,#female{
+    position: absolute;
+    width:40px;
+    height:18px;
+    background: transparent;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.795);
+    }
+    .male,.female{
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    background: transparent;
+    padding-left:45px;
+    padding-top:15px;
+    }
+    #gender{
+    display: none;
+    }
+    /*==================================================================
+    [ Focus input ]*/
+    .focus-input {
+      font-family: arial;
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 17px;
+      left: 0;
+      padding:25px 0 0 0px;
+      font-size: 16px;
+      pointer-events: none;
+      padding-left: 20px;
+      color: #ff0000;
+      font-weight: bold;
+      transition: all 0.4s;
+    
+    }
+    .input1:focus ~ .focus-input,
+    .input1:valid ~ .focus-input,
+    .input2:focus ~ .focus-input,
+    .input2:valid ~ .focus-input,
+    .input3:focus ~ .focus-input,
+    .input3:valid ~ .focus-input,
+    .input4:focus ~ .focus-input,
+    .input4:valid ~ .focus-input,
+    .input5:focus ~ .focus-input,
+    .input5:valid ~ .focus-input
+    {
+    margin-top:-30px ;
+    
+    }
+    /********************************- show pass-----------------------**/
+    .icone{
+    float: right;
+    }
+    .field-icon {
+    float: right;
+    padding-right :30px;
+    margin-bottom: 5px;
+    padding-top: 48px;
+    position: relative;
+    color: rgb(248, 10, 10);
+    z-index: 2;
+    }
+    
+    
+    /*-------------------------------------------*/
+    
+    
+    .login-form-button {
+    position: relative;
+    width:600px;
+    height: 10vh;
+    margin: auto;
+    
+    }
+    .login-button{
+    width: 100%;
+    height:8vh;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    background:#Ff0000;
+    border:#Ff0000;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    }
+    .end{
+        width:965px;
+        max-width:1200px;
+        height: 85%;
+        background-size:cover;
+        position: absolute;
+        margin-top: 1200px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+        
+        }
+        .end .imag{
+        background-image: url('../images/backtoschool-07Converted.png');
+        width:965px;
+        max-width:1200px;
+        height: 100%;
+        background-size:cover;
+        position: absolute;
+        margin-top: 0px;
+        overflow: hidden;
+        }
+        
+        .end .imag .image1 img{
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        margin-top: 100px;
+        }
+        
+        .end .imag .image2 img{
+        width: 13%;
+        margin-top: 30px;
+        position: absolute;
+        margin-left: 230px;
+        }
+        .end .imag .image3 img{
+        width: 13%;
+        margin-top: 130px;
+        position: absolute;
+        margin-left:120px;
+        }
+        .end .link li{
+        list-style: none;
+        }
+        .end .link li a{
+        color: #000;
+        font-size: 23px;
+        }
+        .end .link li .link1{
+        margin: 60px 0 0 195px;
+        position: absolute;
+        text-decoration: none;
+        }
+        .end .link li .link2{
+        margin: 155px 0 0 90px;
+        position: absolute;
+        text-decoration: none;
+        }
+        .end .link .social i{
+        font-size: 40px;
+        }
+        .end .link .social .social1{
+        margin: 126px 0 0 660px;
+        position: absolute;
+        }
+        .end .link .social .social2{
+        margin: 300px 0 0 680px;
+        position: absolute;
+        }
+        .end .link .social  p{
+        color: #fff;
+        margin-top: 430px;
+        margin-left:250px;
+        font-size: 20px;
+        position: absolute;
+        }
+
+}
+@media(min-width:1201px) and (max-width:1300px){
+  
+  
+  /**start item**/
+  .item{
+     position: absolute;
+     width: 97%;
+     height: 500px;
+     margin-top: 0px;
+    
+     margin: 20px 0 0px 20px;
+     
+     
+  }
+  .item .imge{
+         width:100%;
+        height:500px;
+        position: absolute;
+        margin-top: 0px;
+        
+  }
+  #profile{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   margin: 0px 0 0 0;
+   border-radius: 10px;
+  }
+  #linecolor{
+   width: 100%;
+   height: 300px;
+   position: relative;
+   margin: 200px 0 0 0;
+   border-radius: 10px;"
+  }
+  .item .ponts{
+   position: absolute;
+  }
+  #point{
+   width:10px;
+   margin: 30px 0px 0 0;
+   padding-left: 60px;
+  }
+  .item .ponts .point {
+    float: right;
+    padding-top: 0px;
+    position: absolute;
+    margin-top:0px;
+    margin-left: 1225px;
+    cursor: pointer;
+    background: none;
+    border: none;
+   
+  }
+  
+  .item .ponts .point >ul>li{
+  margin: -25px 1000px 0 0 ;
+  
+  }
+  
+  .item .ponts .point >ul>li>span {
+    display: block;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    background: #fff;
+    /**haver backgrounf**/ margin-left:1170px;
+    margin-bottom: 3px;
+    
+    
+  }
+  .item .words{
+   position: absolute;
+   margin: 450px 0 0 20px;
+   width: 300px;
+  }
+  .item .words h5{
+      color: #fff;
+      font-size: 23px;
+      
+  }
+  
+  .Details{
+    position: absolute;
+    margin: 530px 0 0 20px ;
+  }
+  .Details h1{
+    font-size: 35px;
+    float: left;
+  }
+  .Details h3{
+    font-size: 30px;
+    height: 20px;
+    color: #ff0000;
+    float: right;
+    margin-left: 1100px;
+    
+  }
+  
+  
+  
+#cont {
+   
+    margin-top:150px;
+    padding-bottom:35px ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  /*login*/
+  
+  .login-form {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+
+      padding-top:21px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;}
+  
+
+  form  center i{
+  color: #eee;
+  margin: 10px 0 0 25px;
+  }
+  .validate-form{
+    margin:auto;
+    margin-top:20px;
+  }
+  
+  input{
+
+    padding-left: 20px;
+  }
+  
+  .login-form form input{
+  
+    display: block;
+    margin-top: 30px;
+  
+  
+  }
+  /*---------------------------------*/
+  
+  .FirstName,
+  .SecondName,
+  .login-form-educationGrade,  
+  .login-form-Email,
+  .login-form-password
+  {
+    position: relative;
+    width: 600px;
+    height: 13vh;
+    margin: auto;
+    
+    
+  }
+  .FirstName
+{
+    margin-top: 0px;
+  }
+  .SecondName{
+    margin-top: 10px;
+  }
+  .login-form-educationGrade{
+    margin-top: 10px;
+    }
+    .login-form-Email{
+    margin-top: 10px;
+    }
+    .login-form-password{
+    margin-top: 10px;
+    }
+  
+  
+  .login-form-gender{
+    position: relative;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+  }
+  .Gender{
+  font-family: arial;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top:15px ;
+  margin-left: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(248, 10, 10);
+  transition: all 0.4s;
+  pointer-events: none;
+  }
+  
+  .Male-Famel{
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top:10px ;
+  padding:0px  10px;
+  
+  
+  }
+  .Male_input{
+    float: left;
+   
+  }
+  .Female-input{
+    float: right; 
+    padding-right: 312px;
+  }
+  
+  .input1,.input2 ,.input3 ,.input4 ,.input5{
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    font-size: 16px;
+    padding:5px 0;
+    border-radius: 5px;
+    background:#b3b3b3;
+  
+  }
+  #male,#female{
+    position: absolute;
+    width:40px;
+    height:18px;
+    background: transparent;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.795);
+  }
+   .male,.female{
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    background: transparent;
+    padding-left:45px;
+    padding-top:15px;
+   }
+   #gender{
+    display: none;
+   }
+  /*==================================================================
+    [ Focus input ]*/
+  .focus-input {
+    font-family: arial;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 17px;
+    left: 0;
+    padding:25px 0 0 0px;
+    font-size: 16px;
+    pointer-events: none;
+    padding-left: 20px;
+    color: #ff0000;
+    font-weight: bold;
+    transition: all 0.4s;
+  
+  }
+  .input1:focus ~ .focus-input,
+  .input1:valid ~ .focus-input,
+  .input2:focus ~ .focus-input,
+  .input2:valid ~ .focus-input,
+  .input3:focus ~ .focus-input,
+  .input3:valid ~ .focus-input,
+  .input4:focus ~ .focus-input,
+  .input4:valid ~ .focus-input,
+  .input5:focus ~ .focus-input,
+  .input5:valid ~ .focus-input
+  {
+  margin-top:-30px ;
+  
+  }
+  /********************************- show pass-----------------------**/
+  .icone{
+    float: right;
+  }
+  .field-icon {
+    float: right;
+    padding-right :30px;
+    margin-bottom: 5px;
+    padding-top: 48px;
+    position: relative;
+    color: rgb(248, 10, 10);
+    z-index: 2;
+  }
+  
+  
+  /*-------------------------------------------*/
+  
+  
+  .login-form-button {
+    position: relative;
+    width:80%;
+    height: 10vh;
+    margin: auto;
+    
+  }
+  .login-button{
+    width: 650px;
+    height:8vh;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    background:#Ff0000;
+    border:#Ff0000;
+    border-radius: 5px;
+    margin-left: -50px;
+    box-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+  }
+  
+  
+  /** start social**/
+  .end{
+    width:100%;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 1200px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+      width:100%;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 11%;
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 350px;
+   }
+   .end .imag .image3 img{
+    width: 11%;
+   margin-top: 180px;
+   position: absolute;
+    margin-left:180px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 25px;
+   }
+   .end .link li .link1{
+    margin: 110px 0 0 320px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 210px 0 0 160px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 45px;
+   }
+   .end .link .social .social1{
+     margin: 150px 0 0 930px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 390px 0 0 955px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 520px;
+     margin-left:500px;
+     font-size: 18px;
+    position: absolute;
+   }
+}
+   /** end social**/

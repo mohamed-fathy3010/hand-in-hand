@@ -1,0 +1,1882 @@
+/** mobile & tablet**/
+@media(max-width:767px){
+    
+  /* Start Navbar*/
+body{
+height: 900px;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+color: #fff;
+}
+
+.navbar {
+margin-top: 0px;
+height: 60px;
+background-color: #fff;
+z-index: 1;
+width: 100%
+}
+
+.navbar-header {
+padding: 0 0;
+}
+
+.navbar-brand {
+
+padding: 0 40px 0px 20px;
+height: 20px;
+margin-top: -7px;
+margin-left: -50px;
+line-height: 60px;
+display: block;
+position: absolute;
+}
+
+.navbar-brand img {
+width: 45px;
+height: 45px;
+}
+
+.toggle {
+float: right;
+width: 57px;
+height: 40px;
+padding-top: 2px;
+position: relative;
+border-radius: 5px;
+margin-top: 15px;
+margin-right:-300px;
+background-color: #ddd;
+cursor: pointer;
+}
+.link ul ul{
+display: none;
+transition: 1s ease-in-out;
+margin-top: 10px;
+position: absolute;
+margin-left: -60px;
+}
+.toggle  ul li{
+font-size: 15px;
+color: #0052cc;
+margin-top: 10px;
+
+
+}
+.toggle ul li a{
+display: block;
+text-decoration: none;
+color: #404040;
+margin-top: 3px;
+}
+.toggle ul li:hover >ul{
+display: block;
+background-color: #eee;
+
+}
+
+.toggle ul li a:hover{
+color: #0000cc;
+
+}
+
+.toggle:hover {
+background: #fff;
+}
+
+.toggle:active {
+background: #fff;
+}
+
+.toggle:focus {
+outline: none;
+}
+
+.toggle > span {
+display: block;
+border-radius: 2px;
+height: 5px;
+width: 34px;
+background: #fff;
+margin: auto;
+margin-bottom: 3px;
+}
+
+.navlist {
+height: 0;
+float: right;
+overflow: hidden;
+background: #fff;
+padding: 0 ;
+transition: height .5s;
+padding-left: 0px;
+border-radius: 0 0 10px;
+position: relative;
+z-index: 1;
+text-align: center;
+top: auto;
+}
+
+.nav > li:first-child {
+padding-top: 5px;
+}
+
+.nav > li {
+list-style: none;
+display: block;
+text-align: center;
+}
+
+.nav > li > a {
+text-align: center;
+margin-left: 15px;
+line-height: 30px;
+background: #fff;
+text-align: right;
+color: #00363d;
+font-weight: bold;
+display: block;
+height: 35px;
+text-decoration: none;
+transition: all 1s ease;
+
+}
+
+.nav > li > a:hover{
+font-size: 20px;
+font-weight: bolder;
+}
+
+form{
+margin-left: 210px;
+margin-top: 7px;
+position: absolute;
+
+}
+form input{
+border: none;
+border-radius: 5px;
+background: #eee;
+padding: 5px;
+position: absolute;
+width: 150px;
+height: 30px;
+}
+
+form i{
+width: 30px;
+height: 30px;
+color: #Ff0000;
+text-align: center;
+padding-top: 5px;
+margin-top: 1px;
+margin-left: 152px;
+border-radius:5px;
+border: 1px solid #ccc;
+box-shadow: 3px 2px 10px  #E4E4E4,
+          -3px -2px 10px  #E4E4E4
+       ; 
+
+}
+
+.menu .toggl {
+float: right;
+padding-top: 2px;
+position: relative;
+margin-top: 2px;
+margin-left: 365px;
+cursor: pointer;
+background: none;
+border: none;
+width: 20px;
+
+}
+
+.menu>.toggl >ul>li>span {
+display: block;
+border-radius: 2px;
+height: 4px;
+width: 25px;
+background: #00363d;
+/**haver backgrounf**/ margin-left: 50px;
+margin-bottom: 3px;
+
+}
+.menu .toggl ul{
+list-style: none;
+margin-left: -30px;
+cursor: pointer;
+
+
+}
+.toggl ul li{
+text-decoration: none;
+font-size: 20px;
+padding: 10px;
+padding-top: 10px;
+font-weight: bold;
+color: #1a1a1a;
+float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+display: none;
+transition: 2s ease-in-out;
+margin-top: 10px;
+position: absolute;
+padding-right: 80px;
+width: 60px;
+}
+.toggl ul ul li{
+font-size: 15px;
+color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+
+
+}
+.toggl ul ul li a{
+display: block;
+text-decoration: none;
+color: #404040;
+margin-top: 3px;
+margin-left: 40px;
+}
+.toggl ul li:hover >ul{
+display: block;
+background-color: #eee;
+
+
+}
+
+/**start item**/
+.item{
+position: absolute;
+width: 97%;
+height: 400px;
+margin-top: 0px;
+
+margin: 20px 0 0px 20px;
+
+
+}
+.item .imge{
+width:100%;
+height:400px;
+position: absolute;
+margin-top: 0px;
+
+}
+#book{
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0 0 0;
+border-radius: 10px;
+}
+#rectangle{
+width: 100%;
+height: 200px;
+position: relative;
+margin: 200px 0 0 0;
+border-radius: 10px;
+}
+.item .ponts{
+position: absolute;
+}
+#point{
+width:10px;
+margin: 30px 0px 0 0;
+padding-left: 60px;
+}
+.item .ponts .point {
+float: right;
+padding-top: 0px;
+position: absolute;
+margin-top:0px;
+margin-left: 10px;
+cursor: pointer;
+background: none;
+border: none;
+
+}
+
+.item .ponts .point >ul>li{
+margin: -25px 1000px 0 0 ;
+
+}
+
+.item .ponts .point >ul>li>span {
+display: block;
+border-radius: 50%;
+height: 7px;
+width: 7px;
+background: #fff;
+/**haver backgrounf**/ margin-left:330px;
+margin-bottom: 3px;
+
+
+}
+.item .words{
+position: absolute;
+margin: 350px 0 0 20px;
+width: 300px;
+}
+.item .words h5{
+color: #fff;
+font-size: 23px;
+
+}
+/*****button edit********************--------------------------------------------*********/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-right: -150px;
+margin-top: 40px;
+}
+/* The Modal (background) */
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 100%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+
+.contentreport{
+  height: 50%;
+  width: 60%;
+  background-color:#00363d; 
+  margin: auto;
+  border: 1px solid #888;
+  display: flex;
+  ;}
+/* The Close Button */
+.close {
+
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin: auto;
+margin-left:50px;
+}
+
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height:100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+   text-align: center;
+    margin-top:35px;
+}
+/********************** end dialog*************************************/
+/********************end edit button*******************************/
+.description{
+position: absolute;
+margin: 470px 0 0 20px ;
+}
+.description h1{
+font-size: 35px;
+}
+.description p{
+font-size: 22px;
+height: 47px;
+color: #5B5959;
+
+}
+#line-1 , #line-2{
+width: 300px;
+height: 3px;
+background:#5B5959;
+position: absolute;
+}
+#line-1{
+margin: 680px 0 0 100px;
+}
+#line-2{
+margin: 820px 0 0 100px;
+}
+.price{
+position: absolute;
+margin: 720px 0 0 20px ; 
+}
+.price h2{
+font-size: 35px; 
+}
+.price p{
+font-size: 22px;
+color: #5B5959; 
+}
+.contacts{
+ position: absolute;
+margin: 850px 0 0 20px ;
+}
+.contacts h3{
+font-size: 35px; 
+}
+.contacts p{
+font-size: 22px;
+height: 20px;
+color: #5B5959;
+
+}
+#phone , #facebook{
+padding-right: 5px;
+}
+.butt{
+
+margin: 1050px 0 0 100px;
+position: absolute;
+}
+.butt button{
+border: none;
+width: 300px;
+height: 40px;
+font-size: 25px;
+background-color: #ff0000;
+color:#fff ;
+padding-bottom: 3px;
+border-radius: 6px;
+
+
+}
+/********** (delete button)**********************************/
+#myBtndelete{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: -110px;
+  position: absolute;
+  margin-top: 1160px;
+  border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: 300px;
+  position: absolute;
+  margin-top: 1170px;
+  border: none;
+  border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+ margin-top: 5px;
+ margin-left: -70px;
+ 
+}
+#inappropriate{
+ margin-top: 20px;
+  margin-left: -70px;
+}
+.spam,.inappropriate{
+ padding-left: 25px;
+
+}
+.inappropriate{
+ margin-top: 20px;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px;
+   position: absolute;
+   font-size: 20px;
+   margin-left:40px;
+   text-align: center;
+    margin-top:40px;
+}
+.end{
+width:485px;
+max-width:767px;
+height: 80%;
+background-size:cover;
+position: absolute;
+margin-top: 1260px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+background-image: url('../images/backtoschool-07Converted.png');
+width:485px;
+max-width:767px;
+height: 100%;
+background-size:cover;
+position: absolute;
+margin-top: 0px;
+overflow: hidden;
+}
+
+.end .imag .image1 img{
+width: 100%;
+position: absolute;
+overflow: hidden;
+margin-top: 100px;
+}
+
+.end .imag .image2 img{
+width: 18%;
+margin-top: 50px;
+position: absolute;
+margin-left: 110px;
+}
+.end .imag .image3 img{
+width: 18%;
+margin-top: 130px;
+position: absolute;
+margin-left:60px;
+}
+.end .link li{
+list-style: none;
+}
+.end .link li a{
+color: #000;
+font-size: 16px;
+}
+.end .link li .link1{
+margin: 65px 0 0 75px;
+position: absolute;
+text-decoration: none;
+}
+.end .link li .link2{
+margin: 140px 0 0 30px;
+position: absolute;
+text-decoration: none;
+}
+.end .link .social i{
+font-size: 25px;
+}
+.end .link .social .social1{
+margin: 102px 0 0 330px;
+position: absolute;
+}
+.end .link .social .social2{
+margin: 190px 0 0 340px;
+position: absolute;
+}
+.end .link .social  p{
+color: #fff;
+margin-top: 250px;
+margin-left:60px;
+font-size: 15px;
+position: absolute;
+}
+
+}
+
+
+
+@media(min-width:768px) and (max-width:991px){
+
+/**start item**/
+.item{
+position: absolute;
+width: 97%;
+height: 400px;
+margin-top: 0px;
+
+margin: 20px 0 0px 20px;
+
+
+}
+.item .imge{
+width:100%;
+height:400px;
+position: absolute;
+margin-top: 0px;
+
+}
+#book{
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0 0 0;
+border-radius: 10px;
+}
+#rectangle{
+width: 100%;
+height: 200px;
+position: relative;
+margin: 200px 0 0 0;
+border-radius: 10px;"
+}
+.item .ponts{
+position: absolute;
+}
+#point{
+width:10px;
+margin: 30px 0px 0 0;
+padding-left: 60px;
+}
+.item .ponts .point {
+float: right;
+padding-top: 0px;
+position: absolute;
+margin-top:0px;
+margin-left: 10px;
+cursor: pointer;
+background: none;
+border: none;
+
+}
+
+.item .ponts .point >ul>li{
+margin: -25px 1000px 0 0 ;
+
+}
+
+.item .ponts .point >ul>li>span {
+display: block;
+border-radius: 50%;
+height: 7px;
+width: 7px;
+background: #fff;
+/**haver backgrounf**/ margin-left:590px;
+margin-bottom: 3px;
+
+
+}
+.item .words{
+position: absolute;
+margin: 350px 0 0 20px;
+width: 300px;
+}
+.item .words h5{
+color: #fff;
+font-size: 23px;
+
+}
+/*****button edit*************---------------------------------------***/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-right: -400px;
+margin-top: 40px;
+}
+/* The Modal (background) */
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 80%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin: auto;
+margin-left:50px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height:100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+   text-align: center;
+    margin-top:40px;
+}
+/********************** end dialog*************************************/
+/********************end edit button*******************************/
+
+
+
+.description{
+position: absolute;
+margin: 470px 0 0 20px ;
+}
+.description h1{
+font-size: 35px;
+}
+.description p{
+font-size: 22px;
+height: 47px;
+color: #5B5959;
+
+}
+#line-1 , #line-2{
+width: 400px;
+height: 3px;
+background:#5B5959;
+position: absolute;
+}
+#line-1{
+margin: 680px 0 0 200px;
+}
+#line-2{
+margin: 820px 0 0 200px;
+}
+.price{
+position: absolute;
+margin: 720px 0 0 20px ; 
+}
+.price h2{
+font-size: 35px; 
+}
+.price p{
+font-size: 22px;
+color: #5B5959; 
+}
+.contacts{
+ position: absolute;
+margin: 850px 0 0 20px ;
+}
+.contacts h3{
+font-size: 35px; 
+}
+.contacts p{
+font-size: 22px;
+height: 20px;
+color: #5B5959;
+
+}
+#phone , #facebook{
+padding-right: 5px;
+}
+.butt{
+
+margin: 1050px 0 0 200px;
+position: absolute;
+}
+.butt button{
+border: none;
+width: 400px;
+height: 40px;
+font-size: 25px;
+background-color: #ff0000;
+color:#fff ;
+padding-bottom: 3px;
+border-radius: 6px;
+
+
+}
+/**end item**/  
+/********** (delete button)**********************************/
+#myBtndelete{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: -250px;
+  position: absolute;
+  margin-top: 1160px;
+  border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: 500px;
+  position: absolute;
+  margin-top: 1170px;
+  border: none;
+  border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+ margin-top: 5px;
+ margin-left: -70px;
+ 
+}
+#inappropriate{
+ margin-top: 20px;
+  margin-left: -70px;
+}
+.spam,.inappropriate{
+ padding-left: 25px;
+
+}
+.inappropriate{
+ margin-top: 20px;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px;
+   position: absolute;
+   font-size: 20px;
+   margin-left:40px;
+   text-align: center;
+    margin-top:40px;
+}
+
+
+.end{
+width:755px;
+max-width:991px;
+height: 95%;
+background-size:cover;
+position: absolute;
+margin-top: 1260px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+background-image: url('../images/backtoschool-07Converted.png');
+width:755px;
+max-width:991px;
+height: 100%;
+background-size:cover;
+position: absolute;
+margin-top: 0px;
+overflow: hidden;
+}
+
+.end .imag .image1 img{
+width: 100%;
+position: absolute;
+overflow: hidden;
+margin-top: 100px;
+}
+
+.end .imag .image2 img{
+width: 15%;
+margin-top: 30px;
+position: absolute;
+margin-left: 130px;
+}
+.end .imag .image3 img{
+width: 15%;
+margin-top: 130px;
+position: absolute;
+margin-left:60px;
+}
+.end .link li{
+list-style: none;
+}
+.end .link li a{
+color: #000;
+font-size: 19px;
+}
+.end .link li .link1{
+margin: 55px 0 0 100px;
+position: absolute;
+text-decoration: none;
+}
+.end .link li .link2{
+margin: 153px 0 0 35px;
+position: absolute;
+text-decoration: none;
+}
+.end .link .social i{
+font-size: 30px;
+}
+.end .link .social .social1{
+margin: 116px 0 0 518px;
+position: absolute;
+}
+.end .link .social .social2{
+margin: 255px 0 0 530px;
+position: absolute;
+}
+.end .link .social  p{
+color: #fff;
+margin-top: 320px;
+margin-left:150px;
+font-size: 18px;
+position: absolute;
+}
+}
+
+
+@media(min-width:992px) and (max-width:1200px){
+
+/**start item**/
+.item{
+position: absolute;
+width: 97%;
+height: 400px;
+margin-top: 0px;
+
+margin: 20px 0 0px 20px;
+
+
+}
+.item .imge{
+width:100%;
+height:400px;
+position: absolute;
+margin-top: 0px;
+
+}
+#book{
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0 0 0;
+border-radius: 10px;
+}
+#rectangle{
+width: 100%;
+height: 200px;
+position: relative;
+margin: 200px 0 0 0;
+border-radius: 10px;"
+}
+.item .ponts{
+position: absolute;
+}
+#point{
+width:10px;
+margin: 30px 0px 0 0;
+padding-left: 60px;
+}
+.item .ponts .point {
+float: right;
+padding-top: 0px;
+position: absolute;
+margin-top:0px;
+margin-left: 10px;
+cursor: pointer;
+background: none;
+border: none;
+
+}
+
+.item .ponts .point >ul>li{
+margin: -25px 1000px 0 0 ;
+
+}
+
+.item .ponts .point >ul>li>span {
+display: block;
+border-radius: 50%;
+height: 7px;
+width: 7px;
+background: #fff;
+/**haver backgrounf**/ margin-left:810px;
+margin-bottom: 3px;
+
+
+}
+.item .words{
+position: absolute;
+margin: 350px 0 0 20px;
+width: 300px;
+}
+.item .words h5{
+color: #fff;
+font-size: 23px;
+
+}
+
+/*****button edit********---------------------------------********/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-right: -700px;
+margin-top: 40px;
+}
+/* The Modal (background) */
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 50%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin: auto;
+margin-left:70px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height:100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+   text-align: center;
+    margin-top:40px;
+}
+/********************** end dialog*************************************/
+/********************end edit button*******************************/
+
+
+.description{
+position: absolute;
+margin: 470px 0 0 20px ;
+}
+.description h1{
+font-size: 35px;
+}
+.description p{
+font-size: 22px;
+height: 47px;
+color: #5B5959;
+
+}
+#line-1 , #line-2{
+width: 400px;
+height: 3px;
+background:#5B5959;
+position: absolute;
+}
+#line-1{
+margin: 680px 0 0 300px;
+}
+#line-2{
+margin: 820px 0 0 300px;
+}
+.price{
+position: absolute;
+margin: 720px 0 0 20px ; 
+}
+.price h2{
+font-size: 35px; 
+}
+.price p{
+font-size: 22px;
+color: #5B5959; 
+}
+.contacts{
+ position: absolute;
+margin: 850px 0 0 20px ;
+}
+.contacts h3{
+font-size: 35px; 
+}
+.contacts p{
+font-size: 22px;
+height: 20px;
+color: #5B5959;
+
+}
+#phone , #facebook{
+padding-right: 5px;
+}
+.butt{
+
+margin: 1050px 0 0 300px;
+position: absolute;
+}
+.butt button{
+border: none;
+width: 400px;
+height: 40px;
+font-size: 25px;
+background-color: #ff0000;
+color:#fff ;
+padding-bottom: 3px;
+border-radius: 6px;
+
+
+}
+/**end item**/  
+/********** (delete button)**********************************/
+#myBtndelete{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: -110px;
+  position: absolute;
+  margin-top: 1160px;
+  border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: 300px;
+  position: absolute;
+  margin-top: 1170px;
+  border: none;
+  border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+ margin-top: 10px;
+ margin-left: 0px;
+ 
+}
+#inappropriate{
+ margin-top: 30px;
+  margin-left: 0px;
+}
+.spam,.inappropriate{
+ padding-left: 25px;
+
+}
+.inappropriate{
+ margin-top: 20px;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px;
+   position: absolute;
+   font-size: 20px;
+   margin-left:40px;
+   text-align: center;
+    margin-top:40px;
+}
+.end{
+width:965px;
+max-width:1200px;
+height: 125%;
+background-size:cover;
+position: absolute;
+margin-top: 1260px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+background-image: url('../images/backtoschool-07Converted.png');
+width:965px;
+max-width:1200px;
+height: 100%;
+background-size:cover;
+position: absolute;
+margin-top: 0px;
+overflow: hidden;
+}
+
+.end .imag .image1 img{
+width: 100%;
+position: absolute;
+overflow: hidden;
+margin-top: 100px;
+}
+
+.end .imag .image2 img{
+width: 13%;
+margin-top: 30px;
+position: absolute;
+margin-left: 230px;
+}
+.end .imag .image3 img{
+width: 13%;
+margin-top: 130px;
+position: absolute;
+margin-left:120px;
+}
+.end .link li{
+list-style: none;
+}
+.end .link li a{
+color: #000;
+font-size: 23px;
+}
+.end .link li .link1{
+margin: 60px 0 0 195px;
+position: absolute;
+text-decoration: none;
+}
+.end .link li .link2{
+margin: 155px 0 0 90px;
+position: absolute;
+text-decoration: none;
+}
+.end .link .social i{
+font-size: 40px;
+}
+.end .link .social .social1{
+margin: 126px 0 0 660px;
+position: absolute;
+}
+.end .link .social .social2{
+margin: 300px 0 0 680px;
+position: absolute;
+}
+.end .link .social  p{
+color: #fff;
+margin-top: 430px;
+margin-left:250px;
+font-size: 20px;
+position: absolute;
+}
+}
+
+
+@media(min-width:1201px) and (max-width:1300px){
+
+
+/**start item**/
+.item{
+position: absolute;
+width: 97%;
+height: 400px;
+margin-top: 0px;
+
+margin: 20px 0 0px 20px;
+
+
+}
+.item .imge{
+width:100%;
+height:400px;
+position: absolute;
+margin-top: 0px;
+
+}
+#book{
+width: 100%;
+height: 100%;
+position: absolute;
+margin: 0px 0 0 0;
+border-radius: 10px;
+}
+#rectangle{
+width: 100%;
+height: 200px;
+position: relative;
+margin: 200px 0 0 0;
+border-radius: 10px;"
+}
+.item .ponts{
+position: absolute;
+}
+#point{
+width:10px;
+margin: 30px 0px 0 0;
+padding-left: 60px;
+}
+.item .ponts .point {
+float: right;
+padding-top: 0px;
+position: absolute;
+margin-top:0px;
+margin-left: 10px;
+cursor: pointer;
+background: none;
+border: none;
+
+}
+
+.item .ponts .point >ul>li{
+margin: -25px 1000px 0 0 ;
+
+}
+
+.item .ponts .point >ul>li>span {
+display: block;
+border-radius: 50%;
+height: 7px;
+width: 7px;
+background: #fff;
+/**haver backgrounf**/ margin-left:1030px;
+margin-bottom: 3px;
+
+
+}
+.item .words{
+position: absolute;
+margin: 350px 0 0 20px;
+width: 300px;
+}
+.item .words h5{
+color: #fff;
+font-size: 23px;
+
+}
+/********** (edit button)**********************************/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-right: -900px;
+margin-top: 40px;
+}
+/**********************(start daliag)***********************/
+/* The Modal (background) */
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 50%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin: auto;
+margin-left:100px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height:100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+   text-align: center;
+    margin-top:40px;
+}
+/********************** end dialog*************************************/
+/*********************** (end daliag)***********************/
+
+
+
+.description{
+position: absolute;
+margin: 470px 0 0 20px ;
+}
+.description h1{
+font-size: 35px;
+}
+.description p{
+font-size: 22px;
+height: 47px;
+color: #5B5959;
+
+}
+#line-1 , #line-2{
+  width: 400px;
+  height: 3px;
+  background:#5B5959;
+  position: absolute;
+  }
+  #line-1{
+  margin: 680px 0 0 400px;
+  }
+  #line-2{
+  margin: 820px 0 0 400px;
+  }
+.price{
+position: absolute;
+margin: 720px 0 0 20px ; 
+}
+.price h2{
+font-size: 35px; 
+}
+.price p{
+font-size: 22px;
+color: #5B5959; 
+}
+.contacts{
+ position: absolute;
+margin: 850px 0 0 20px ;
+}
+.contacts h3{
+font-size: 35px; 
+}
+.contacts p{
+font-size: 22px;
+height: 20px;
+color: #5B5959;
+
+}
+#phone , #facebook{
+padding-right: 5px;
+}
+.butt{
+
+margin: 1050px 0 0 400px;
+position: absolute;
+}
+.butt button{
+border: none;
+width: 400px;
+height: 40px;
+font-size: 25px;
+background-color: #ff0000;
+color:#fff ;
+padding-bottom: 3px;
+border-radius: 6px;
+
+
+}
+/**end item**/  
+/********** (delete button)**********************************/
+#myBtndelete{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 1160px;
+  border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-left: 200px;
+  position: absolute;
+  margin-top: 1170px;
+  border: none;
+  border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+ margin-top: 10px;
+ margin-left: 0px;
+ 
+}
+#inappropriate{
+ margin-top: 30px;
+  margin-left: 0px;
+}
+.spam,.inappropriate{
+ padding-left: 25px;
+
+}
+.inappropriate{
+ margin-top: 20px;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px;
+   position: absolute;
+   font-size: 20px;
+   margin-left:40px;
+   text-align: center;
+    margin-top:40px;
+}
+
+.end{
+width:1210px;
+max-width:1300px;
+height: 130%;
+background-size:cover;
+position: absolute;
+margin-top: 1260px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+background-image: url('../images/backtoschool-07Converted.png');
+width:1210px;
+max-width:1300px;
+height: 100%;
+background-size:cover;
+position: absolute;
+margin-top: 0px;
+overflow: hidden;
+}
+
+.end .imag .image1 img{
+width: 100%;
+position: absolute;
+overflow: hidden;
+margin-top: 100px;
+}
+
+.end .imag .image2 img{
+width: 12%;
+margin-top: 30px;
+position: absolute;
+margin-left: 260px;
+}
+.end .imag .image3 img{
+width: 12%;
+margin-top: 130px;
+position: absolute;
+margin-left:140px;
+}
+.end .link li{
+list-style: none;
+}
+.end .link li a{
+color: #000;
+font-size: 25px;
+}
+.end .link li .link1{
+margin: 60px 0 0 230px;
+position: absolute;
+text-decoration: none;
+}
+.end .link li .link2{
+margin: 160px 0 0 120px;
+position: absolute;
+text-decoration: none;
+}
+.end .link .social i{
+font-size: 40px;
+}
+.end .link .social .social1{
+margin: 140px 0 0 830px;
+position: absolute;
+}
+.end .link .social .social2{
+margin: 360px 0 0 860px;
+position: absolute;
+}
+.end .link .social  p{
+color: #fff;
+margin-top: 470px;
+margin-left:320px;
+font-size: 20px;
+position: absolute;
+}
+}

@@ -29,85 +29,24 @@ button {
 
 
 
-/**start item**/
-.item{
-   position: absolute;
-   width: 97%;
-   height: 500px;
-   margin-top: 0px;
-  
-   margin: 20px 0 0px 20px;
-   
-   
-}
-.item .imge{
-       width:100%;
-      height:500px;
-      position: absolute;
-      margin-top: 0px;
-      
-}
-#book{
- width: 100%;
- height: 100%;
- position: absolute;
- margin: 0px 0 0 0;
- border-radius: 10px;
-}
-#rectangle{
- width: 100%;
- height: 300px;
- position: relative;
- margin: 200px 0 0 0;
- border-radius: 10px;"
-}
-.item .ponts{
- position: absolute;
-}
-#point{
- width:10px;
- margin: 30px 0px 0 0;
- padding-left: 60px;
-}
-.item .ponts .point {
-  float: right;
-  padding-top: 0px;
-  position: absolute;
-  margin-top:0px;
-  margin-left: 1225px;
-  cursor: pointer;
-  background: none;
-  border: none;
- 
-}
 
-.item .ponts .point >ul>li{
-margin: -25px 1000px 0 0 ;
-
+.Workshop{
+ text-align: center;
+ margin-top: 20px ;
+ border-bottom: #eee solid 2px;
+ height: 100px;
 }
-
-.item .ponts .point >ul>li>span {
-  display: block;
-  border-radius: 50%;
-  height: 7px;
-  width: 7px;
-  background: #fff;
-  /**haver backgrounf**/ margin-left:1170px;
-  margin-bottom: 3px;
-  
-  
+.Workshop h4{
+ color:#00363d ;
+ font-size: 35px;
+ font-weight: bold;
 }
-.item .words{
- position: absolute;
- margin: 450px 0 0 20px;
- width: 300px;
+.Workshop p{
+  color:#a6a6a6 ;
+ font-size: 17px;
+ margin-top: -7px;
 }
-.item .words h5{
-    color: #fff;
-    font-size: 23px;
-    
-}
-/********** (edit button)**********************************/
+/******************** start diaglog*******************************************/
 #myBtn{
   font-size: 20px;
   width: 100px;
@@ -115,7 +54,7 @@ margin: -25px 1000px 0 0 ;
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-right: -900px;
+  margin-right: 150px;
   margin-top: 40px;
    border: none;
 }
@@ -124,7 +63,7 @@ margin: -25px 1000px 0 0 ;
 .modal {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -135,9 +74,20 @@ margin: -25px 1000px 0 0 ;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-#myModalete{
-  padding: 50px;/* Location of the box */
-  }
+.modalete {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top:10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 /* Modal Content */
 .content{
 height: 100%;
@@ -155,6 +105,8 @@ margin: auto;
 border: 1px solid #888;
 display: flex;
 flex-direction: column;}
+/* The Close Button */
+/* The Close Button */
 .close , .closereport{
   
   float: right;
@@ -173,50 +125,14 @@ flex-direction: column;}
   text-decoration: none;
   cursor: pointer;
 }
+
 .edit-item{
   margin: auto;
   margin-left:100px;
 }
-/* photo profile**********************************/
-.photo{
-  margin-left:20px;
-}
-
-#blah{
-  max-width:300px;
-  max-height: 100px;
-  border-radius: 20px;
-  position: relative;
-}
-
-.update-photo{
-  margin-top: 2px;
-}
-
-.inputfile {
-width: 0.1px;
-height: 0.1px;
-opacity: 0;
-overflow: hidden;
-position: absolute;
-
-}
-.inputfile + label {
-font-size: 1.25em;
-font-weight: 20px;
-color: white;
-background:#b3b3b3;
-display: inline-block;
-}
-
-.inputfile:focus + label,
-.inputfile + label:hover {
-background-color: red;
-}
 .home{
-  margin-top: -40px;
-}
-.homereport{
+  margin-top:20px;}
+  .homereport{
  margin-left: 50px;
  margin-top: 40px;
 }
@@ -230,6 +146,9 @@ textarea,
 input{
   display: block;
   padding: 2px 10px ;
+}
+.goal{
+  margin-top: 35px;
 }
 .spam-inappropriate{
 margin-left: 100px;
@@ -259,11 +178,57 @@ position: absolute;
    text-align: center;
     margin-top:40px;
 }
-/********************** end dialog*************************************/
-/*********************** (end daliag)***********************/
+/************** end dialog**********************************/
+
+.Interests{
+ margin: 30px 0 0 60px;
+}
+.Interests p span{
+ color: #Ff0000;
+ font-weight: bold;
+}
+.Interests h6{
+  font-size: 35px;
+}
+.Interests p{
+    font-size: 22px;
+    height: 20px;
+    color: #5B5959;
+    
+}
+#line-1{
+ width: 400px;
+ height: 3px;
+ background:#5B5959;
+ position: absolute;
+ margin: 50px 0 0 500px;
+}
+.Goal{
+ margin: 120px 0 0 60px;
+}
+.Goal h5{
+  font-size: 35px;
+}
+.Goal p{
+    font-size: 22px;
+    height: 20px;
+    color: #5B5959;
+    
+}
+.Goal p span{
+ color: #Ff0000;
+ font-weight: bold;
+}
+#line-2{
+ width: 400px;
+ height: 3px;
+ background:#5B5959;
+ position: absolute;
+ margin: 50px 0 0 500px;
+}
 .description{
     position: absolute;
-    margin: 520px 0 0 20px ;
+    margin: 90px 0 0 60px ;
 }
 .description h1{
     font-size: 35px;
@@ -274,21 +239,16 @@ position: absolute;
     color: #5B5959;
     
 }
-#line1 , #line2{
+#line-3{
  width: 400px;
  height: 3px;
  background:#5B5959;
  position: absolute;
-}
-#line1{
- margin: 680px 0 0 500px;
-}
-#line2{
- margin: 820px 0 0 500px;
+ margin: 270px 0 0 500px;
 }
 .price{
        position: absolute;
-    margin: 720px 0 0 20px ; 
+    margin: 310px 0 0 60px ; 
 }
 .price h2{
      font-size: 35px; 
@@ -297,40 +257,85 @@ position: absolute;
     font-size: 22px;
     color: #5B5959; 
 }
-.contacts{
-        position: absolute;
-    margin: 850px 0 0 20px ;
+#line-4{
+ width: 400px;
+ height: 3px;
+ background:#5B5959;
+ position: absolute;
+ margin: 450px 0 0 500px;
 }
-.contacts h3{
+.target{
+        position: absolute;
+    margin: 520px 0 0 60px ;
+}
+.target h3{
     font-size: 35px; 
 }
-.contacts p{
+.target p{
     font-size: 22px;
     height: 20px;
     color: #5B5959;
     
 }
-#phone , #facebook{
- padding-right: 5px;
+.target p span{
+  color: #Ff0000;
+ font-weight: bold;
 }
 .butt{
     
-    margin: 1050px 0 0 500px;
+    margin: 700px 0 0 500px;
     position: absolute;
 }
+.butt .share{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color:#00363d ;
+ margin: 15px 0 0 -80px;
+ position: absolute;
+}
+.butt .share i{
+ margin: 10px 0 0 10px ;
+ position: absolute;
+ font-size: 20px;
+ color: #fff;
+}
+
 .butt button{
     border: none;
     width: 400px;
-    height: 40px;
+    height: 70px;
     font-size: 25px;
     background-color: #ff0000;
     color:#fff ;
-    padding-bottom: 3px;
-    border-radius: 6px;
+    padding-bottom: 16px;
+    border-radius: 30px;
+    line-height: 4px;
+    
 
     
 }
+.butt button i{
+ font-size: 45px;
+ padding-top: 6px;
+}
+.butt .circle{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+
+ margin: -70px 0 0 430px;
+ position: absolute;
+}
+.butt .circle i{
+ margin: 10px 0 0 10px ;
+ position: absolute;
+ font-size: 46px;
+ color: #00363d;
+ background-color:#fff ;
+}
 /**end item**/
+
 
 /********** (delete button)**********************************/
 #myBtndelete{
@@ -340,9 +345,9 @@ position: absolute;
   color:#fff;
   background: #ff0000;
   float: right;
- margin-left: -410px;
+   margin-left: -410px;
   position: absolute;
-  margin-top: 1160px;
+  margin-top: 790px;
   border: none;
 }
 /********** (report button)**********************************/
@@ -352,11 +357,11 @@ position: absolute;
   height: 45px;
   color:#fff;
   background: #ff0000;
-  float: right;
   border-radius: 5px;
-  margin-left: 800px;
+  float: right;
+  margin-left: 810px;
   position: absolute;
-  margin-top: 1170px;
+  margin-top: 800px;
   border: none;
 }
 
@@ -367,7 +372,7 @@ position: absolute;
  height: 100%;
  background-size:cover;
  position: absolute;
- margin-top: 1270px;
+ margin-top: 900px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
 
 }

@@ -16,7 +16,7 @@ class NotificationController extends Controller
     //
     public function index()
     {
-        $notifications = Notification::where('user_id',auth()->id())->latest()->get();
+        $notifications = Notification::where('user_id',auth()->id())->latest()->paginate(16);
         return $this->apiResponse('notifications',$notifications);
     }
 

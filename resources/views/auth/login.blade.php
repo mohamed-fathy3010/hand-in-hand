@@ -2,82 +2,111 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-         <link rel="shortcut icon" href="{{asset('images/HandInHand.png')}}" type="../images/HandInHand.png"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/login.css')}}">
-        <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.js')}}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <style></style>
-         <script>
-            /*global $, alert, console*/
+      <meta name="csrf-token" content="{{ csrf_token() }}">
+      <title>hand in hand</title>
+      <link rel="shortcut icon" href="images/HandInHand.png" type="/images/HandInHand.png"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="bootstrab/bootstrap.min.css">
+      <link rel="stylesheet" href="css/login.css">
+      <link rel="stylesheet" href="css/loginresponsive.css">
+      <link rel="stylesheet" href="bootstrab/bootstrap.min.js">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <style>
 
-$(".toggle").click(function () {
+      </style>
+      <script>
+          /*global $, alert, console*/
 
-    'use strict';
+          $(".toggle").click(function () {
 
-    $(".navlist").toggleClass("show");
+              'use strict';
 
-});
-        </script>
+              $(".navlist").toggleClass("show");
+
+          });
+      </script>
   </head>
-<body>
-<!-- Start Navbar -->
-<div class="navbar elem-center">
-    <div class="container">
-        <div class="parent left-right">
-            <div class="navbar-header">
-                <button class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="/" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
-            </div>
-            <ul class="nav navlist" id="links" style="margin-left:450px;margin-top: 10px;position: absolute;">
-                <li class="active">
-                    <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
-                <li><a href="#" data-value="port" class="effect">Services</a></li>
-                <li><a href="#" data-value="foll" class="effect">Events</a></li>
-                <li><a href="#" data-value="cont" class="effect">Handmade</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <input type="text" placeholder="Search">
-                <i class="fa fa-search"></i>
-            </form>
-            <div class="menu">
-                <button class="toggl">
-                    <ul>
-                        <li><span></span>
-                            <span></span>
-                            <span></span>
-                            <ul>
-                                <li>
-                                    @guest
-                                        <a href="{{url('/login')}}">login</a>
-                                        <a href="{{url('/register')}}">Register</a>
-                                    @endguest
-                                    @auth
-                                        <a href="{{url('/profile/'.auth()->id())}}">profile</a>
-                                    @endauth
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+  <body>
 
-                </button>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
+  <!-- Start Navbar -->
+  <div class="navbar elem-center" id="app">
+      <div class="container">
+          <div class="parent left-right">
+              <div class="navbar-header">
+                  <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                  @auth
+                      <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
+                  @endauth
+                  <div class="language">
+                      <!-- select from 2 option-->
+                      <select>
+                          <option>English</option>
+                          <option>عربي</option>
 
-</div>
+                      </select>
 
+                  </div>
 
+              </div>
+              <ul class="nav navlist" id="links">
+                  <li class="active">
+                      <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
+                  <li><a href="{{url('/services')}}" data-value="port"class="effect">Services</a></li>
+                  <li><a href="{{url('/events')}}" data-value="foll"class="effect">Events</a></li>
+                  <li><a href="{{url('/products')}}" data-value="cont"class="effect">Handmade</a></li>
+              </ul>
+              <form class="navbar-form navbar-right">
+                  <input type="text" placeholder="Search">
+                  <i class="fa fa-search"></i>
+              </form>
+              <!-- menu-->         <div class="menu">
+                  <button class="toggl">
+                      <ul>
+                          <li class="burger"><span></span>
+                              <span></span>
+                              <span></span>
+                              <ul >
+                                  <li >
+                                      <a href="{{url('/items')}}" data-value="about" id="link-nav" class="effect">Items</a>
+                                      <hr id="link-nav">
+                                      <a href="{{url('/services')}}" data-value="port" id="link-nav"class="effect">Services</a>
+                                      <hr id="link-nav">
+                                      <a href="{{url('/events')}}" data-value="foll" id="link-nav"class="effect">Events</a>
+                                      <hr id="link-nav">
+                                      <a href="{{url('/products')}}" data-value="cont" id="link-nav"class="effect">Handmade</a>
+                                      <hr id="link-nav">
+                                      @guest
+                                          <a href="{{url('/login')}}">login</a>
+                                          <hr>
+                                          <a href="{{url('/register')}}">Register</a>
+                                      @endguest
+                                      @auth
+
+                                          <a href="{{url('/profile')}}">profile</a>
+                                          <hr>
+                                          <a href="{{url('/logout')}}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">log out</a>
+                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                              @csrf
+                                          </form>
+                                      @endauth
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+
+                  </button>
+              </div>
+          </div>
+          <div class="clearfix"></div>
+      </div>
+
+  </div>
+  <!-- End Navbar -->
 
 <!--Login section container-->
     <section id="cont">
@@ -129,7 +158,6 @@ $(".toggle").click(function () {
         </form>
       </div>
     </section>
-    </div>
            <!-- java script-->
 <!-------===================================================-------------------------------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

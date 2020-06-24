@@ -191,7 +191,7 @@ class EventController extends Controller
         $first_name = $sender->info->first_name;
         $last_name = $sender->info->last_name;
         $body = "{$first_name} {$last_name} {$message}";
-        $url = "/events/{$event->id}/interests";
+        $url = "/events/{$event->id}";
         return $receiver->notifications()->updateOrCreate([
             'url' => $url
         ],[

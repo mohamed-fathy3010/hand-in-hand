@@ -19,9 +19,6 @@ cursor: pointer
 clear: both
 }
 
-.burger{
-    margin-top: -25px;
-}
 
 /* Start Navbar*/
 
@@ -50,7 +47,7 @@ padding: 0 0;
 
 padding: 0 40px 0px 20px;
 height: 20px;
-margin-top: -12px;
+margin-top: -17px;
 margin-left: -80px;
 line-height: 60px;
 display: block;
@@ -96,7 +93,9 @@ background: #fff;
 margin: auto;
 margin-bottom: 3px;
 }
-
+.burger{
+    margin-top: -25px;
+}
 .navlist {
 height: 0;
 float: right;
@@ -178,18 +177,16 @@ font-weight: bolder;
   padding: 0 15px;
   border: none;
 }
-
-
 .show {
 height: 220px;
 float: right;
 }
+
 #links{
  margin-left:450px;
  margin-top: 10px;
  position: absolute;
 }
-
 /* Start Navbar*/
 
 
@@ -348,6 +345,7 @@ hr{
 #link-nav{
     display:none;
 }
+
 #cont {
 margin-top:10px;
 padding-bottom:35px ;
@@ -356,7 +354,7 @@ padding-bottom:35px ;
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
-  height:100%;
+  height:115%;
   position: absolute;
   min-width: 100%;
   display: flex;
@@ -366,174 +364,258 @@ padding-bottom:35px ;
 
 }
 
-/*login*/
 
 .login-form {
   width: 45%;
-  height: 68vh;
+  height:110vh;
   background-color:#ffffff20;
   position: relative;
-  margin-top: -30px;
-  margin-left: 20px;
-  padding-top:21px;
+  margin-top: 98px;
+  margin-left: 2px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
 
 
 }
-.validate-form{
-margin-top: 30px;
+/* photo profile**********************************/
+.photo{
+  margin-left:20px;
 }
 
-input {
+#blah{
+  max-width:300px;
+    max-height: 100px;
+    border-radius:20px;
+  position: relative;
+}
+
+.update-photo{
+  margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+
+/*login*/
+
+.validate-form{
+top: 0;
+}
+
+input{
   padding-left: 20px;
 }
 
 .login-form form input{
 
   display: block;
-  margin-top: 24px;
+  margin-top: 10px;
 
 
 }
-
 /*---------------------------------*/
 
-.login-form-email{
+.login-form-username,
+.login-form-educationGrade,
+.login-form-Email,
+.login-form-password
+{
   position: relative;
+  width: 80%;
+  height: 13vh;
+  margin: auto;
+
 
 }
-.input1,.input5 {
+
+.login-form-educationGrade{
+margin-top: -1px;
+}
+.login-form-Email{
+margin-top: -18px;
+}
+.login-form-password{
+margin-top: -21px;
+}
+
+.FirstName{
+  width: 45%;
+  float: left;
+}
+.SecondName{
+  width: 45%;
+  float: right;
+}
+.login-form-gender{
+  position: relative;
   width: 80%;
-  height: 8vh;
+  height: 10vh;
   margin: auto;
+}
+.Gender{
+font-family: arial;
+position: absolute;
+display: block;
+width: 100%;
+margin-top:-10px ;
+padding:0px  10px;
+font-size: 18px;
+font-weight: bold;
+color: rgba(255, 255, 255, 0.795);
+transition: all 0.4s;
+pointer-events: none;
+}
+
+.Male-Famel{
+position: absolute;
+display: block;
+width: 100%;
+margin-top:10px ;
+padding:0px  10px;
+
+
+}
+.Male_input{
+  float: left;
+
+}
+.Female-input{
+  float: right;
+  padding-right: 312px;
+}
+
+.input1,.input2 ,.input3 ,.input4 ,.input5{
+  width: 100%;
+  height: 8vh;
   font-size: 16px;
-  padding:5px 0;
   border: 1px solid#fff;
   color: #fff;
   border-radius: 5px;
   background: transparent;
 
-
 }
-
+#male,#female{
+  position: absolute;
+  width:40px;
+  height:18px;
+  background: transparent;
+  padding-top: 5px;
+  color: rgba(255, 255, 255, 0.795);
+}
+ .male,.female{
+  position: absolute;
+  width: 100%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.795);
+  background: transparent;
+  padding-left:45px;
+  padding-top:15px;
+ }
+ #gender{
+  display: none;
+ }
 /*==================================================================
   [ Focus input ]*/
 .focus-input {
+
 font-family: arial;
 position: absolute;
 display: block;
-width: 100%;
-top: 17px;
-left: 0;
-padding:5px 70px;
+width: 120%;
+margin-top:-35px ;
+padding:0px  10px;
 font-size: 16px;
 color: rgba(255, 255, 255, 0.795);
+transition: all 0.4s;
 pointer-events: none;
 
-transition: all 0.4s;
-
 }
-/*email*/
 .input1:focus ~ .focus-input,
 .input1:valid ~ .focus-input,
+.input2:focus ~ .focus-input,
+.input2:valid ~ .focus-input,
+.input3:focus ~ .focus-input,
+.input3:valid ~ .focus-input,
+.input4:focus ~ .focus-input,
+.input4:valid ~ .focus-input,
 .input5:focus ~ .focus-input,
-.input5:valid ~ .focus-input {
-top: -25px;
-left: 0;
+.input5:valid ~ .focus-input
+{
+margin-top:-78px ;
+
 }
-/* password*/
-
-/*------------------------------*/
-
-.login-form-password{   /* div home pass*/
-  position: relative;
-    margin-top: 12px;
-  }
-
-
-/*----------------------- show pass----------------------------------------------------*/
+/********************************- show pass-----------------------**/
 .icone{
-float: right;
+  float: right;
 }
 .field-icon {
-float: right;
-padding-right:100px;
-margin-top: -40px;
-color: rgb(255, 13, 13);
-display: flex;
-position: relative;
-width: 10px;
-z-index: 2;
-}
-/*--------------------------------------------------*/
-.forget-pass{
-
-  width: 80%;
-  display: block;
-  height: 5vh;
-  margin: auto;
-  margin-top: -14px;
-  padding-right: 19px;
-  margin-bottom: -10px;
-
+  float: right;
+  padding-right :30px;
+  margin-top: -30px;
+  position: relative;
+  color: rgb(248, 10, 10);
+  z-index: 2;
 }
 
-span>a {
-  color: rgba(255, 255, 255, 0.795);
-  font-family: Arial;
-  font-size: 19px;
-}
-span>a:hover{
-text-decoration: none;
-color: rgba(255, 255, 255, 0.795);
-  font-family: Arial;
-  font-size: 19px;
-}
+
+/*-------------------------------------------*/
 
 
 .login-form-button {
-  width: 83%;
-  height:9vh;
+  position: relative;
+  width:80%;
+  height: 10vh;
+  margin: auto;
+
+}
+.login-button{
+  width: 100%;
+  height:7vh;
   color: #fff;
-  font-family: Arial;
   text-align: center;
+  font-family: Arial;
   font-size: 18px;
   font-weight: bold;
   background:#Ff0000;
   border:#Ff0000;
   border-radius: 5px;
+  margin-right: 10px;
   box-shadow: 1px 1px 1px #000;
-  padding:0px 9px 0px  3px;
-  margin: auto;
   cursor: pointer;
 }
 
 .new-account {
   width: 80%;
-  height: 3vh;
-  margin: auto;
-
-  padding-right: 8px;
+  height: 5vh;
+  margin-top:3px;
+  padding-left:10px;
 }
-
-.new-account p {
+span>a {
   color: rgba(255, 255, 255, 0.795);
   font-family: Arial;
+  font-size: 16px;
 }
-
-.Register a {
-  color:#fff;
+span>a:hover{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.795);
   font-family: Arial;
   font-size: 16px;
-  font-weight: bold;
-}
-.Register a:hover{
-color:#fff;
-  font-family: Arial;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-}
+}}

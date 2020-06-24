@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>hand in hand</title>
     <link rel="shortcut icon" href="{{asset('images/HandInHand.png')}} " type="../images/HandInHand.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
-    <link rel="stylesheet" href="{{asset('css/service.css')}}">
-    <link rel="stylesheet" href="{{asset('bootstrab/bootstrap.min.js')}}">
+    <link rel="stylesheet" href="../bootstrab/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/navbar-responsive.css">
+    <link rel="stylesheet" href="../css/serviceresponsive.css">
+    <link rel="stylesheet" href="../bootstrab/bootstrap.min.js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,42 +36,66 @@
 <body>
 
 <!-- Start Navbar -->
-<div class="navbar elem-center">
+<div class="navbar elem-center" id="app">
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <button class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="/" class="navbar-brand"><img src="{{asset('images/HandInHand.png')}}"></a>
+                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                @auth
+                    <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
+                @endauth
+                <div class="language">
+                    <!-- select from 2 option-->
+                    <select>
+                        <option>English</option>
+                        <option>عربي</option>
+
+                    </select>
+
+                </div>
+
             </div>
-            <ul class="nav navlist" id="links" style="margin-left:450px;margin-top: 10px;position: absolute;">
+            <ul class="nav navlist" id="links">
                 <li class="active">
-                    <a href="{{url('/products')}}" data-value="about" class="effect">products</a></li>
-                <li><a href="#" data-value="port" class="effect">Services</a></li>
-                <li><a href="#" data-value="foll" class="effect">Events</a></li>
-                <li><a href="#" data-value="cont" class="effect">Handmade</a></li>
+                    <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
+                <li><a href="{{url('/services')}}" data-value="port"class="effect">Services</a></li>
+                <li><a href="{{url('/events')}}" data-value="foll"class="effect">Events</a></li>
+                <li><a href="{{url('/products')}}" data-value="cont"class="effect">Handmade</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <input type="text" placeholder="Search">
                 <i class="fa fa-search"></i>
             </form>
-            <div class="menu">
+            <!-- menu-->         <div class="menu">
                 <button class="toggl">
                     <ul>
                         <li><span></span>
                             <span></span>
                             <span></span>
-                            <ul>
-                                <li>
+                            <ul >
+                                <li >
+                                    <a href="{{url('/items')}}" data-value="about" id="link-nav" class="effect">Items</a>
+                                    <hr id="link-nav">
+                                    <a href="{{url('/services')}}" data-value="port" id="link-nav"class="effect">Services</a>
+                                    <hr id="link-nav">
+                                    <a href="{{url('/events')}}" data-value="foll" id="link-nav"class="effect">Events</a>
+                                    <hr id="link-nav">
+                                    <a href="{{url('/products')}}" data-value="cont" id="link-nav"class="effect">Handmade</a>
+                                    <hr id="link-nav">
                                     @guest
                                         <a href="{{url('/login')}}">login</a>
+                                        <hr>
                                         <a href="{{url('/register')}}">Register</a>
                                     @endguest
                                     @auth
-                                        <a href="{{url('/profile/'.auth()->id())}}">profile</a>
+
+                                        <a href="{{url('/profile')}}">profile</a>
+                                        <hr>
+                                        <a href="{{url('/logout')}}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">log out</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
                                     @endauth
                                 </li>
                             </ul>
@@ -87,13 +115,13 @@
 
 <div class="cotainer">
     <div class="row" >
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="service">
             <div class="items">
                 <div class="image">
-                    <img src="{{asset('images/undraw_collab_8oes.png')}}" class="ig1"style="width: 40%;height: 110%;transform: rotateY(180deg);position: absolute;margin: -1px 0 0 0px;" >
+                    <img src="../images/undraw_collab_8oes.png" class="ig1"style="width: 40%;height: 110%;transform: rotateY(180deg);position: absolute;margin: -1px 0 0 0px;" >
                     <h3>SERVICE</h3>
                 </div>
-                <img src="{{asset('images/Path2.png')}}"class="background1" style="width: 1300px; height: 315px;position: relative">
+                <img src="../images/path2.png"class="background1">
 
                 <div class="paragrph">
 
@@ -106,11 +134,50 @@
 </div>
 
 
+
 <!--start fileter-->
 <div class="filter">
     <button><i class="fa fa-filter"></i>Filter</button>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Add</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal"  >
+        <!-- Modal content -->
+        <div class="content">
+            <span class="close" style=" font-size: 35px;color: #ff0000;">&times;</span>
+            <form class="edit-item" action="{{url('/services')}}" method="post">
+                @csrf
+                <center>
+                <div class="home">
+                    <label for="w3review">Description</label>
+                    <textarea id="w3review" name="description" rows="3" cols="55">
+                          </textarea>
+
+                    <label for="w3review">TiTLe</label>
+                    <textarea id="w3review" name="title" rows="2" cols="55">
+                          </textarea>
+
+                    <label for="w3review">Target</label>
+                    <textarea id="w3review" name="target" rows="2" cols="55">
+                             </textarea>
+                    <label for="w3review">Price</label>
+                    <input type="number" name="price" style="width: 430px;">
+                    <div  class="goal">
+                        <label for="w3review">goal</label>
+                        <input type="number" name="goal" style="width: 430px;">
+                    </div>
+                    <br>
+                    <input class="submit" type="submit" value="save">
+                    <!---- end dialog from-->
+                </div>
+                </center>
+            </form>
+        </div>
+
+    </div>
 </div>
-<!--end fileter-->
+
+
 
 
 
@@ -163,5 +230,7 @@
 <!--end endwebsite-->
 
 <script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
+<script src="../js/itemdes.js"> </script>
+
 </body>
 </html>

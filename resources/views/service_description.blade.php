@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>hand in hand</title>
-    <link rel="shortcut icon" href="{{asset('images/HandInHand.png')}} " type="../images/HandInHand.png"/>
+    <link rel="shortcut icon" href="../images/HandInHand.png" type="../images/HandInHand.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bootstrab/bootstrap.min.css">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/servicedescription.css">
+    <link rel="stylesheet" href="../css/servicedesresponsive.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/navbar-responsive.css">
-    <link rel="stylesheet" href="../css/eventresponsive.css">
     <link rel="stylesheet" href="../bootstrab/bootstrap.min.js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -113,111 +113,167 @@
 
 </div>
 <!--end nevbar-->
+<!--start item-->
+<div class="Workshop">
+    <h4>{{$service->title}}</h4>
+            <p>
+                @if ($service->created_at->diffInDays() > 30)
+                    {{$service->created_at->toFormattedDateString()}}
+                @else
+                    {{$service->created_at->diffForHumans()}}
+                @endif
+            </p>
+</div>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="visibility:{{auth()->id() === $service->user_id?"":"hidden" }}">Edit</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-<div class="cotainer"id="event">
-    <div class="row" >
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-            <div class="items">
-                <div class="image">
-                    <img src="../images/marginalia-education.png"class="ig1"style="width: 40%;height: 110%;transform: rotatey(180deg);position: absolute;margin: 0px 0 0 0px;" >
-                    <h3>EVENTS</h3>
+    <div class="content">
+        <span class="close" style=" font-size: 35px;color: #ff0000;">&times;</span>
+        <form class="edit-item" method="post" action="{{url('/services/'.$service->id)}}">
+            @csrf
+            @method('patch')
+            <div class="home">
+                <label for="w3review">Description</label>
+                <textarea id="w3review" name="description" rows="3" cols="55">
+                    {{$service->description}}
+              </textarea>
+
+                <label for="w3review">TiTLe</label>
+                <textarea id="w3review" name="title" rows="2" cols="55">
+                    {{$service->title}}
+              </textarea>
+
+                <label for="w3review">Target</label>
+                <textarea id="w3review" name="target" rows="2" cols="55">
+                    {{$service->target}}
+                 </textarea>
+                <label for="w3review">Price</label>
+                <input type="number" name="price" style="width: 430px;" value="{{$service->price}}">
+                <div class="goal">
+                    <label for="w3review">goal</label>
+                    <input type="number" name="goal" style="width: 430px;" value="{{$service->goal}}">
                 </div>
-                <img src="../images/path2.png"class="background1">
-
-                <div class="paragrph">
-
-                    <p class="paragrph2">know the events in your university or in your zone.</p>
-                </div>
-
+                <br>
+                <input class="submit" type="submit" value="save">
             </div>
-        </div>
+        </form>
     </div>
+
+</div>
+
+<div class="Interests">
+    <h6> Interests</h6>
+    <p><span>{{$service->interests}}</span> people are interest in the service.</p>
+
+</div>
+<span id="line-1">
+
+           </span>
+<div class="Goal">
+    <h5> Goal to start</h5>
+    <p>the service will to start when interest become <span>{{$service->goal}}</span>.</p>
+</div>
+<span id="line-2">
+
+           </span>
+<div class="description">
+    <h1> Service Description</h1>
+    <p>{{$service->description}}</p>
+</div>
+
+<span id="line-3">
+
+           </span>
+
+<div class="price">
+    <h2>Price</h2>
+    <p>{{$service->price>0?$service->price.' LE':"Free"}}</p>
+</div>
+
+<span id="line-4">
+
+           </span>
+
+<div class="target">
+    <h3>Target</h3>
+    <p>This service ia avilable to <span>{{$service->target}}</span> only.</p>
 </div>
 
 
+@if(auth()->id() !== $service->user_id)
+<div class="butt">
+    <div class="share">
+        <i class="fa fa-share-alt" aria-hidden="true" name="share"></i>
+    </div>
+    <button><i class="fa fa-star-o" aria-hidden="true"></i><br>Interest</button>
+    <div class="circle">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+    </div>
+</div>
+@endif
+<!--end item-->
 
-<!--start fileter-->
-<div class="filter">
-    <button><i class="fa fa-filter"></i>Filter</button>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Add</button>
-    <!-- The Modal -->
-    <div id="myModal" class="modal"  >
-        <!-- Modal content -->
-        <div class="content">
-            <span class="close" style=" font-size: 35px;color: #ff0000;">&times;</span>
-            <form class="edit-item" method="post" action="{{url('/events')}}" enctype="multipart/form-data">
-                @csrf
-                <!-- select photo -->
-                <center  class="photo">
-                    <img id="blah" src="{{url('storage/events/default.png')}}" alt="your image" />
-                    <div class="update-photo">
-                        <input type="file" name="image" id="file" class="inputfile" onchange="readURL(this);" />
-                        <label for="file">select photo</label>
+
+<!-- start buttom delete-->
+<form method="post" action="{{url('/services/'.$service->id)}}">
+    @csrf
+    @method('delete')
+    @if(auth()->id() === $service->user_id)
+    <input id="myBtndelete" class="login-button" type="submit" value="delete">
+    @endif
+</form>
+<!-- end buttom delete-->
+<!-- start buttom delete-->
+@if(auth()->id() !== $service->user_id)
+<button id="myBtnreport">Report</button>
+@endif
+<div id="myModalete" class="modal">
+    <!-- Modal content -->
+    <div class="contentreport">
+        <span class="closereport" style=" font-size: 35px;color: #ff0000;">&times;</span>
+        <form class="edit-item" action="{{url('services/'.$service->id.'/report')}}" method="post">
+           @csrf
+            <!-- select photo -->
+
+
+            <div class="homereport">
+                <div class="spam-inappropriate">
+                    <div class="spam_input">
+                        <input type="radio" id="spam" value="spam" name="reason">
+                        <label class="spam" for="spam">spam</label>
                     </div>
-                    <!---- end select photo-->
-                </center>
-                <div class="home">
+                    <div class="inappropriate-input">
+                        <input type="radio" id="inappropriate" value="inappropriate" name="reason">
+                        <label class="inappropriate" for="inappropriate">inappropriate</label>
+                    </div>
 
-                    <label for="w3review">Description</label>
-                    <textarea id="w3review" name="description" rows="3" cols="55">
-             </textarea>
-
-                    <label for="w3review">TiTLe</label>
-                    <textarea id="w3review" name="title" rows="2" cols="55">
-             </textarea>
-
-                    <label for="w3review">About</label>
-                    <textarea id="w3review" name="about" rows="2" cols="55">
-                </textarea>
-                    <label for="w3review">Location</label>
-                    <textarea id="w3review" name="location" rows="2" cols="55">
-                  </textarea>
-                    <label for="w3review">date </label>
-                    <input type="datetime-local" name="date" style="width: 430px;">
                     <br>
                     <input class="submit" type="submit" value="save">
-                    <!---- end dialog from-->
                 </div>
-            </form>
-        </div>
-
-    </div>
-</div>
-<!--end fileter-->
-
-
-<!--start events-->
-@foreach($events as $event)
-    <div class="interset">
-        <div class="events">
-            <img class="image-event"src="{{url('storage/events/'.$event->image)}}">
-            <img class="image-shadow"src="../images/Rectangle1.png">
-        </div>
-        <div class="shadow">
-            <div class="images">
-                <span class="image-1"><i class="fa fa-star" aria-hidden="true"></i></span>
-                <span class="image-2"><img src="../images/Path 1.png"></span>
             </div>
-        </div>
-        <div class="inter">
-            <h5>
-                {{$event->interests}}
-            </h5>
-            <h6>
-                interests
-            </h6>
-        </div>
+        </form>
     </div>
-    <div class="clearfix" id="clear"></div>
 
-@endforeach
+</div>
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+<!-- end buttom delete-->
 
+<!--start endwebsite-->
 <div class="end">
     <div class="imag">
-        <span class="image1"><img src="{{asset('images/f.png')}}"></span>
-        <span class="image2"><img src="{{asset('images/f2.png')}}"></span>
-        <span class="image3"><img src="{{asset('images/f2.png')}}"></span>
+        <span class="image1"><img src="../images/f.png"></span>
+        <span class="image2"><img src="../images/f2.png"></span>
+        <span class="image3"><img src="../images/f2.png"></span>
     </div>
     <div class="link">
         <ul>
@@ -225,8 +281,8 @@
             <li><a href="#" class="link2">About Us</a></li>
         </ul>
         <div class="social">
-            <a class="social1"><i class="fa fa-facebook-official	" style="color:#000"></i></a>
-            <a class="social2"><i class="fa fa-twitter" style="color:#000"></i></a>
+            <a class="social1"><i class="fa fa-facebook-official"></i></a>
+            <a class="social2"><i class="fa fa-twitter"></i></a>
             <p>All copy Rights Reserved to Student Service Zone 2019</p>
 
         </div>
@@ -234,8 +290,7 @@
 </div>
 <!--end endwebsite-->
 
-<script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
+<script src="../js/jquery-1.12.4.min.js"></script>
 <script src="../js/itemdes.js"></script>
-
 </body>
 </html>

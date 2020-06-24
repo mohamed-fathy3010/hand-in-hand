@@ -22,9 +22,13 @@ class Event extends Model
     ];
     //
 
-//    public function setDateAttribute( $value ) {
-//        $this->attributes['date'] = Carbon::createFromTimestamp($value)->toDateTimeString();
+
+
+//    public function getDateAttribute($value)
+//    {
+//        return $this->asDateTime($value)->format('d-m-Y  -  H:i A');
 //    }
+
     public function getIsInterestedAttribute(){
        return \App\Interest::where('user_id',auth()->id())->
             where('interest_type','events')->where('interest_id',$this->id)->exists();

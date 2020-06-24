@@ -1,0 +1,1620 @@
+/** mobile & tablet**/
+@media(max-width:767px){
+     /* Start Navbar*/
+ body{
+  height: 900px;
+ }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.navbar {
+  margin-top: 0px;
+  height: 60px;
+  background-color: #fff;
+  z-index: 1;
+  width: 100%
+}
+
+.navbar-header {
+  padding: 0 0;
+}
+
+.navbar-brand {
+
+  padding: 0 40px 0px 20px;
+  height: 20px;
+  margin-top: -7px;
+  margin-left: -50px;
+  line-height: 60px;
+  display: block;
+  position: absolute;
+}
+
+.navbar-brand img {
+ width: 45px;
+ height: 45px;
+}
+
+.toggle {
+  float: right;
+  width: 57px;
+  height: 40px;
+  padding-top: 2px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right:-300px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+.link ul ul{
+	display: none;
+	transition: 1s ease-in-out;
+	margin-top: 10px;
+	position: absolute;
+	margin-left: -60px;
+}
+.toggle  ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: 10px;
+
+
+}
+.toggle ul li a{
+	display: block;
+	text-decoration: none;
+	color: #404040;
+	margin-top: 3px;
+}
+.toggle ul li:hover >ul{
+	display: block;
+	background-color: #eee;
+
+}
+
+.toggle ul li a:hover{
+	color: #0000cc;
+
+}
+
+.toggle:hover {
+  background: #fff;
+}
+
+.toggle:active {
+  background: #fff;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle > span {
+  display: block;
+  border-radius: 2px;
+  height: 5px;
+  width: 34px;
+  background: #fff;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.navlist {
+  height: 0;
+  float: right;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 ;
+  transition: height .5s;
+  padding-left: 0px;
+  border-radius: 0 0 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: auto;
+}
+
+.nav > li:first-child {
+  padding-top: 5px;
+}
+
+.nav > li {
+  list-style: none;
+  display: block;
+   text-align: center;
+}
+
+.nav > li > a {
+  text-align: center;
+  margin-left: 15px;
+  line-height: 30px;
+  background: #fff;
+  text-align: right;
+  color: #00363d;
+  font-weight: bold;
+  display: block;
+  height: 35px;
+  text-decoration: none;
+  transition: all 1s ease;
+
+}
+
+.nav > li > a:hover{
+ font-size: 20px;
+  font-weight: bolder;
+}
+
+form{
+    margin-left: 210px;
+    margin-top: 7px;
+    position: absolute;
+    
+}
+form input{
+   border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+}
+
+form i{
+    width: 30px;
+    height: 30px;
+  color: #Ff0000;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-left: 152px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+     box-shadow: 3px 2px 10px  #E4E4E4,
+                 -3px -2px 10px  #E4E4E4
+              ; 
+
+}
+
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 365px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+ 
+}
+
+.menu>.toggl >ul>li>span {
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 25px;
+  background: #00363d;
+  /**haver backgrounf**/ margin-left: 50px;
+  margin-bottom: 3px;
+  
+}
+.menu .toggl ul{
+	list-style: none;
+	margin-left: -30px;
+	cursor: pointer;
+ 
+	
+}
+.toggl ul li{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #1a1a1a;
+	float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+	display: none;
+	transition: 2s ease-in-out;
+	margin-top: 10px;
+	position: absolute;
+padding-right: 80px;
+ width: 60px;
+}
+.toggl ul ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+
+
+}
+.toggl ul ul li a{
+	display: block;
+	text-decoration: none;
+	color: #404040;
+	margin-top: 3px;
+ margin-left: 40px;
+}
+.toggl ul li:hover >ul{
+	display: block;
+	background-color: #eee;
+
+
+}
+
+
+
+/** start items**/
+#handmade{
+ margin-top: 20px;
+ margin-left: 20px;
+ padding-right:30px;
+ 
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+
+  
+}
+.cotainer .row .items .background1{
+ width: 450px;
+ height: 190px;
+ position: relative;
+ 
+}
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 40px;
+ margin: 25px 0 0 145px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+ 
+.cotainer .row .paragrph{
+ position: absolute;
+}
+
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 15px;
+ margin: -42px 0 0 195px;
+ width: 280px;
+ 
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -42px 0 0 200px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ float: right;
+ padding-left: 100px;
+ margin: -42px 0 0 100px;
+position: absolute;
+
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+.filter{
+  margin-top: 250px;
+  position: relative;
+}
+/* The Modal (background) */
+
+.filter button{
+  background-color: #ff0000;
+  margin-left: 50px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+}
+.filter button i{
+padding: 5px;
+}   
+/********** (edit button)**********************************/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+margin-left: 150px;
+}
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 100%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin-left:50px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height: 100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+ width:100px; 
+ font-size: 20px;
+ margin-left:150px;
+ text-align: center;
+  margin-top:40px;
+  background-color: #ff0000;
+  border: none;
+  color: #ffff;
+  border-radius: 4px;
+}
+/********************** end dialog*************************************/
+
+
+
+
+
+
+
+
+/**start items**/
+ .cotainer .row .items1{
+	position:absolute;
+	left: 200px;
+	top: 200px;
+	transform: translate(-50%,-50%);
+	width: 240px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	border-radius: 5px;
+	overflow: hidden;
+    margin-left: 60px;
+}
+#marg-top{
+ margin-top: 350px;
+}
+.items1 .imgbox{
+	height: 100%;
+	box-sizing: border-box;
+}
+#marg-left-2{
+ margin-left: 0px;
+ margin-top: 350px;
+}
+#marg-left-3{
+ margin-left: 0px;
+ margin-top: 350px;
+}
+#marg-left-4{
+ margin-left: 0px;
+ margin-top: 350px;
+}
+ .items1 .imgbox img{
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+ height: 200px;
+}
+.dateils{
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	background: #fff;
+	padding:  0 10px 10px 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 rgba(0,0,0,0); 
+ height: 40px;
+ margin-top: -60px;
+}
+#name{
+ margin-top: 8px;
+ margin-left: 11px;
+font-size: 17px;
+height: 67px;
+overflow: hidden;
+}
+.dateils .price{
+	position: absolute;
+	top: 73px;
+ margin-left: 11px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 17px;
+}
+
+
+.end{
+ width:485px;
+ max-width:767px;
+ height: 60%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 400px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:485px;
+ max-width:767px;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 18%;
+ margin-top: 50px;
+ position: absolute;
+ margin-left: 110px;
+}
+.end .imag .image3 img{
+ width: 18%;
+margin-top: 130px;
+position: absolute;
+ margin-left:60px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 16px;
+}
+.end .link li .link1{
+ margin: 65px 0 0 75px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 140px 0 0 30px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 25px;
+}
+.end .link .social .social1{
+  margin: 102px 0 0 330px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 190px 0 0 340px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 300px;
+  margin-left:60px;
+  font-size: 15px;
+ position: absolute;
+}
+    
+}
+
+
+@media(min-width:768px) and (max-width:991px){
+ /** start items**/
+ 
+#item{
+ margin-top: 20px;
+ margin-left: 20px;
+ padding-right:30px;
+ 
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+
+  
+}
+.cotainer .row .items .background1{
+ width: 725px;
+ height: 220px;
+ position: relative;
+ 
+}
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 40px;
+ margin: 30px 0 0 320px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+ 
+.cotainer .row .paragrph{
+ position: absolute;
+}
+
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 18px;
+ margin: -42px 0 0 265px;
+ width: 440px;
+ 
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -52px 0 0 325px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ float: right;
+ padding-left: 100px;
+ margin: -42px 0 0 215px;
+position: absolute;
+
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+
+
+
+
+  
+.filter{
+  margin-top: 280px;
+  position: relative;
+  
+}
+.filter button{
+  background-color: #ff0000;
+  border: none;
+  text-align: center;
+  margin-left: 50px;
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+}
+.filter button i{
+padding: 5px;
+}
+
+/********** (edit button)**********************************/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+text-align: center;
+color:#fff;
+background: #ff0000;
+margin-left: 300px;
+}
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 80%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin-left:60px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height: 100px;
+  border-radius:20px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+ width:100px; 
+ font-size: 20px;
+ margin-left:150px;
+ text-align: center;
+  margin-top:35px;
+  background-color: #ff0000;
+  border: none;
+  color: #ffff;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+}
+/********************** end dialog*************************************/
+  
+  
+/**start items**/
+ .cotainer .row .items1{
+	position:absolute;
+	left: 200px;
+	top: 200px;
+	transform: translate(-50%,-50%);
+	width: 240px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	border-radius: 5px;
+	overflow: hidden;
+    margin-left: 20px;
+}
+#marg-top{
+ margin-top: 350px;
+}
+.items1 .imgbox{
+	height: 100%;
+	box-sizing: border-box;
+}
+#marg-left-2{
+ margin-left: 70px;
+ margin-top: 0px;
+}
+#marg-left-3{
+ margin-left: 0px;
+ margin-top: 350px;
+}
+#marg-left-4{
+ margin-left: 70px;
+ margin-top: 350px;
+}
+ .items1 .imgbox img{
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+ height: 200px;
+}
+.dateils{
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	background: #fff;
+	padding:  0 10px 10px 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 rgba(0,0,0,0); 
+ height: 40px;
+ margin-top: -60px;
+}
+#name{
+ margin-top: 8px;
+ margin-left: 11px;
+font-size: 17px;
+height: 67px;
+overflow: hidden;
+}
+.dateils .price{
+	position: absolute;
+	top: 73px;
+ margin-left: 11px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 17px;
+}
+
+
+
+
+
+.end{
+ width:755px;
+ max-width:991px;
+ height: 65%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 400px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:755px;
+ max-width:991px;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 15%;
+ margin-top: 30px;
+ position: absolute;
+ margin-left: 130px;
+}
+.end .imag .image3 img{
+ width: 15%;
+margin-top: 130px;
+position: absolute;
+ margin-left:60px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 19px;
+}
+.end .link li .link1{
+ margin: 55px 0 0 100px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 153px 0 0 35px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 30px;
+}
+.end .link .social .social1{
+  margin: 116px 0 0 518px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 255px 0 0 530px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 320px;
+  margin-left:150px;
+  font-size: 18px;
+ position: absolute;
+}
+}
+
+
+
+
+
+@media(min-width:992px) and (max-width:1200px){
+ /** start items**/
+ 
+#item{
+ margin-top: 20px;
+ margin-left: 20px;
+ padding-right:30px;
+ 
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+
+  
+}
+.cotainer .row .items .background1{
+ width: 930px;
+ height: 220px;
+ position: relative;
+ 
+}
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 40px;
+ margin: 30px 0 0 450px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+ 
+.cotainer .row .paragrph{
+ position: absolute;
+}
+
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 23px;
+ margin: -42px 0 0 335px;
+ width: 500px;
+ 
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -65px 0 0 455px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ float: right;
+ padding-left: 100px;
+ margin: -42px 0 0 305px;
+position: absolute;
+
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+
+.filter{
+  margin-top: 280px;
+  position: relative;
+
+}
+.filter button{
+  background-color: #ff0000;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+  margin-left: 50px;
+}
+.filter button i{
+padding: 5px;
+}
+/********** (edit button)**********************************/
+/********** (edit button)**********************************/
+#myBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+text-align: center;
+  color:#fff;
+  background: #ff0000;
+  margin-left: 500px;
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 50%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.edit-item{
+  margin-left:70px;
+}
+/* photo profile**********************************/
+.photo{
+  margin-left:20px;
+}
+
+#blah{
+  max-width:300px;
+  max-height: 100px;
+  border-radius:20px;
+  position: relative;
+}
+
+.update-photo{
+  margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+  margin-top: -40px;
+}
+label{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+textarea,
+input{
+  display: block;
+  padding: 2px 10px ;
+}
+.submit{
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+    margin-top:40px;
+    background-color: #ff0000;
+    border: none;
+    color: #ffff;
+    text-align: center;
+    border-radius: 4px;
+}
+/********************** end dialog*************************************/
+
+
+
+
+  
+  
+  
+  
+/**start items**/
+ .cotainer .row .items1{
+	position:absolute;
+	left: 200px;
+	top: 200px;
+	transform: translate(-50%,-50%);
+	width: 240px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	border-radius: 5px;
+	overflow: hidden;
+    margin-left: -70px;
+}
+#marg-top{
+ margin-top: 350px;
+}
+.items1 .imgbox{
+	height: 100%;
+	box-sizing: border-box;
+}
+#marg-left-2{
+ margin-left: 85px;
+}
+#marg-left-3{
+ margin-left: 85px;
+
+}
+#marg-left-4{
+ margin-left: 85px;
+
+}
+ .items1 .imgbox img{
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+ height: 200px;
+}
+.dateils{
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	background: #fff;
+	padding:  0 10px 10px 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 rgba(0,0,0,0); 
+ height: 40px;
+ margin-top: -60px;
+}
+#name{
+ margin-top: 8px;
+ margin-left: 11px;
+font-size: 17px;
+height: 67px;
+overflow: hidden;
+}
+.dateils .price{
+	position: absolute;
+	top: 73px;
+ margin-left: 11px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 17px;
+}
+
+
+
+
+
+.end{
+ width:965px;
+ max-width:1200px;
+ height: 85%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 400px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:965px;
+ max-width:1200px;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 13%;
+ margin-top: 30px;
+ position: absolute;
+ margin-left: 230px;
+}
+.end .imag .image3 img{
+ width: 13%;
+margin-top: 130px;
+position: absolute;
+ margin-left:120px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 23px;
+}
+.end .link li .link1{
+ margin: 60px 0 0 195px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 155px 0 0 90px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 40px;
+}
+.end .link .social .social1{
+  margin: 126px 0 0 660px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 300px 0 0 680px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 430px;
+  margin-left:250px;
+  font-size: 20px;
+ position: absolute;
+}
+}
+
+
+@media(min-width:1201px) and (max-width:1300px){
+    
+  #handmade {
+ margin-top: 20px;
+ margin-left: 20px;
+ padding-right:30px;
+ 
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+
+  
+}
+.cotainer .row .items .background1{
+ width: 1130px;
+ height: 300px;
+ position: relative;
+ 
+}
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 40px;
+ margin: 30px 0 0 570px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+ 
+.cotainer .row .paragrph{
+ position: absolute;
+}
+
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 23px;
+ margin: -42px 0 0 335px;
+ width: 690px;
+ 
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -65px 0 0 452px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ float: right;
+ padding-left: 100px;
+ margin: -70px 0 0 395px;
+position: absolute;
+
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+
+
+
+
+
+.filter{
+  margin-top: 370px;
+  position: relative;
+  
+}
+.filter button{
+  background-color: #ff0000;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+  margin-left: 50px;
+}
+.filter button i{
+padding: 5px;
+} 
+    /********** (edit button)**********************************/
+#myBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+text-align: center;
+  color:#fff;
+  background: #ff0000;
+  margin-left: 700px;
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 50%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.edit-item{
+  margin-left:100px;
+}
+/* photo profile**********************************/
+.photo{
+  margin-left:20px;
+}
+
+#blah{
+   max-width:300px;
+    max-height: 100px;
+    border-radius:20px;
+  position: relative;
+}
+
+.update-photo{
+  margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+  margin-top: -40px;
+}
+label{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+textarea,
+input{
+  display: block;
+  padding: 2px 10px ;
+}
+.submit{
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+    margin-top:40px;
+    text-align: center;
+    background-color: #ff0000;
+    border: none;
+    color: #ffff;
+    text-align: center;
+    border-radius: 4px;
+}
+/********************** end dialog*************************************/
+    
+    
+    
+    
+    .end{
+ width:1210px;
+ max-width:1300px;
+ height: 93%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 450px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:1210px;
+ max-width:1300px;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 12%;
+ margin-top: 30px;
+ position: absolute;
+ margin-left: 260px;
+}
+.end .imag .image3 img{
+ width: 12%;
+margin-top: 130px;
+position: absolute;
+ margin-left:140px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 25px;
+}
+.end .link li .link1{
+ margin: 60px 0 0 230px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 160px 0 0 120px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 40px;
+}
+.end .link .social .social1{
+  margin: 140px 0 0 830px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 360px 0 0 860px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 480px;
+  margin-left:320px;
+  font-size: 20px;
+ position: absolute;
+}
+}

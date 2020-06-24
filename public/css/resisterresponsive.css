@@ -1,0 +1,801 @@
+/** mobile & tablet**/
+@media(max-width:767px){
+    /* Start Navbar*/
+body{
+ height: 900px;
+}
+
+a {
+ text-decoration: none;
+}
+
+a:hover {
+ color: #fff;
+}
+form{
+   margin-left: 210px;
+   margin-top: 7px;
+   position: absolute;
+
+}
+form input{
+  border: none;
+   border-radius: 5px;
+   background: #eee;
+   padding: 5px;
+   position: absolute;
+   width: 150px;
+   height: 30px;
+}
+
+form i{
+   width: 30px;
+   height: 30px;
+ color: #Ff0000;
+ text-align: center;
+ padding-top: 5px;
+ margin-top: 1px;
+ margin-left: 152px;
+   border-radius:5px;
+   border: 1px solid #ccc;
+    box-shadow: 3px 2px 10px  #E4E4E4,
+                -3px -2px 10px  #E4E4E4
+             ;
+
+}
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 365px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+
+}
+
+.menu>.toggl >ul>li>span {
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 25px;
+  background: #00363d;
+  /**haver backgrounf**/ margin-left: 50px;
+  margin-bottom: 3px;
+
+}
+.menu .toggl ul{
+	list-style: none;
+	margin-left: -30px;
+	cursor: pointer;
+
+
+}
+.toggl ul li{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #1a1a1a;
+	float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+	display: none;
+	transition: 2s ease-in-out;
+	margin-top: 10px;
+	position: absolute;
+padding-right: 80px;
+ width: 60px;
+}
+.toggl ul ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+padding-left: 80px;
+
+
+}
+.toggl ul ul li a{
+	display: block;
+	text-decoration: none;
+	color: #Ff0000;
+    font-size: 17px;
+	margin-top: 3px;
+ margin-left: -50px;
+ padding-top: 5px;
+}
+.toggl ul li:hover >ul{
+	display: block;
+	background-color: #00363d;
+    height: 430px;
+    width: 300px;
+    margin-left: -230px;
+   border-radius: 20px;
+
+}
+hr{
+ background-color: #Ff0000;
+ margin-left: -45px;
+ width: 270px;
+ height: 0.5px;
+}
+#link-nav{
+    display: block;
+
+}
+#cont {
+ margin-top:10px;
+ padding-bottom:35px ;
+   background-image: url('../images/background.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   width: 100%;
+   height:100%;
+   position: absolute;
+   min-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+.login-form {
+   width: 95%;
+   height: 110vh;
+   background-color:#ffffff20;
+   position: relative;
+   margin-top: -60px;
+   margin-left: 0px;
+   padding-top:21px;
+   border-radius: 40px;
+   display: flex;
+   flex-direction: column;
+
+
+}
+/* photo profile**********************************/
+.photo{
+   margin-left: -280px;
+
+ }
+
+ #blah{
+   max-width:300px;
+   max-height: 100px;
+   border-radius:20px;
+   position: relative;
+ }
+
+ .update-photo{
+   margin-top: 2px;
+
+ }
+
+ .inputfile {
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+
+ }
+ .inputfile + label {
+ font-size: 1.25em;
+ color: white;
+ background:#b3b3b3;
+ display: inline-block;
+ }
+
+ .inputfile:focus + label,
+ .inputfile + label:hover {
+ background-color: red;
+ }
+
+ /*login*/
+.validate-form{
+ top: 0;
+}
+
+input{
+   padding-left: 10px;
+}
+
+.login-form form input{
+
+   display: block;
+   margin-top: 40px;
+
+
+}
+
+
+/*---------------------------------*/
+
+.login-form-username,
+.login-form-educationGrade,
+.login-form-Email,
+.login-form-password{
+   position: relative;
+   width: 120%;
+   height: 13vh;
+   margin: auto;
+   margin-left: -180px;
+
+}
+.login-form-educationGrade{
+margin-top: -1px;
+}
+.login-form-Email{
+margin-top: -18px;
+}
+.login-form-password{
+margin-top: -21px;
+}
+
+.FirstName{
+   width: 45%;
+   float: left;
+}
+.SecondName{
+   width: 45%;
+   float: right;
+
+}
+.login-form-gender{
+display: none;
+}
+
+
+
+.input1,.input2 ,.input3 ,.input4 ,.input5 , select , option {
+   width: 100%;
+   height: 8vh;
+   font-size: 16px;
+   border: 1px solid#fff;
+   color: #fff;
+   border-radius: 5px;
+   background: transparent;
+
+}
+
+
+
+
+
+.input1,.input2{
+   width: 170px;
+}
+.input2{
+   margin-left: 50px;
+}
+#inp2{
+   margin-left: 50px;
+}
+.input3 ,.input4 ,.input5 {
+   width: 400px;
+
+}
+#gender{
+   margin: 40px 0 0 -230px;
+   width: 500px;
+}
+.login-form-educationGrade,
+.login-form-Email,
+.login-form-password{
+   margin-top: 5px;
+}
+
+select{
+   width: 45%;
+
+   }
+   select option{
+background: transparent;
+color: #000;
+}
+
+  /* [ Focus input ]*/
+.focus-input {
+
+font-family: arial;
+ position: absolute;
+ display: block;
+ width: 100%;
+ top:52px ;
+ padding:0px  10px;
+ font-size: 16px;
+ color: rgba(255, 255, 255, 0.795);
+ transition: all 0.4s;
+ pointer-events: none;
+
+}
+.input1:focus ~ .focus-input,
+.input1:valid ~ .focus-input,
+.input2:focus ~ .focus-input,
+.input2:valid ~ .focus-input,
+.input3:focus ~ .focus-input,
+.input3:valid ~ .focus-input,
+.input4:focus ~ .focus-input,
+.input4:valid ~ .focus-input,
+.input5:focus ~ .focus-input,
+.input5:valid ~ .focus-input
+{
+ margin-top:-38px ;
+
+}
+
+/********************************- show pass-----------------------**/
+ .icone{
+   float: right;
+
+ }
+ .field-icon {
+   float: right;
+   padding-right:0px;
+   margin-right: -70px;
+   margin-top: 57px;
+   position: relative;
+   color: rgb(248, 10, 10);
+   z-index: 2;
+ }
+
+
+/*-------------------------------------------*/
+
+
+.login-form-button {
+   position: relative;
+   width:150%;
+   height: 10vh;
+   margin: auto;
+   margin: -20px 0 0 -180px;
+
+}
+select{
+width: 80%;
+padding-left: 4px;
+
+}
+
+.login-button{
+   width: 100%;
+   height:7vh;
+   color: #fff;
+   text-align: center;
+   font-family: Arial;
+   font-size: 18px;
+   font-weight: bold;
+   background:#Ff0000;
+   border:#Ff0000;
+   border-radius: 5px;
+   margin-right: 10px;
+   box-shadow: 1px 1px 1px #000;
+   cursor: pointer;
+}
+
+.new-account {
+   width: 80%;
+   height: 3vh;
+   padding-top: 90px;
+   padding-left:10px;
+}
+
+span>a {
+   color: rgba(255, 255, 255, 0.795);
+   font-family: Arial;
+   font-size: 16px;
+   padding-top: 50px;
+}
+span>a:hover{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.795);
+   font-family: Arial;
+   font-size: 16px;
+}
+}
+
+@media(min-width:768px){
+ #gender{
+ display: none;
+}
+.login-form-gender{
+ position: relative;
+ width: 80%;
+ height: 10vh;
+ margin: auto;
+}
+.Gender{
+font-family: arial;
+position: absolute;
+display: block;
+width: 100%;
+margin-top:-10px ;
+padding:0px  10px;
+font-size: 18px;
+font-weight: bold;
+color: rgba(255, 255, 255, 0.795);
+transition: all 0.4s;
+pointer-events: none;
+}
+
+.Male-Famel{
+position: absolute;
+display: block;
+width: 100%;
+margin-top:10px ;
+padding:0px  10px;
+
+
+}
+.Male_input{
+ float: left;
+
+}
+.Female-input{
+ float: right;
+ padding-right: 312px;
+}
+#male,#female{
+ position: absolute;
+ width:40px;
+ height:18px;
+ background: transparent;
+ padding-top: 5px;
+ color: rgba(255, 255, 255, 0.795);
+}
+#female{
+margin-left: 160px;
+}
+.male,.female{
+ position: absolute;
+ width: 100%;
+ font-size: 18px;
+ color: rgba(255, 255, 255, 0.795);
+ background: transparent;
+ padding-left:35px;
+ padding-top:15px;
+}
+.female{
+ margin-left: 160px;
+}
+}
+
+
+
+
+@media(min-width:992px){
+ #gender{
+ display: none;
+}
+.login-form-gender{
+ position: relative;
+ width: 80%;
+ height: 10vh;
+ margin: auto;
+}
+.Gender{
+font-family: arial;
+position: absolute;
+display: block;
+width: 100%;
+margin-top:-10px ;
+padding:0px  10px;
+font-size: 18px;
+font-weight: bold;
+color: rgba(255, 255, 255, 0.795);
+transition: all 0.4s;
+pointer-events: none;
+}
+
+.Male-Famel{
+position: absolute;
+display: block;
+width: 100%;
+margin-top:10px ;
+padding:0px  10px;
+
+
+}
+.Male_input{
+ float: left;
+
+}
+.Female-input{
+ float: right;
+ padding-right: 312px;
+}
+#male,#female{
+ position: absolute;
+ width:40px;
+ height:18px;
+ background: transparent;
+ padding-top: 5px;
+ color: rgba(255, 255, 255, 0.795);
+}
+#female{
+margin-left: 160px;
+}
+.male,.female{
+ position: absolute;
+ width: 100%;
+ font-size: 18px;
+ color: rgba(255, 255, 255, 0.795);
+ background: transparent;
+ padding-left:35px;
+ padding-top:15px;
+}
+.female{
+ margin-left: 160px;
+}
+}
+@media(min-width:768px) and (max-width:991px){
+ .navbar-brand {
+
+  padding: 0 40px 0px 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-left: -30px;
+  line-height: 60px;
+  display: block;
+  position: absolute;
+}
+
+.navbar-brand img {
+ width: 45px;
+ height: 45px;
+ margin-left: 10px;
+}
+#search{
+    margin-left: 440px;
+    margin-top: 7px;
+    position: absolute;
+
+}
+#search input{
+   border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+}
+
+#search i{
+    width: 30px;
+    height: 30px;
+  color: #Ff0000;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-left: 152px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+     box-shadow: 3px 2px 10px  #E4E4E4,
+                 -3px -2px 10px  #E4E4E4;
+
+}
+#links{
+    display: none;
+}
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 620px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+
+}
+
+.menu>.toggl >ul>li>span {
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 25px;
+  background: #00363d;
+  /**haver backgrounf**/ margin-left: 50px;
+  margin-bottom: 3px;
+
+}
+.menu .toggl ul{
+	list-style: none;
+	margin-left: -30px;
+	cursor: pointer;
+
+
+}
+.toggl ul li{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #1a1a1a;
+	float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+	display: none;
+	transition: all 2s ease-in-out;
+	margin-top: 10px;
+	position: absolute;
+padding-right: 80px;
+ width: 60px;
+}
+.toggl ul ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+padding-left: 80px;
+
+
+}
+.toggl ul ul li a{
+	display: block;
+	text-decoration: none;
+	color: #Ff0000;
+    font-size: 17px;
+	margin-top: 3px;
+ margin-left: -50px;
+ padding-top: 5px;
+}
+.toggl ul li:hover >ul{
+	display: block;
+	background-color: #00363d;
+    height: 430px;
+    width: 300px;
+    margin-left: -230px;
+   border-radius: 20px;
+
+}
+hr{
+ background-color: #Ff0000;
+ margin-left: -45px;
+ width: 270px;
+ height: 0.5px;
+}
+#link-nav{
+    display:block;
+
+}
+}
+@media(min-width:992px) and (max-width:1200px){
+  .navbar-brand {
+
+  padding: 0 40px 0px 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-left: -30px;
+  line-height: 60px;
+  display: block;
+  position: absolute;
+}
+
+.navbar-brand img {
+ width: 45px;
+ height: 45px;
+ margin-left: 10px;
+}
+#search{
+    margin-left: 680px;
+    margin-top: 7px;
+    position: absolute;
+
+}
+#search input{
+   border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+}
+
+#search i{
+    width: 30px;
+    height: 30px;
+  color: #Ff0000;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-left: 152px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+     box-shadow: 3px 2px 10px  #E4E4E4,
+                 -3px -2px 10px  #E4E4E4;
+
+}
+#links{
+    margin-left: 220px;
+}
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 860px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+
+}
+}
+@media(min-width:1201px) and (max-width:1300px){
+   .navbar-brand {
+
+  padding: 0 40px 0px 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-left: -30px;
+  line-height: 60px;
+  display: block;
+  position: absolute;
+}
+
+.navbar-brand img {
+ width: 45px;
+ height: 45px;
+ margin-left: 10px;
+}
+#search{
+    margin-left: 840px;
+    margin-top: 7px;
+    position: absolute;
+
+}
+#search input{
+   border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+}
+
+#search i{
+    width: 30px;
+    height: 30px;
+  color: #Ff0000;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-left: 152px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+     box-shadow: 3px 2px 10px  #E4E4E4,
+                 -3px -2px 10px  #E4E4E4;
+
+}
+#links{
+    margin-left: 380px;
+}
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 1020px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+
+}
+}

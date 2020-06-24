@@ -9,6 +9,12 @@ class Deal extends Model
     //
     protected $guarded =[];
 
+    public function getOwnerStatusAttribute($value){
+        return is_null($value)? -1 : $value;
+    }
+    public function getBuyerStatusAttribute($value){
+        return is_null($value)? -1 : $value;
+    }
     public function buyer()
     {
         return $this->belongsTo(User::class,'buyer_id');

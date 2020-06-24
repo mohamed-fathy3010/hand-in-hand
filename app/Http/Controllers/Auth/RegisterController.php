@@ -53,15 +53,18 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+        $validator =  Validator::make($data, [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8','confirmed'],
             'grade' => ['required', 'string'],
-            'gender' =>['required',Rule::in(['male','female'])]
+            'gender' =>['required',Rule::in(['male','female'])],
+            'avatar' => ['nullable','mimes:jpg,jpeg,png,bmp,gif,svg,webp']
 
         ]);
+
+            return $validator;
 
     }
 
@@ -73,6 +76,11 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $avatarName ="{$data['gender']}.png";
+        if ($data['avatar']) {
+            $avatarName = time() . '.' . request()->avatar->getClientOriginalExtension();
+           $data['avatar']->storeAs('avatars', $avatarName);
+        }
 
         $user = User::create([
             'email' => $data['email'],
@@ -83,7 +91,7 @@ class RegisterController extends Controller
             'last_name'=> $data['last_name'],
             'grade' =>$data['grade'],
             'gender'=> $data['gender'],
-//           'avatar'=>'default.png'
+           'avatar'=>$avatarName
         ]);
         return $user;
     }
