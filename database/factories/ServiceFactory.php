@@ -16,6 +16,7 @@ $factory->define(Service::class, function (Faker $faker) {
         'goal'=>$faker->numberBetween(10,100),
         'target'=>$faker->sentence,
         'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime
+        'updated_at' => $faker->dateTime,
+        'reports' => 0
     ];
 });

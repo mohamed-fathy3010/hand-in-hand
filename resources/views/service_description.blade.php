@@ -39,7 +39,7 @@
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                 @auth
                     <i id="bell" class="fa fa-bell" aria-hidden="true"></i>
                 @endauth

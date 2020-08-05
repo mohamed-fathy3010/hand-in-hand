@@ -11,7 +11,7 @@ class ItemsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Item::class,100)->create([
+        factory(\App\Item::class,1000)->create([
             'image'=>'1582808660.jpg'
         ]);
     }

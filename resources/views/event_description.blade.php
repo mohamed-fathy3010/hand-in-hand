@@ -40,7 +40,7 @@
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                 @auth
                     <i id="bell" class="fa fa-bell" aria-hidden="true"></i>
                 @endauth
@@ -150,27 +150,28 @@
                         </div>
                     </center>
                     <div class="home">
-                        <label for="w3review">Description</label>
-                        <textarea id="w3review" name="description" rows="3" cols="55">
-                            {{$event->description}}
-               </textarea>
 
                         <label for="w3review">TiTLe</label>
-                        <textarea id="w3review" name="title" rows="2" cols="55">
+                        <textarea id="w3review" name="title" rows="1.500" cols="55"style="border-radius: 5px;">
                             {{$event->title}}
                </textarea>
 
                         <label for="w3review">About</label>
-                        <textarea id="w3review" name="about" rows="2" cols="55">
+                        <textarea id="w3review" name="about" rows="1.500" cols="55"style="border-radius: 5px;">
                             {{$event->about}}
                   </textarea>
                         <label for="w3review">Location</label>
-                        <textarea id="w3review" name="location" rows="2" cols="55">
+                        <textarea id="w3review" name="location" rows="1.500" cols="55"style="border-radius: 5px;">
                             {{$event->location}}
                     </textarea>
-                        <label for="w3review">date </label>
-                        <input type="datetime-local" name="date" style="width: 430px;" value="{{strftime('%Y-%m-%dT%H:%M:%S', strtotime($event->date))
+                        <label for="date">date </label>
+                        <input id="date" type="datetime-local" name="date" style="width: 423px;height: 30px;border: 1px solid #666;background-color: #fff;direction:ltr;
+     unicode-bidi: bidi-override;" value="{{strftime('%Y-%m-%dT%H:%M:%S', strtotime($event->date))
 }}">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="3" cols="55">
+                            {{$event->description}}
+               </textarea>
                         <input class="submit" type="submit" value="save">
                     </div>
                 </form>

@@ -54930,10 +54930,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: "4970d5ea2182736d2d20",
-  cluster: "eu",
+  key: '4970d5ea2182736d2d20',
+  cluster: 'eu',
   encrypted: true
-}); // window.Echo.channel('test-channel').listen('Test',e =>{
+}); // console.log(window.Echo);
+// window.Echo.channel('user-61').listen('NotificationWasPushed',e =>{
 //     console.log('test has been done');
 //     console.log(e);
 // })

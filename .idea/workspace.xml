@@ -2,65 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff59e0d-5885-4766-a8f9-742c4bfff52b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_17_210417_create_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Resister.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/edit profileresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/eventdesresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/handmadedescription.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/handmadedesresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/handmaderesponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/itemdescresponcive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/itemresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/loginresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/navbar-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/profile edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/profileresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/resisterresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/servicedescription.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/servicedesresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/serviceresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/styleresponsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Rectangle1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/undraw_male_avatar_323b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/itemdes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/handmade_description.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/service_description.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/events2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/nav3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/service-flex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/banner.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/events1.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/events2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/handmade1.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/item_description1.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/items1.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/service1.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/services2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Deal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/EventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/NotificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/NotificationWasPushed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/NotificationWasPushed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ServiceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_233548_create_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/EventFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/EventFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ItemFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ItemFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ServiceFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ServiceFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ItemsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ItemsTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/eventdescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/eventdescription.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/eventresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/eventresponsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/events.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/handemade.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/handemade.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/itemdescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/itemdescription.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/itemresponsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/itemresponsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/items.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/items.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/service.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/service.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/event_description.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/event_description.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/handmade.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/handmade.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/handmade_description.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/handmade_description.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/item_description.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/item_description.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/items.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/items.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/service_description.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/service_description.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -345,6 +337,19 @@
       <workItem from="1592666640773" duration="8158000" />
       <workItem from="1592748805539" duration="41220000" />
       <workItem from="1592925640123" duration="17196000" />
+      <workItem from="1593041055076" duration="1180000" />
+      <workItem from="1593120742883" duration="11126000" />
+      <workItem from="1593230336896" duration="70000" />
+      <workItem from="1593245495697" duration="1438000" />
+      <workItem from="1593691022238" duration="659000" />
+      <workItem from="1595838404150" duration="4722000" />
+      <workItem from="1596034523066" duration="12341000" />
+      <workItem from="1596147704442" duration="266000" />
+      <workItem from="1596227743042" duration="2966000" />
+      <workItem from="1596338255195" duration="3593000" />
+      <workItem from="1596354027058" duration="11010000" />
+      <workItem from="1596413166843" duration="2192000" />
+      <workItem from="1596441955876" duration="52674000" />
     </task>
     <servers />
   </component>
@@ -370,39 +375,33 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1589624706833" />
-    <state x="363" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585036514841">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="413" y="132" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596597124138">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="112" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1585036514841" />
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592954424037">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
+    <state x="413" y="132" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1596597124138" />
     <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1592954424037" />
     <state x="453" y="198" key="NewPhpClassDialog" timestamp="1590443241496">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="453" y="198" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1590443241496" />
-    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1585586237328">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="379" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1596441965023">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1585586237328" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1592925666114">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588369546633" />
-    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592925666114" />
+    <state x="379" y="197" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596441965023" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1593691025942" />
     <state x="0" y="0" width="737" height="728" key="find.popup" timestamp="1588369937517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="737" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1588369937517" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1592863054072">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="339" y="163" key="run.anything.popup" timestamp="1596051635044">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="339" y="163" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596051635044" />
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1592863054072" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592967212960">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="346" y="84" width="672" height="643" key="search.everywhere.popup" timestamp="1596602635353">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="84" width="672" height="643" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588371103624" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1592967212960" />
+    <state x="346" y="84" width="672" height="643" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596602635353" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1593245507305" />
   </component>
 </project>

@@ -14,9 +14,10 @@ $factory->define(Event::class, function (Faker $faker) {
         'description'=>$faker->sentence(),
         'image'=>$faker->imageUrl(),
         'location'=>$faker->streetAddress,
-        'date'=>$faker->date(),
-        'time'=>$faker->time(),
+        'date'=>$faker->dateTime(),
         'created_at'=>$faker->dateTime,
-        'updated_at'=>$faker->dateTime
+        'updated_at'=>$faker->dateTime,
+        'interests'=>$faker->numberBetween(0,50),
+        'reports'=> 0,
     ];
 });

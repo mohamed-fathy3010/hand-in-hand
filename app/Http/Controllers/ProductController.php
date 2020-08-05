@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Deal;
+use App\Events\NotificationWasPushed;
 use App\Product;
 use App\Report;
+use App\User;
 use eloquentFilter\QueryFilter\ModelFilters\ModelFilters;
 use Illuminate\Http\Request;
 
@@ -25,7 +28,9 @@ class ProductController extends Controller
     }
     public function show(product $product)
     {
-        return view('handmade_description',['product'=>$product]);
+        $is_requested =$this->hasDeal($product,auth()->id());
+        $is_reported =$this->isReported($product->id);
+        return view('handmade_description',['product'=>$product,'is_requested'=>$is_requested,'is_reported'=>$is_reported]);
     }
 
     public function store(Request $request){
@@ -115,6 +120,40 @@ class ProductController extends Controller
         ]);
         $product->increment('reports');
         return redirect('/products/'.$product->id);
+    }
+
+    public function request(Product $product)
+    {
+        $sender = User::with('info')->find(auth()->id());
+        $productInfo = $product->load('user.info');
+
+
+        $deal = $product->deals()->create([
+            'buyer_id' =>$sender->id,
+            'owner_id' => $productInfo->user->id
+        ]);
+        $notification = $this->makeNotification($sender,$productInfo->user,$deal,'is interested in one of your products');
+        NotificationWasPushed::dispatch($notification);
+        return redirect('/products/'.$product->id);
+
+    }
+
+    private function hasDeal($product,$buyerId):bool {
+        return Deal::where('deal_type','products')
+            ->where('deal_id',$product->id)
+            ->where('buyer_id',$buyerId)
+            ->where('owner_id',$product->user->id)->exists();
+    }
+
+    private function makeNotification($sender, $receiver, $deal,$message){
+        $first_name = $sender->info->first_name;
+        $last_name = $sender->info->last_name;
+        $body = "{$first_name} {$last_name} {$message}";
+        $url = "/deals/{$deal->id}";
+        return $receiver->notifications()->create([
+            'body'=>$body,
+            'url' => $url
+        ]);
     }
 
 }

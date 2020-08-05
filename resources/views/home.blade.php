@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>hand in hand</title>
     <link rel="shortcut icon" href="images/HandInHand.png" type="/images/HandInHand.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrab/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+{{--    <link rel="stylesheet" href="bootstrab/bootstrap.min.css">--}}
+{{--    <link rel="stylesheet" href="css/normalize.css">--}}
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/navbar-responsive.css">
+{{--    <link rel="stylesheet" href="css/navbar-responsive.css">--}}
     <link rel="stylesheet" href="css/styleresponsive.css">
     <link rel="stylesheet" href="bootstrab/bootstrap.min.js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +40,7 @@
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                @auth
                 <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
                 @endauth
@@ -131,8 +132,9 @@
                                             <h2>faciliate the collaboration among students by providing a space where
                                                 you can Share , exchangr , and sell educational materials like books or tools ,Offer services like teaching subjects or answering
                                                 college subjects question ,Announce and group events and Sell hand-made products.</h2>
-
+                                            @guest
                                             <a href="{{url('/register')}}" data-value="foll"class="register"> Register</a>
+                                            @endguest
                                         </div>
                                     </div>
 
@@ -259,15 +261,16 @@
         },
         created() {
             @auth
-                this.getNotifications();
-            window.Echo.private('user.'+this.user.id).listen('NotificationWasPushed', e =>{
-                console.log(e)
+                // this.getNotifications();
+            console.log('hello user ' + this.user.id);
+            window.Echo.channel('user-'+this.user.id).listen('NotificationWasPushed', e =>{
+                console.log(e);
             });
             @endauth
         },
         methods: {
             getNotifications() {
-                axios.get('/api/notifications')
+                axios.get('/api/users/'+this.user.id+'/notifications')
                     .then((response) => {
                         this.notifications = response.data;
                         console.log(response.data);

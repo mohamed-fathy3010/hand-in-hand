@@ -19,7 +19,11 @@ public function index(ModelFilters $modelFilters)
         $services=Service::filter($modelFilters)->paginate(20);
     else
         $services=Service::latest()->paginate(20);
-    return view('services',['services'=>$services]);
+    return view('services2',[
+        'services'=>$services,
+        'margin'=>80,
+        'margin_counter'=>450
+    ]);
 }
     public function show(Service $service)
     {
@@ -106,30 +110,30 @@ public function index(ModelFilters $modelFilters)
         if ($service->is_interested){
             $service->decrement('interests');
             $service->interestable()->where('user_id',auth()->id())->delete();
-            return redirect('/services/'.$service->id);
         }
-        $sender = User::with('info')->find(auth()->id());
-        $serviceInfo = $service->load('user.info');
-        $count = $service->interestable()->get()->count();
-        switch ($count){
-            case 0:
-                $message = 'is interested in your service';
-                break;
-            case 1;
-                $message = 'and one more user are interested in your service';
-                break;
-            default:
-                $message = "and ${count} other people are interested in your service";
+        else {
+            $sender = User::with('info')->find(auth()->id());
+            $serviceInfo = $service->load('user.info');
+            $count = $service->interestable()->get()->count();
+            switch ($count) {
+                case 0:
+                    $message = 'is interested in your service';
+                    break;
+                case 1;
+                    $message = 'and one more user are interested in your service';
+                    break;
+                default:
+                    $message = "and ${count} other people are interested in your service";
+            }
+            $service->increment('interests');
+            $service->interestable()->create([
+                'user_id' => $sender->id
+            ]);
+            $notification = $this->makeNotification($sender, $serviceInfo->user, $service, $message);
+            NotificationWasPushed::dispatch($notification);
+            $service->refresh();
+            $this->checkGoal($service, $serviceInfo->user);
         }
-        $service->increment('interests');
-        $service->interestable()->create([
-            'user_id' =>$sender->id
-        ]);
-        $notification = $this->makeNotification($sender,$serviceInfo->user,$service,$message);
-        NotificationWasPushed::dispatch($notification);
-        $service->refresh();
-        $this->checkGoal($service,$serviceInfo->user);
-        return redirect('/services/'.$service->id);
     }
 
 

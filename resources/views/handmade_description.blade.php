@@ -39,7 +39,7 @@ $(".toggle").click(function () {
         <div class="container">
             <div class="parent left-right">
                 <div class="navbar-header">
-                    <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                    <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                     @auth
                         <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
                     @endauth
@@ -196,8 +196,18 @@ $(".toggle").click(function () {
 
     @if(auth()->id() !== $product->user_id)
         <div class="butt">
-            <button>Booking Request</button>
+            <button onclick="event.preventDefault();
+     document.getElementById('request-form').submit();">
+                @if($is_requested)
+                    {{'Requested'}}
+                @else
+                    {{'booking request'}}
+                @endif
+            </button>
         </div>
+        <form id="request-form" action="{{url('products/'.$product->id.'/request')}}" method="POST" style="display: none;">
+            @csrf
+        </form>
     @endif
 
     <!--end item-->
@@ -213,7 +223,7 @@ $(".toggle").click(function () {
     <!-- end buttom delete-->
     <!-- start buttom delete-->
     @if(auth()->id() !== $product->user_id)
-        <button id="myBtnreport">Report</button>
+        <button id="myBtnreport">{{$is_reported?'Reported':'Report'}}</button>
     @endif
     <div id="myModalete" class="modal">
         <!-- Modal content -->

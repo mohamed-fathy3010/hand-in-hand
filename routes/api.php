@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Broadcast;
 use  Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +17,6 @@ use  Illuminate\Support\Facades\Route;
 
 Route::post('login', 'PassportController@login');
 Route::post('register', 'PassportController@register');
-//Route::post('password/email','ForgotPasswordcontroller@sendResetLinkEmail');
-//Route::post('password/reset','ForgotPasswordcontroller@reset');
 
 Route::group([
     'prefix' => 'password',
@@ -71,15 +70,17 @@ Route::middleware('auth:api')->group(function () {
   Route::get('notifications','NotificationController@index');
   Route::get('notifications/{notification}','NotificationController@show');
 
+    Broadcast::routes(['middleware' => 'auth:api']);
+
     Route::get('events/{event}','EventController@show');
     Route::get('events','EventController@index');
     Route::get('services','ServiceController@index');
     Route::get('services/{service}','ServiceController@show');
 
-    Route::get('/a',function (){
-        $type = 'items';
-        return response()->json(auth()->user());
-    });
+//    Route::get('/a',function (){
+//        $notification = \App\Notification::find(52);
+//        return \App\Events\NotificationWasPushed::dispatch($notification);
+//    });
     Route::post('/validations','ValidationController@store');
 });
 

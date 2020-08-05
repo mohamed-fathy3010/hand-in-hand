@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/navbar-responsive.css">
     <link rel="stylesheet" href="../css/serviceresponsive.css">
     <link rel="stylesheet" href="../bootstrab/bootstrap.min.js">
+    <script src="{{asset('js/app.js')}}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,12 +36,13 @@
 </head>
 <body>
 
+
 <!-- Start Navbar -->
 <div class="navbar elem-center" id="app">
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                 @auth
                     <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
                 @endauth
@@ -181,11 +183,10 @@
 
 
 
-
 <!--start service-->
 @foreach($services as $service)
-<div style="text-align: center;">
-    <div class="interest">
+<center>
+    <div class="interest" style="margin-top:{{$margin.'px'}}">
         <h3>{{$service->title}}</h3>
         <h4>
             @if ($service->created_at->diffInDays() > 30)
@@ -194,21 +195,22 @@
            {{$service->created_at->diffForHumans()}}
             @endif
         </h4>
-        <p>{{$service->description}}</p>
+        <a style="text-decoration: none" href="{{url('/services/'.$service->id)}}"><p>{{$service->description}}</p></a>
         <span></span>
         <br>
         <br>
-        <a><i class="fa fa-star-o"></i><br>Interest</a>
+        <a id="star-link" style="text-decoration: none;color: #ff0000" href="" onclick="interest({{$service->id}})"><i id="star" class="fa fa-star-o"></i><br>Interest</a>
     </div>
-</div>
+</center>
+    @php($margin = $margin + $margin_counter)
 @endforeach
 <!--end item-->
 
-
+{{$services->links('vendor.pagination.default',['margin'=>$margin])}}
 
 
 <!--start endwebsite-->
-<div class="end">
+<div class="end" style="margin-top: 50px">
     <div class="imag">
         <span class="image1"><img src="{{asset('images/f.png')}}"></span>
         <span class="image2"><img src="{{asset('images/f2.png')}}"></span>
@@ -231,6 +233,25 @@
 
 <script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
 <script src="../js/itemdes.js"> </script>
+<script >
+    var star= document.getElementById('star');
+    var starLink=document.getElementById('star-link')
+    function interest(serviceId) {
+        event.preventDefault();
+        // console.log(starLink.innerText)
+        axios.post('/services/' + serviceId + '/interest');
+        if (starLink.innerText == 'Interest')
+        {
+            console.log('interest')
+            starLink.innerText= 'Interested'
+            star.className='fa fa-star'
+        }
+        else{
+            starLink.innerText= 'Interest'
+            star.className='fa fa-star-o'
 
+        }
+    }
+</script>
 </body>
 </html>

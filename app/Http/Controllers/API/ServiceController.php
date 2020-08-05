@@ -175,7 +175,7 @@ public function show(Service $service)
     {
         if($service->goal !== 0 && $service->interests === $service->goal ){
             $body = 'your goal has been reached';
-            $url = "/services/{$service->id}/interests";
+            $url = "/services/{$service->id}";
             $notification = $receiver->notifications()->create([
                 'body'=>$body,
                 'url'=>$url

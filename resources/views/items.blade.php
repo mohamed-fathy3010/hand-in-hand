@@ -37,7 +37,7 @@
     <div class="container">
         <div class="parent left-right">
             <div class="navbar-header">
-                <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
+                <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                 @auth
                     <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
                 @endauth
@@ -232,12 +232,12 @@
     @endif
 @endforeach
 
-
+{{$items->links('vendor.pagination.default')}}
 
 <!--end items-->
 
 <!--start endwebsite-->
-<div class="end">
+<div class="end" style="margin-top: 50px">
     <div class="imag">
         <span class="image1"><img src="{{asset('images/f.png')}}"></span>
         <span class="image2"><img src="{{asset('images/f2.png')}}"></span>

@@ -35,11 +35,12 @@ window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: process.env.MIX_PUSHER_APP_KEY,
-    cluster: process.env.MIX_PUSHER_APP_CLUSTER,
-    encrypted: true
+    key: '4970d5ea2182736d2d20',
+    cluster: 'eu',
+    encrypted: true,
 });
-// window.Echo.channel('test-channel').listen('Test',e =>{
+// console.log(window.Echo);
+// window.Echo.channel('user-61').listen('NotificationWasPushed',e =>{
 //     console.log('test has been done');
 //     console.log(e);
 // })

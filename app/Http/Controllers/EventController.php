@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $events =  Event::latest()->paginate(16);
-        return view('events',['events'=>$events]);
+        return view('events2',['events'=>$events]);
     }
 
     public function show(Event $event){
@@ -115,30 +115,29 @@ class EventController extends Controller
         if($event->is_interested){
             $event->decrement('interests');
             $event->interestable()->where('user_id',auth()->id())->delete();
-            return redirect('/events/'.$event->id);
         }
+        else {
+            $sender = User::with('info')->find(auth()->id());
+            $eventInfo = $event->load('user.info');
+            $count = $event->interestable()->get()->count();
+            switch ($count) {
+                case 0:
+                    $message = 'is interested in your event';
+                    break;
+                case 1;
+                    $message = 'and one more user are interested in your event';
+                    break;
+                default:
+                    $message = "and ${count} other people are interested in your event";
+            }
 
-        $sender = User::with('info')->find(auth()->id());
-        $eventInfo = $event->load('user.info');
-        $count = $event->interestable()->get()->count();
-        switch ($count){
-            case 0:
-                $message = 'is interested in your event';
-                break;
-            case 1;
-                $message = 'and one more user are interested in your event';
-                break;
-            default:
-                $message = "and ${count} other people are interested in your event";
+            $event->increment('interests');
+            $event->interestable()->create([
+                'user_id' => $sender->id
+            ]);
+            $notification = $this->makeNotification($sender, $eventInfo->user, $event, $message);
+            NotificationWasPushed::dispatch($notification);
         }
-
-        $event->increment('interests');
-        $event->interestable()->create([
-            'user_id' =>$sender->id
-        ]);
-        $notification = $this->makeNotification($sender,$eventInfo->user,$event,$message);
-        NotificationWasPushed::dispatch($notification);
-        return redirect('/events/'.$event->id);
     }
 
 

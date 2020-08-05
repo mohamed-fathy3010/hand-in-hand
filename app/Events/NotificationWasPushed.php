@@ -4,6 +4,7 @@ namespace App\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
@@ -31,6 +32,6 @@ class NotificationWasPushed implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel("user.{$this->notification->user_id}");
+        return new Channel("user-{$this->notification->user_id}");
     }
 }

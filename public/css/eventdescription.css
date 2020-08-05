@@ -6,7 +6,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
- 
+
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   padding: 0px;
   margin: 0px;
-   
+
 }
 
 input,
@@ -38,8 +38,8 @@ button {
  margin-top: 0px;
 
  margin: 20px 0 0px 20px;
- 
- 
+
+
 }
 #event{
 width: 100%;
@@ -59,7 +59,7 @@ border-radius: 10px;
     height:500px;
     position: absolute;
     margin-top: 0px;
-    
+
 }
 .item .ponts i{
 font-size: 25px;
@@ -112,7 +112,7 @@ width: 300px;
 .item .words h5{
   color: #fff;
   font-size: 23px;
-  
+
 }
 #star{
 margin:-50px 0 0 1220px ;
@@ -153,18 +153,19 @@ font-size: 45px;
 
 /* Modal Content */
 .content{
-height: 100%;
-width: 50%;
-background-color:#00363d; 
-margin: auto;
-border: 1px solid #888;
-display: flex;
-flex-direction: column;}
+    height: 98.5%;
+    width: 50%;
+    background-color:#fff;
+    margin: auto;
+    border: 3px solid #eee;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;}
 /* The Close Button */
 .contentreport{
   height: 50%;
   width: 50%;
-  background-color:#00363d; 
+  background-color:#00363d;
   margin: auto;
   border: 1px solid #888;
   display: flex;
@@ -172,7 +173,7 @@ flex-direction: column;}
 /* The Close Button */
 /* The Close Button */
 .close , .closereport{
-  
+
   float: right;
   font-weight: bold;
 }
@@ -202,10 +203,11 @@ flex-direction: column;}
 }
 
 #blah{
- max-width: 300px;
- max-height: 100px;
- border-radius: 20px;
-  position: relative;
+    max-width:300px;
+    max-height: 100px;
+    border-radius: 20px;
+    position: relative;
+    width: 120px;
 }
 
 .update-photo{
@@ -228,22 +230,20 @@ background:#b3b3b3;
 display: inline-block;
 }
 
-.inputfile:focus + label,
-.inputfile + label:hover {
-background-color: red;
-}
+
 .home{
-  margin-top: -40px;
+    margin-top: 0px;
+    margin-left: 20px;
 }
 .homereport{
  margin-left: 50px;
  margin-top: 40px;
 }
 label{
-  color: #ff0000;
-  font-weight: bold;
-  font-size: 20px;
-  display: block;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
 }
 textarea,
 input{
@@ -291,7 +291,7 @@ position: absolute;
   font-size: 22px;
   height: 20px;
   color: #5B5959;
-  
+
 }
 
 #line-2{
@@ -303,7 +303,7 @@ margin: 650px 0 0 450px;
 }
 .description{
     position: absolute;
-    margin: 650px 0 0 20px ; 
+    margin: 650px 0 0 20px ;
 }
 .description h1{
     font-size: 35px;
@@ -312,7 +312,7 @@ margin: 650px 0 0 450px;
     font-size: 22px;
     height: 20px;
     color: #5B5959;
-    
+
 }
 #line-2{
 width: 400px;
@@ -326,13 +326,13 @@ margin: 830px 0 0 500px;
     margin: 850px 0 0 20px ;
 }
 .location h1{
-    font-size: 35px; 
+    font-size: 35px;
 }
 .location p{
     font-size: 22px;
     height: 20px;
     color: #5B5959;
-    
+
 }
 #map , #calender ,#clock{
  padding-right: 5px;
@@ -349,7 +349,7 @@ margin: 830px 0 0 500px;
   margin: 1000px 0 0 20px ;
 }
 .Time h1{
-font-size: 35px; 
+font-size: 35px;
 }
 .Time p{
 font-size: 22px;
