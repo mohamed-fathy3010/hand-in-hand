@@ -28,10 +28,11 @@ public function index(ModelFilters $modelFilters)
     public function show(Service $service)
     {
         $serviceRelations= $service->load('interestable.user.info');
+        $is_reported=$this->isReported($service->id);
         $interesters=$serviceRelations->interestable->pluck('user.info');
         $service->unsetRelation('interestable');
         $service->interesters =$interesters;
-        return view('service_description',['service'=>$service]);
+        return view('service_description',['service'=>$service,'is_reported'=>$is_reported]);
     }
 
     public function store(Request $request){
@@ -110,6 +111,7 @@ public function index(ModelFilters $modelFilters)
         if ($service->is_interested){
             $service->decrement('interests');
             $service->interestable()->where('user_id',auth()->id())->delete();
+            return redirect('services/'.$service->id);
         }
         else {
             $sender = User::with('info')->find(auth()->id());
@@ -133,6 +135,7 @@ public function index(ModelFilters $modelFilters)
             NotificationWasPushed::dispatch($notification);
             $service->refresh();
             $this->checkGoal($service, $serviceInfo->user);
+            return redirect('services/'.$service->id);
         }
     }
 

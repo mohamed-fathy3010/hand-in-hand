@@ -32,52 +32,40 @@
   </head>
   <body>
 
-  <!-- Start Navbar -->
-  <div class="navbar elem-center" id="app">
+  <div class="navbar elem-center">
       <div class="container">
           <div class="parent left-right">
               <div class="navbar-header">
-                  <a href="" class="navbar-brand"><img src="/images/HandInHand.png"></a>
-                  @auth
-                      <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
-                  @endauth
-                  <div class="language">
-                      <!-- select from 2 option-->
-                      <select>
-                          <option>English</option>
-                          <option>عربي</option>
-
-                      </select>
-
-                  </div>
-
+                  <a href="{{url('')}}" class="navbar-brand"><img src="../images/HandInHand.png"></a>
               </div>
               <ul class="nav navlist" id="links">
                   <li class="active">
                       <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
-                  <li><a href="{{url('/services')}}" data-value="port"class="effect">Services</a></li>
-                  <li><a href="{{url('/events')}}" data-value="foll"class="effect">Events</a></li>
-                  <li><a href="{{url('/products')}}" data-value="cont"class="effect">Handmade</a></li>
+                  <li><a href="{{url('/services')}}" data-value="port" class="effect">Services</a></li>
+                  <li><a href="{{url('/events')}}" data-value="foll" class="effect">Events</a></li>
+                  <li><a href="{{url('/products')}}" data-value="cont" class="effect">Handmade</a></li>
               </ul>
-              <form class="navbar-form navbar-right">
+              <form id="search"class="navbar-form navbar-right">
                   <input type="text" placeholder="Search">
                   <i class="fa fa-search"></i>
               </form>
-              <!-- menu-->         <div class="menu">
+              <div class="menu">
                   <button class="toggl">
                       <ul>
-                          <li class="burger"><span></span>
+                          <li><span></span>
                               <span></span>
                               <span></span>
                               <ul >
                                   <li >
-                                      <a href="{{url('/items')}}" data-value="about" id="link-nav" class="effect">Items</a>
+                                      <a href="{{url('/items')}}" data-value="about" id="link-nav"
+                                         class="effect">Items</a>
                                       <hr id="link-nav">
-                                      <a href="{{url('/services')}}" data-value="port" id="link-nav"class="effect">Services</a>
+                                      <a href="{{url('/services')}}" data-value="port" id="link-nav" class="effect">Services</a>
                                       <hr id="link-nav">
-                                      <a href="{{url('/events')}}" data-value="foll" id="link-nav"class="effect">Events</a>
+                                      <a href="{{url('/events')}}" data-value="foll" id="link-nav"
+                                         class="effect">Events</a>
                                       <hr id="link-nav">
-                                      <a href="{{url('/products')}}" data-value="cont" id="link-nav"class="effect">Handmade</a>
+                                      <a href="{{url('/products')}}" data-value="cont" id="link-nav" class="effect">Handmade</a>
                                       <hr id="link-nav">
                                       @guest
                                           <a href="{{url('/login')}}">login</a>
@@ -88,9 +76,10 @@
 
                                           <a href="{{url('/profile')}}">profile</a>
                                           <hr>
-                                          <a href="{{url('/logout')}}"  onclick="event.preventDefault();
+                                          <a href="{{url('/logout')}}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">log out</a>
-                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                          <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                style="display: none;">
                                               @csrf
                                           </form>
                                       @endauth

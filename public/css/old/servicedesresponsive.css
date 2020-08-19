@@ -1,0 +1,1555 @@
+@media(max-width:767px){
+
+  .Workshop{
+      text-align: center;
+      margin-top: 20px ;
+      border-bottom: #eee solid 2px;
+      height: 100px;
+     }
+     .Workshop h4{
+      color:#00363d ;
+      font-size: 35px;
+      font-weight: bold;
+     }
+     .Workshop p{
+       color:#a6a6a6 ;
+      font-size: 17px;
+      margin-top: -7px;
+     }
+     /******************** start diaglog*******************************************/
+#myBtn{
+  font-size: 20px;
+  width: 100px;
+  height: 45px;
+  color:#fff;
+  background: #ff0000;
+  float: right;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+/**********************(start daliag)***********************/
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 100%;
+background-color:#00363d; 
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+  
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-item{
+  margin: auto;
+  margin-left:50px;
+}
+.home{
+  margin-top:20px;}
+label{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+textarea,
+input{
+  display: block;
+  padding: 2px 10px ;
+}
+.goal{
+  margin-top: 35px;
+}
+.submit{
+  background-color: #ff0000;
+    color: aliceblue;
+   width:100px; 
+   font-size: 20px;
+   margin-left:150px;
+   text-align: center;
+    margin-top:30px;
+}
+/************** end dialog**********************************/
+     .Interests{
+      margin: 50px 0 0 60px;
+     }
+     .Interests p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     .Interests h6{
+       font-size: 35px;
+     }
+     .Interests p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     #line-1{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 60px 0 0 90px;
+     }
+     .Goal{
+      margin: 170px 0 0 60px;
+     }
+     .Goal h5{
+       font-size: 35px;
+     }
+     .Goal p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .Goal p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     #line-2{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 80px 0 0 95px;
+     }
+     .description{
+         position: absolute;
+         margin: 100px 0 0 60px ;
+     }
+     .description h1{
+         font-size: 35px;
+     }
+     .description p{
+         font-size: 22px;
+         height:60px;
+         color: #5B5959;
+         
+     }
+     #line-3{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 340px 0 0 95px;
+     }
+     .price{
+            position: absolute;
+         margin: 370px 0 0 60px ; 
+     }
+     .price h2{
+          font-size: 35px; 
+     }
+     .price p{
+         font-size: 22px;
+         color: #5B5959; 
+     }
+     #line-4{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 490px 0 0 95px;
+     }
+     .target{
+             position: absolute;
+         margin: 520px 0 0 60px ;
+     }
+     .target h3{
+         font-size: 35px; 
+     }
+     .target p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .target p span{
+       color: #Ff0000;
+      font-weight: bold;
+     }
+     .butt{
+         
+         margin: 750px 0 0 70px;
+         position: absolute;
+     }
+     .butt .share{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color:#00363d ;
+      margin: 15px 0 0 -50px;
+      position: absolute;
+     }
+     .butt .share i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 20px;
+      color: #fff;
+     }
+     
+     .butt button{
+         border: none;
+         width: 360px;
+         height: 70px;
+         font-size: 25px;
+         background-color: #ff0000;
+         color:#fff ;
+         padding-bottom: 16px;
+         border-radius: 30px;
+         line-height: 4px;
+         
+     
+         
+     }
+     .butt button i{
+      font-size: 45px;
+      padding-top: 6px;
+     }
+     .butt .circle{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+     
+      margin: -70px 0 0 360px;
+      position: absolute;
+     }
+     .butt .circle i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 46px;
+      color: #00363d;
+      background-color:#fff ;
+     }
+     
+/**end item**/  
+/********** (delete button)**********************************/
+#myBtndelete{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: -110px;
+position: absolute;
+margin-top: 860px;
+border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: 300px;
+position: absolute;
+margin-top: 860px;
+border: none;
+border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+margin-top: 5px;
+margin-left: -70px;
+
+}
+#inappropriate{
+margin-top: 20px;
+margin-left: -70px;
+}
+.spam,.inappropriate{
+padding-left: 25px;
+
+}
+.inappropriate{
+margin-top: 20px;
+}
+.submit{
+background-color: #ff0000;
+  color: aliceblue;
+ width:100px;
+ position: absolute;
+ font-size: 20px;
+ margin-left:40px;
+ text-align: center;
+  margin-top:40px;
+}
+.end{
+width:485px;
+max-width:767px;
+height: 80%;
+background-size:cover;
+position: absolute;
+margin-top: 960px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+  .end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:485px;
+  max-width:767px;
+  height: 100%;
+  background-size:cover;
+  position: absolute;
+  margin-top: 0px;
+  overflow: hidden;
+  }
+  
+  .end .imag .image1 img{
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 100px;
+  }
+  
+  .end .imag .image2 img{
+  width: 18%;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 110px;
+  }
+  .end .imag .image3 img{
+  width: 18%;
+  margin-top: 130px;
+  position: absolute;
+  margin-left:60px;
+  }
+  .end .link li{
+  list-style: none;
+  }
+  .end .link li a{
+  color: #000;
+  font-size: 16px;
+  }
+  .end .link li .link1{
+  margin: 65px 0 0 75px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link li .link2{
+  margin: 140px 0 0 30px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link .social i{
+  font-size: 25px;
+  }
+  .end .link .social .social1{
+  margin: 102px 0 0 330px;
+  position: absolute;
+  }
+  .end .link .social .social2{
+  margin: 190px 0 0 340px;
+  position: absolute;
+  }
+  .end .link .social  p{
+  color: #fff;
+  margin-top: 300px;
+  margin-left:60px;
+  font-size: 15px;
+  position: absolute;
+  }
+  
+}
+@media(min-width:768px) and (max-width:991px){
+  .Workshop{
+      text-align: center;
+      margin-top: 20px ;
+      border-bottom: #eee solid 2px;
+      height: 100px;
+     }
+     .Workshop h4{
+      color:#00363d ;
+      font-size: 35px;
+      font-weight: bold;
+     }
+     .Workshop p{
+       color:#a6a6a6 ;
+      font-size: 17px;
+      margin-top: -7px;
+     }
+     #myBtn{
+      font-size: 20px;
+      width: 100px;
+      height: 45px;
+      color:#fff;
+      background: #ff0000;
+      float: right;
+      margin-right: 70px;
+      margin-top: 40px;
+    }
+    /**********************(start daliag)***********************/
+    /* The Modal (background) */
+    .modal {
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .content{
+    height: 100%;
+    width: 80%;
+    background-color:#00363d; 
+    margin: auto;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;}
+    /* The Close Button */
+    .close {
+      
+      float: right;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .edit-item{
+      margin: auto;
+      margin-left:50px;
+    }
+    .home{
+      margin-top:20px;}
+    label{
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+    }
+    textarea,
+    input{
+      display: block;
+      padding: 2px 10px ;
+    }
+    .goal{
+      margin-top: 35px;
+    }
+    .submit{
+      background-color: #ff0000;
+        color: aliceblue;
+       width:100px; 
+       font-size: 20px;
+       margin-left:150px;
+       text-align: center;
+        margin-top:30px;
+    }
+     .Interests{
+      margin: 50px 0 0 60px;
+     }
+     .Interests p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     .Interests h6{
+       font-size: 35px;
+     }
+     .Interests p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     #line-1{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 60px 0 0 90px;
+     }
+     .Goal{
+      margin: 170px 0 0 60px;
+     }
+     .Goal h5{
+       font-size: 35px;
+     }
+     .Goal p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .Goal p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     #line-2{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 80px 0 0 95px;
+     }
+     .description{
+         position: absolute;
+         margin: 100px 0 0 60px ;
+     }
+     .description h1{
+         font-size: 35px;
+     }
+     .description p{
+         font-size: 22px;
+         height:60px;
+         color: #5B5959;
+         
+     }
+     #line-3{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 340px 0 0 95px;
+     }
+     .price{
+            position: absolute;
+         margin: 370px 0 0 60px ; 
+     }
+     .price h2{
+          font-size: 35px; 
+     }
+     .price p{
+         font-size: 22px;
+         color: #5B5959; 
+     }
+     #line-4{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 490px 0 0 95px;
+     }
+     .target{
+             position: absolute;
+         margin: 520px 0 0 60px ;
+     }
+     .target h3{
+         font-size: 35px; 
+     }
+     .target p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .target p span{
+       color: #Ff0000;
+      font-weight: bold;
+     }
+     .butt{
+         
+         margin: 750px 0 0 70px;
+         position: absolute;
+     }
+     .butt .share{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color:#00363d ;
+      margin: 15px 0 0 -50px;
+      position: absolute;
+     }
+     .butt .share i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 20px;
+      color: #fff;
+     }
+     
+     .butt button{
+         border: none;
+         width: 360px;
+         height: 70px;
+         font-size: 25px;
+         background-color: #ff0000;
+         color:#fff ;
+         padding-bottom: 16px;
+         border-radius: 30px;
+         line-height: 4px;
+         
+     
+         
+     }
+     .butt button i{
+      font-size: 45px;
+      padding-top: 6px;
+     }
+     .butt .circle{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+     
+      margin: -70px 0 0 360px;
+      position: absolute;
+     }
+     .butt .circle i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 46px;
+      color: #00363d;
+      background-color:#fff ;
+     }
+     
+/**end item**/  
+/********** (delete button)**********************************/
+#myBtndelete{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: -350px;
+position: absolute;
+margin-top: 860px;
+border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: 300px;
+position: absolute;
+margin-top: 870px;
+border: none;
+border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+margin-top: 5px;
+margin-left: -70px;
+
+}
+#inappropriate{
+margin-top: 20px;
+margin-left: -70px;
+}
+.spam,.inappropriate{
+padding-left: 25px;
+
+}
+.inappropriate{
+margin-top: 20px;
+}
+.submit{
+background-color: #ff0000;
+  color: aliceblue;
+ width:100px;
+ position: absolute;
+ font-size: 20px;
+ margin-left:40px;
+ text-align: center;
+  margin-top:40px;
+}
+
+
+.end{
+width:755px;
+max-width:991px;
+height: 95%;
+background-size:cover;
+position: absolute;
+margin-top: 960px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+  .end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:755px;
+  max-width:991px;
+  height: 100%;
+  background-size:cover;
+  position: absolute;
+  margin-top: 0px;
+  overflow: hidden;
+  }
+  
+  .end .imag .image1 img{
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 100px;
+  }
+  
+  .end .imag .image2 img{
+  width: 15%;
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 130px;
+  }
+  .end .imag .image3 img{
+  width: 15%;
+  margin-top: 130px;
+  position: absolute;
+  margin-left:60px;
+  }
+  .end .link li{
+  list-style: none;
+  }
+  .end .link li a{
+  color: #000;
+  font-size: 19px;
+  }
+  .end .link li .link1{
+  margin: 55px 0 0 100px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link li .link2{
+  margin: 153px 0 0 35px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link .social i{
+  font-size: 30px;
+  }
+  .end .link .social .social1{
+  margin: 116px 0 0 518px;
+  position: absolute;
+  }
+  .end .link .social .social2{
+  margin: 255px 0 0 530px;
+  position: absolute;
+  }
+  .end .link .social  p{
+  color: #fff;
+  margin-top: 320px;
+  margin-left:150px;
+  font-size: 18px;
+  position: absolute;
+  }
+
+}
+@media(min-width:992px) and (max-width:1200px){
+  .Workshop{
+      text-align: center;
+      margin-top: 20px ;
+      border-bottom: #eee solid 2px;
+      height: 100px;
+     }
+     .Workshop h4{
+      color:#00363d ;
+      font-size: 35px;
+      font-weight: bold;
+     }
+     .Workshop p{
+       color:#a6a6a6 ;
+      font-size: 17px;
+      margin-top: -7px;
+     }
+     #myBtn{
+      font-size: 20px;
+      width: 100px;
+      height: 45px;
+      color:#fff;
+      background: #ff0000;
+      float: right;
+      margin-right: 100px;
+      margin-top: 40px;
+    }
+    /**********************(start daliag)***********************/
+    /* The Modal (background) */
+    .modal {
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .content{
+    height: 100%;
+    width: 50%;
+    background-color:#00363d; 
+    margin: auto;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;}
+    /* The Close Button */
+    .close {
+      
+      float: right;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .edit-item{
+      margin: auto;
+      margin-left:50px;
+    }
+    .home{
+      margin-top:20px;}
+    label{
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+    }
+    textarea,
+    input{
+      display: block;
+      padding: 2px 10px ;
+    }
+    .goal{
+      margin-top: 35px;
+    }
+    .submit{
+      background-color: #ff0000;
+        color: aliceblue;
+       width:100px; 
+       font-size: 20px;
+       margin-left:150px;
+       text-align: center;
+        margin-top:30px;
+    }
+     .Interests{
+      margin: 50px 0 0 60px;
+     }
+     .Interests p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     .Interests h6{
+       font-size: 35px;
+     }
+     .Interests p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     #line-1{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 60px 0 0 350px;
+     }
+     .Goal{
+      margin: 170px 0 0 60px;
+     }
+     .Goal h5{
+       font-size: 35px;
+     }
+     .Goal p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .Goal p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     #line-2{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 80px 0 0 350px;
+     }
+     .description{
+         position: absolute;
+         margin: 100px 0 0 60px ;
+     }
+     .description h1{
+         font-size: 35px;
+     }
+     .description p{
+         font-size: 22px;
+         height:30px;
+         color: #5B5959;
+         
+     }
+     #line-3{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 300px 0 0 350px;
+     }
+     .price{
+            position: absolute;
+         margin: 370px 0 0 60px ; 
+     }
+     .price h2{
+          font-size: 35px; 
+     }
+     .price p{
+         font-size: 22px;
+         color: #5B5959; 
+     }
+     #line-4{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 490px 0 0 350px;
+     }
+     .target{
+             position: absolute;
+         margin: 520px 0 0 60px ;
+     }
+     .target h3{
+         font-size: 35px; 
+     }
+     .target p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .target p span{
+       color: #Ff0000;
+      font-weight: bold;
+     }
+  .butt{
+  
+      margin: 700px 0 0 350px;
+      position: absolute;
+  }
+  .butt .share{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color:#00363d ;
+   margin: 15px 0 0 -80px;
+   position: absolute;
+  }
+  .butt .share i{
+   margin: 10px 0 0 10px ;
+   position: absolute;
+   font-size: 20px;
+   color: #fff;
+  }
+  
+  .butt button{
+      border: none;
+      width: 400px;
+      height: 70px;
+      font-size: 25px;
+      background-color: #ff0000;
+      color:#fff ;
+      padding-bottom: 16px;
+      border-radius: 30px;
+      line-height: 4px;
+      
+  
+      
+  }
+  .butt button i{
+   font-size: 45px;
+   padding-top: 6px;
+  }
+  .butt .circle{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+  
+   margin: -70px 0 0 430px;
+   position: absolute;
+  }
+  .butt .circle i{
+   margin: 10px 0 0 10px ;
+   position: absolute;
+   font-size: 46px;
+   color: #00363d;
+   background-color:#fff ;
+  }
+  /**end item**/
+     
+/********** (delete button)**********************************/
+#myBtndelete{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: -80px;
+position: absolute;
+margin-top: 860px;
+border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: 420px;
+position: absolute;
+margin-top: 870px;
+border: none;
+border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+margin-top: 10px;
+margin-left: 0px;
+
+}
+#inappropriate{
+margin-top: 30px;
+margin-left: 0px;
+}
+.spam,.inappropriate{
+padding-left: 25px;
+
+}
+.inappropriate{
+margin-top: 20px;
+}
+.submit{
+background-color: #ff0000;
+  color: aliceblue;
+ width:100px;
+ position: absolute;
+ font-size: 20px;
+ margin-left:40px;
+ text-align: center;
+  margin-top:40px;
+}
+.end{
+width:965px;
+max-width:1200px;
+height: 125%;
+background-size:cover;
+position: absolute;
+margin-top: 960px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+  .end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+  width:965px;
+  max-width:1200px;
+  height: 100%;
+  background-size:cover;
+  position: absolute;
+  margin-top: 0px;
+  overflow: hidden;
+  }
+  
+  .end .imag .image1 img{
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 100px;
+  }
+  
+  .end .imag .image2 img{
+  width: 13%;
+  margin-top: 30px;
+  position: absolute;
+  margin-left: 230px;
+  }
+  .end .imag .image3 img{
+  width: 13%;
+  margin-top: 130px;
+  position: absolute;
+  margin-left:120px;
+  }
+  .end .link li{
+  list-style: none;
+  }
+  .end .link li a{
+  color: #000;
+  font-size: 23px;
+  }
+  .end .link li .link1{
+  margin: 60px 0 0 195px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link li .link2{
+  margin: 155px 0 0 90px;
+  position: absolute;
+  text-decoration: none;
+  }
+  .end .link .social i{
+  font-size: 40px;
+  }
+  .end .link .social .social1{
+  margin: 126px 0 0 660px;
+  position: absolute;
+  }
+  .end .link .social .social2{
+  margin: 300px 0 0 680px;
+  position: absolute;
+  }
+  .end .link .social  p{
+  color: #fff;
+  margin-top: 430px;
+  margin-left:250px;
+  font-size: 20px;
+  position: absolute;
+  }
+
+}
+@media(min-width:1201px) and (max-width:1300px){
+  .Workshop{
+      text-align: center;
+      margin-top: 20px ;
+      border-bottom: #eee solid 2px;
+      height: 100px;
+     }
+     .Workshop h4{
+      color:#00363d ;
+      font-size: 35px;
+      font-weight: bold;
+     }
+     .Workshop p{
+       color:#a6a6a6 ;
+      font-size: 17px;
+      margin-top: -7px;
+     }
+     #myBtn{
+      font-size: 20px;
+      width: 100px;
+      height: 45px;
+      color:#fff;
+      background: #ff0000;
+      float: right;
+      margin-right: 150px;
+      margin-top: 40px;
+    }
+    /**********************(start daliag)***********************/
+    /* The Modal (background) */
+    .modal {
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .content{
+    height: 100%;
+    width: 50%;
+    background-color:#00363d; 
+    margin: auto;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;}
+    /* The Close Button */
+    .close {
+      
+      float: right;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .edit-item{
+      margin: auto;
+      margin-left:50px;
+    }
+    .home{
+      margin-top:20px;}
+    label{
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+    }
+    textarea,
+    input{
+      display: block;
+      padding: 2px 10px ;
+    }
+    .goal{
+      margin-top: 35px;
+    }
+    .submit{
+      background-color: #ff0000;
+        color: aliceblue;
+       width:100px; 
+       font-size: 20px;
+       margin-left:150px;
+       text-align: center;
+        margin-top:30px;
+    }
+     .Interests{
+      margin: 30px 0 0 60px;
+     }
+     .Interests p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     .Interests h6{
+       font-size: 35px;
+     }
+     .Interests p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     #line-1{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 50px 0 0 500px;
+     }
+     .Goal{
+      margin: 120px 0 0 60px;
+     }
+     .Goal h5{
+       font-size: 35px;
+     }
+     .Goal p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .Goal p span{
+      color: #Ff0000;
+      font-weight: bold;
+     }
+     #line-2{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 50px 0 0 500px;
+     }
+     .description{
+         position: absolute;
+         margin: 90px 0 0 60px ;
+     }
+     .description h1{
+         font-size: 35px;
+     }
+     .description p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     #line-3{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 270px 0 0 500px;
+     }
+     .price{
+            position: absolute;
+         margin: 310px 0 0 60px ; 
+     }
+     .price h2{
+          font-size: 35px; 
+     }
+     .price p{
+         font-size: 22px;
+         color: #5B5959; 
+     }
+     #line-4{
+      width: 400px;
+      height: 3px;
+      background:#5B5959;
+      position: absolute;
+      margin: 450px 0 0 500px;
+     }
+     .target{
+             position: absolute;
+         margin: 520px 0 0 60px ;
+     }
+     .target h3{
+         font-size: 35px; 
+     }
+     .target p{
+         font-size: 22px;
+         height: 20px;
+         color: #5B5959;
+         
+     }
+     .target p span{
+       color: #Ff0000;
+      font-weight: bold;
+     }
+     .butt{
+         
+         margin: 700px 0 0 500px;
+         position: absolute;
+     }
+     .butt .share{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color:#00363d ;
+      margin: 15px 0 0 -80px;
+      position: absolute;
+     }
+     .butt .share i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 20px;
+      color: #fff;
+     }
+     
+     .butt button{
+         border: none;
+         width: 400px;
+         height: 70px;
+         font-size: 25px;
+         background-color: #ff0000;
+         color:#fff ;
+         padding-bottom: 16px;
+         border-radius: 30px;
+         line-height: 4px;
+         
+     
+         
+     }
+     .butt button i{
+      font-size: 45px;
+      padding-top: 6px;
+     }
+     .butt .circle{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+     
+      margin: -70px 0 0 430px;
+      position: absolute;
+     }
+     .butt .circle i{
+      margin: 10px 0 0 10px ;
+      position: absolute;
+      font-size: 46px;
+      color: #00363d;
+      background-color:#fff ;
+     }
+/********** (delete button)**********************************/
+#myBtndelete{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: -300px;
+position: absolute;
+margin-top: 860px;
+border: none;
+}
+/********** (report button)**********************************/
+#myBtnreport{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+float: right;
+margin-left: 750px;
+position: absolute;
+margin-top: 870px;
+border: none;
+border-radius: 5px;
+}
+/**end item**/
+.spam-inappropriate{
+margin-left: -50px;
+position: absolute;
+
+}
+#spam {
+margin-top: 10px;
+margin-left: 0px;
+
+}
+#inappropriate{
+margin-top: 30px;
+margin-left: 0px;
+}
+.spam,.inappropriate{
+padding-left: 25px;
+
+}
+.inappropriate{
+margin-top: 20px;
+}
+.submit{
+background-color: #ff0000;
+  color: aliceblue;
+ width:100px;
+ position: absolute;
+ font-size: 20px;
+ margin-left:40px;
+ text-align: center;
+  margin-top:40px;
+}
+
+.end{
+width:1210px;
+max-width:1300px;
+height: 130%;
+background-size:cover;
+position: absolute;
+margin-top: 960px;
+background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+      .end .imag{
+      background-image: url('../images/backtoschool-07Converted.png');
+      width:1210px;
+      max-width:1300px;
+      height: 100%;
+      background-size:cover;
+      position: absolute;
+      margin-top: 0px;
+      overflow: hidden;
+      }
+      
+      .end .imag .image1 img{
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      margin-top: 100px;
+      }
+      
+      .end .imag .image2 img{
+      width: 12%;
+      margin-top: 30px;
+      position: absolute;
+      margin-left: 260px;
+      }
+      .end .imag .image3 img{
+      width: 12%;
+      margin-top: 130px;
+      position: absolute;
+      margin-left:140px;
+      }
+      .end .link li{
+      list-style: none;
+      }
+      .end .link li a{
+      color: #000;
+      font-size: 25px;
+      }
+      .end .link li .link1{
+      margin: 60px 0 0 230px;
+      position: absolute;
+      text-decoration: none;
+      }
+      .end .link li .link2{
+      margin: 160px 0 0 120px;
+      position: absolute;
+      text-decoration: none;
+      }
+      .end .link .social i{
+      font-size: 40px;
+      }
+      .end .link .social .social1{
+      margin: 140px 0 0 830px;
+      position: absolute;
+      }
+      .end .link .social .social2{
+      margin: 360px 0 0 860px;
+      position: absolute;
+      }
+      .end .link .social  p{
+      color: #fff;
+      margin-top: 470px;
+      margin-left:320px;
+      font-size: 20px;
+      position: absolute;
+      }
+}

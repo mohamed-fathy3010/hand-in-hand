@@ -93,9 +93,7 @@ background: #fff;
 margin: auto;
 margin-bottom: 3px;
 }
-.burger{
-    margin-top: -25px;
-}
+
 .navlist {
 height: 0;
 float: right;
@@ -237,7 +235,7 @@ float: right;
   margin-left: 910px;
   margin-top: 0px;
   position: absolute;
-
+  
 }
 .navbar form input{
  border: none;
@@ -258,7 +256,7 @@ margin-left: 185px;
   border: 1px solid #ccc;
    box-shadow: 3px 2px 10px  #E4E4E4,
                -3px -2px 10px  #E4E4E4
-            ;
+            ; 
 
 }
 
@@ -272,7 +270,7 @@ margin-left: 185px;
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 
 .menu>.toggl >ul>li>span {
@@ -283,14 +281,14 @@ margin-left: 185px;
   background: #00363d;
   /**haver backgrounf**/ margin-left: 50px;
   margin-bottom: 3px;
-
+  
 }
 .menu .toggl ul{
 	list-style: none;
 	margin-left: -30px;
 	cursor: pointer;
-
-
+ 
+	
 }
 .toggl ul li{
 	text-decoration: none;
@@ -330,17 +328,17 @@ hr{
  background-color: #Ff0000;
  margin-left: 25px;
  width: 200px;
-
+ 
 }
 .toggl ul li:hover >ul{
 	display: block;
-	background-color: #00363d;
+	background-color: #fff;
     width: 230px;
     height: 200px;
      margin-left: -160px;
    border-radius: 20px;
-
-
+   border: 3px solid #eee;
+   
 }
 #link-nav{
     display:none;
@@ -404,6 +402,7 @@ position: absolute;
 }
 .inputfile + label {
 font-size: 1.25em;
+font-weight: 20px;
 color: white;
 background:#b3b3b3;
 display: inline-block;
@@ -434,7 +433,7 @@ input{
 /*---------------------------------*/
 
 .login-form-username,
-.login-form-educationGrade,
+.login-form-educationGrade,  
 .login-form-Email,
 .login-form-password
 {
@@ -442,8 +441,8 @@ input{
   width: 80%;
   height: 13vh;
   margin: auto;
-
-
+  
+  
 }
 
 .login-form-educationGrade{
@@ -495,10 +494,10 @@ padding:0px  10px;
 }
 .Male_input{
   float: left;
-
+ 
 }
 .Female-input{
-  float: right;
+  float: right; 
   padding-right: 312px;
 }
 
@@ -584,7 +583,7 @@ margin-top:-78px ;
   width:80%;
   height: 10vh;
   margin: auto;
-
+  
 }
 .login-button{
   width: 100%;
@@ -618,4 +617,4 @@ text-decoration: none;
 color: rgba(255, 255, 255, 0.795);
   font-family: Arial;
   font-size: 16px;
-}}
+}

@@ -64,7 +64,7 @@
       #blah{
         max-width:500px;
         max-height: 200px;
-        border-radius: 50px;
+        border-radius: 20px;
       }
       .photo{
         margin-top:5px;
@@ -85,14 +85,13 @@
   .inputfile + label {
     font-size: 1.25em;
     font-weight: 700;
-    color: white;
-    background:#b3b3b3;
+    color: #ff0000;
     display: inline-block;
 }
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    background-color: red;
+    background-color: ;
 }
 
   .validate-form{

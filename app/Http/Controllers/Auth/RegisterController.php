@@ -77,7 +77,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $avatarName ="{$data['gender']}.png";
-        if ($data['avatar']) {
+        if ( request()->hasFile('avatar')) {
             $avatarName = time() . '.' . request()->avatar->getClientOriginalExtension();
            $data['avatar']->storeAs('avatars', $avatarName);
         }

@@ -1,0 +1,312 @@
+/*****************Global Css *******************/
+
+/*****************Global Css *******************/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: 'arial', sans-serif;
+  outline: none;
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+
+   
+}
+
+input,
+button {
+  cursor: pointer
+}
+
+.clearfix {
+  clear: both
+}
+
+
+
+
+/** start hand image**/
+.landing{
+ 
+    width: 100%;
+    height:50%;  
+}
+.landing-image{
+    position: absolute;
+    background-image: url('../images/home-image.jpg');
+    width: 100%;
+    height:100%;
+    background-size:cover;
+
+}
+    
+#path-1{
+    fill:#00363d;
+    fill-opacity:0.91;
+}
+
+.curve-layer1 {
+
+    width: 100%;
+    height: 100%;
+overflow: hidden;
+}
+.curve-layer1-img{
+   width:70%; 
+}
+  .landing .landing-image .hand .imagelogo{
+ width: 100%;
+ height:140%;
+ margin: -648px 575px;
+ position: absolute;
+transform: rotatez(0deg);
+  }
+   .landing .landing-image .hand .imagehand{
+  width: 90%;
+  height:70%;
+  margin: -900px 50px;
+  position: absolute;
+  }
+.hand{
+    position: absolute;
+    float: right;
+    width: 26%;
+    height: 30%;
+    padding-top:100px;
+    padding-left:1px ;
+  
+}
+.landing .text{
+ width: 400px;
+ height: ;
+ margin: -750px 52px;
+}
+.landing .text h1 ,h2{
+ color: #fff;
+}
+.landing .text h2{
+ padding-top: 10px;
+ font-size: 20px;
+ color: #fff;
+ font-weight:bold;
+   line-height: 33px;
+}
+.landing .text a{
+ color: #fff;
+ border: 2px solid #fff;
+ border-radius: 30px;
+ width: 200px;
+ height: 20px;
+ padding: 3px 20px 5px 20px;
+ font-size: 20px;
+ font-weight: bold;
+ top: 5px;
+ text-decoration: none;
+ position: relative;
+ margin:12px 80px ;
+ text-align: center;
+}
+/** end hand image**/
+
+
+/** start items**/
+.cotainer{
+ margin-top: 650px;
+ margin-left: 40px;
+ padding-right:30px;
+ 
+}
+#two_row{
+ margin-top: 300px;
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+  
+}
+.cotainer .row .image .ig1{
+ width: 40%;
+ height: 90%;
+ transform: rotatey(180deg);
+ position: absolute;
+ margin: 0px 0 0 0;
+}
+.cotainer .row .items .background1{
+ width: 600px;
+ height: 250px;
+ position: relative;
+}
+.cotainer .row .image .ig2{
+ width: 40%;
+ height: 80%;
+ position: absolute;
+ margin: 10px 0 0 0;
+}
+.cotainer .row .items .background2{
+ width: 600px;
+ height: 250px;
+ position: relative;
+}
+
+.cotainer .row .image .ig3{
+ width: 40%;
+ height: 90%;
+ transform: rotatey(180deg);
+ position: absolute;
+ margin: 0px 0 0 0;
+}
+.cotainer .row .items .background3{
+ width: 600px;
+ height: 250px;
+ position: relative;
+}
+.cotainer .row .image .ig4{
+width: 40%;
+height: 90%;
+position: absolute;
+margin: 0px 0 0 0;
+}
+.cotainer .row .items .background4{
+width: 600px;
+height: 250px;
+position: relative;
+}
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 40px;
+ margin: 40px 0 0 240px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+ 
+.cotainer .row .paragrph{
+ position: absolute;
+}
+.cotainer .row .paragrph a{
+ position: absolute;
+ text-align: center;
+ border: 1.5px solid #fff;
+ border-radius: 25px;
+ font-size: 20px;
+ color: #fff;
+ text-decoration: none;
+ padding: 4px 10px 4px  10px;
+margin: -100px 0 0 455px;
+width: 130px;
+}
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 15px;
+ margin: -42px 0 0 213px;
+ width: 400px;
+ 
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -42px 0 0 210px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ margin: -42px 0 0 250px;
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+/** start social**/
+.end{
+ width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 400px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+   width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 11%;
+ margin-top: 70px;
+ position: absolute;
+ margin-left: 350px;
+}
+.end .imag .image3 img{
+ width: 11%;
+margin-top: 180px;
+position: absolute;
+ margin-left:180px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 25px;
+}
+.end .link li .link1{
+ margin: 110px 0 0 320px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 210px 0 0 160px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 45px;
+}
+.end .link .social .social1{
+  margin: 150px 0 0 930px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 390px 0 0 955px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 520px;
+  margin-left:500px;
+  font-size: 18px;
+ position: absolute;
+}
+/** start social**/ 

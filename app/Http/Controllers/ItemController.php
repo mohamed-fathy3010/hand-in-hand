@@ -20,12 +20,24 @@ class ItemController extends Controller
         $items=Item::filter($modelFilters)->paginate(20);
         else
             $items=Item::latest()->paginate(20);
-        return view('items',[
-            'items'=>$items,
-            'first_item_style'=>"margin-left: 70px",
-            'container_style'=>"margin-top: 350px",
-            'new_row'=>false
-        ]);
+       $data = array_chunk($items->items(),4);
+       return view('items',[
+           'items'=>$items,
+           'data'=>$data
+       ]);
+//       foreach ($data as $collection){
+//           foreach ($collection as $item)
+//           {
+//               dd($item);
+//           }
+//       }
+        //dd(array_chunk($items,4));
+//        return view('items',[
+//            'items'=>$items,
+//            'first_item_style'=>"margin-left: 70px",
+//            'container_style'=>"margin-top: 350px",
+//            'new_row'=>false
+//        ]);
     }
     public function show(Item $item)
     {

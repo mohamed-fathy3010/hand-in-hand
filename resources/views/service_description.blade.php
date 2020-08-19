@@ -134,29 +134,29 @@
         <form class="edit-item" method="post" action="{{url('/services/'.$service->id)}}">
             @csrf
             @method('patch')
-            <div class="home">
-                <label for="w3review">Description</label>
-                <textarea id="w3review" name="description" rows="3" cols="55">
-                    {{$service->description}}
-              </textarea>
 
+            <div class="home" style="margin-top: 35px; margin-left: 25px">
                 <label for="w3review">TiTLe</label>
-                <textarea id="w3review" name="title" rows="2" cols="55">
+                <textarea id="w3review" name="title" rows="1.500" cols="55"style="border-radius: 5px;">
                     {{$service->title}}
-              </textarea>
+                          </textarea>
 
                 <label for="w3review">Target</label>
-                <textarea id="w3review" name="target" rows="2" cols="55">
+                <textarea id="w3review" name="target" rows="1.500" cols="55"style="border-radius: 5px;">
                     {{$service->target}}
-                 </textarea>
+                             </textarea>
                 <label for="w3review">Price</label>
-                <input type="number" name="price" style="width: 430px;" value="{{$service->price}}">
-                <div class="goal">
-                    <label for="w3review">goal</label>
-                    <input type="number" name="goal" style="width: 430px;" value="{{$service->goal}}">
+                <input type="number" name="price"  style="width: 425px;background-color: #fff; border: 1px solid #737373;" value="{{$service->price}}">
+                <div class="goal" style="margin-top: 35px;">
+                    <label for="w3review" >goal</label>
+                    <input type="number" name="goal"style="width: 425px;background-color: #fff; border: 1px solid #737373;" value="{{$service->goal}}">
                 </div>
                 <br>
-                <input class="submit" type="submit" value="save">
+                <label style="margin-top: 30px;" for="w3review">Description</label>
+                <textarea id="w3review" name="description" rows="3" cols="55">
+                    {{$service->description}}
+                          </textarea>
+                <input class="submit" type="submit" value="save" style="margin-left: 150px;">
             </div>
         </form>
     </div>
@@ -207,11 +207,15 @@
     <div class="share">
         <i class="fa fa-share-alt" aria-hidden="true" name="share"></i>
     </div>
-    <button><i class="fa fa-star-o" aria-hidden="true"></i><br>Interest</button>
+    <button onclick="event.preventDefault();
+     document.getElementById('request-form').submit();"><i class="fa fa-star-o" aria-hidden="true" ></i><br>{{$service->is_interested?'interested':'interest'}}</button>
     <div class="circle">
         <i class="fa fa-info-circle" aria-hidden="true"></i>
     </div>
 </div>
+<form id="request-form" action="{{url('services/'.$service->id.'/interest')}}" method="POST" style="display: none;">
+    @csrf
+</form>
 @endif
 <!--end item-->
 
@@ -227,7 +231,7 @@
 <!-- end buttom delete-->
 <!-- start buttom delete-->
 @if(auth()->id() !== $service->user_id)
-<button id="myBtnreport">Report</button>
+<button id="myBtnreport">{{$is_reported?'reported':'report'}}</button>
 @endif
 <div id="myModalete" class="modal">
     <!-- Modal content -->

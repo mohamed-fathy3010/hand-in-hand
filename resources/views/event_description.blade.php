@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bootstrab/bootstrap.min.css">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/eventdescription.css">
+    <link rel="stylesheet" href="{{asset('/css/eventdescription.css')}}">
     <link rel="stylesheet" href="../css/eventdesresponsive.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/navbar-responsive.css">
@@ -168,10 +168,12 @@
                         <input id="date" type="datetime-local" name="date" style="width: 423px;height: 30px;border: 1px solid #666;background-color: #fff;direction:ltr;
      unicode-bidi: bidi-override;" value="{{strftime('%Y-%m-%dT%H:%M:%S', strtotime($event->date))
 }}">
-                        <label for="description">Description</label>
+                        <br>
+                        <label for="description" style="margin-top: 30px;">Description</label>
                         <textarea id="description" name="description" rows="3" cols="55">
                             {{$event->description}}
                </textarea>
+                        <br>
                         <input class="submit" type="submit" value="save">
                     </div>
                 </form>
@@ -220,7 +222,7 @@
 @if(auth()->id() !== $event->user_id)
 <form method="post" action="{{url('events/'.$event->id.'/interest')}}">
     @csrf
-    <input id="myBtninterest" class="login-button" type="submit" value="Interest">
+    <input id="myBtninterest" class="login-button" type="submit" value="{{$event->is_interested?'interested':'interest'}}">
 </form>
 @endif
 <!-- start buttom delete-->
@@ -234,7 +236,7 @@
 <!-- end buttom delete-->
 <!-- start buttom delete-->
 @if(auth()->id() !== $event->user_id)
-<button id="myBtnreport">Report</button>
+<button id="myBtnreport">{{$is_reported?'reported':'report'}}</button>
 @endif
 <div id="myModalete" class="modal"  >
     <!-- Modal content -->

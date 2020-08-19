@@ -1,0 +1,396 @@
+/*****************Global Css *******************/
+
+/*****************Global Css *******************/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'arial', sans-serif;
+  outline: none;
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+input,
+button {
+  cursor: pointer
+}
+
+.clearfix {
+  clear: both
+}
+
+/** start items**/
+#event{
+ margin-top: 20px;
+ margin-left: 25px;
+ padding-right:30px;
+
+}
+
+.cotainer .row .items{
+ border:  2.4px solid #ccc;
+ border-radius: 6px;
+  position: absolute;
+
+}
+.cotainer .row .items .background1{
+ width: 1300px;
+ height: 315px;
+ position: relative;
+
+}
+
+.cotainer .row .image h3{
+ position: absolute;
+ color: #Ff0000;
+  font-family: good times;
+  font-weight: bold;
+ font-size: 60px;
+ margin: 70px 0 0 650px;
+}
+    @font-face {
+        font-family: "paraaminobenzoic";
+        src: url("paraaminobenzoic.otf");
+    }
+    h3.custom_font {
+        font-family: "paraaminobenzoic";
+    }
+
+.cotainer .row .paragrph{
+ position: absolute;
+}
+
+.cotainer .row .paragrph p{
+ position: absolute;
+ color: #fff;
+ font-size: 20px;
+ margin: -42px 0 0 713px;
+ width: 600px;
+
+}
+.cotainer .row .paragrph .paragrph1{
+ margin: -42px 0 0 210px;
+}
+.cotainer .row .paragrph .paragrph3{
+ margin: -42px 0 0 215px;
+}
+.cotainer .row .paragrph .paragrph2{
+ float: right;
+ padding-left: 100px;
+ margin: -42px 0 0 700px;
+position: absolute;
+
+}
+#path-2{
+ position: absolute;
+  fill:#00363d;
+  fill-opacity:0.91;
+}
+/** end items**/
+
+
+/**start filter**/
+.filter{
+  margin-top: 400px;
+  position: relative;
+}
+.filter button{
+  background-color: #ff0000;
+  margin-left: 100px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  color: #ffff;
+  font-size: 17px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+}
+.filter button i{
+padding: 5px;
+}
+/**end filter**/
+  /********** (edit button)**********************************/
+#myBtn{
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+text-align: center;
+margin-left: 700px;
+    margin-bottom: 30px;
+padding: 10px;
+border: none;
+border-radius: 4px;
+letter-spacing: 1.5px;
+}
+/**********************(start daliag)***********************/
+/* The Modal (background) */
+.modal {
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.content{
+height: 100%;
+width: 50%;
+background-color:#00363d;
+margin: auto;
+border: 1px solid #888;
+display: flex;
+flex-direction: column;}
+/* The Close Button */
+.close {
+float: right;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.edit-item{
+margin-left:100px;
+}
+/* photo profile**********************************/
+.photo{
+margin-left:20px;
+}
+
+#blah{
+max-width:300px;
+max-height: 100px;
+border-radius: 40px;
+position: relative;
+}
+
+.update-photo{
+margin-top: 2px;
+}
+
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+
+}
+.inputfile + label {
+font-size: 1.25em;
+font-weight: 20px;
+color: white;
+background:#b3b3b3;
+display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: red;
+}
+.home{
+margin-top: -40px;
+}
+label{
+color: #ff0000;
+font-weight: bold;
+font-size: 20px;
+display: block;
+}
+textarea,
+input{
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+ width:100px;
+ font-size: 20px;
+ margin-left:150px;
+ text-align: center;
+  margin-top:40px;
+  background-color: #ff0000;
+  border: none;
+  color: #ffff;
+  border-radius: 4px;
+}
+/********************** end dialog*************************************/
+
+
+
+
+/**start events**/
+
+.events{
+
+ width:95%;
+ height: 51%;
+ position: absolute;
+ margin-top: 100px;
+ margin-left: 20px;
+
+}
+.events .image-event{
+ width: 88%;
+
+}
+.image-shadow{
+   width:95%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ margin-left: -1050px;
+ overflow: hidden;
+}
+/**
+.shadow .images{
+ background-image: linear-gradient(to right, rgba(242, 242, 242), rgba(0, 45, 61 ,0.55));
+  width:95%;
+ height: 51%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 100px;
+ margin-left: 20px;
+ overflow: hidden;
+
+}**/
+
+.shadow .images i{
+ font-size: 80px;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 150px;
+ margin-left: 1185px;
+color: #ff0000;
+}
+.shadow .images img{
+ width: 10px;
+ height: 120%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: -8px;
+ margin-left: 1144px;
+
+}
+
+.interset .inter h5{
+ color: #fff;
+ font-size: 30px;
+ margin: 230px 0 0 1220px;
+ position: absolute;
+}
+.interset .inter h6{
+ color: #fff;
+ font-size: 25px;
+ margin: 265px 0 0 1190px;
+ position: absolute;
+}
+
+.interset .images .image-3 i{
+ color: #fff;
+}
+
+#clear{
+ height: 380px;
+}
+
+
+/**end event**/
+
+
+/** start social**/
+.end{
+ width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 50px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+   width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 11%;
+ margin-top: 70px;
+ position: absolute;
+ margin-left: 350px;
+}
+.end .imag .image3 img{
+ width: 11%;
+margin-top: 180px;
+position: absolute;
+ margin-left:180px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 25px;
+}
+.end .link li .link1{
+ margin: 110px 0 0 320px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 210px 0 0 160px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 45px;
+}
+.end .link .social .social1{
+  margin: 150px 0 0 930px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 390px 0 0 955px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 520px;
+  margin-left:500px;
+  font-size: 18px;
+ position: absolute;
+}
+/** start social**/

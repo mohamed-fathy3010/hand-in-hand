@@ -109,16 +109,18 @@
 <!-- End Navbar -->
 
 <div class="cotainer">
-    <div class="row" >
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="handmade">
             <div class="items">
                 <div class="image">
-                    <img src="{{asset('images/undraw_good_team_m7uu.png')}}" style="width: 40%;height: 100%;transform: rotateY(180deg);position: absolute;margin: 0px 10px 10px 0px;" >
+                    <img src="../images/undraw_good_team_m7uu.png"
+                         style="width: 40%;height: 100%;transform: rotateY(180deg);position: absolute;margin: 0px 10px 10px 0px;"  >
                     <h3>HANDMADE</h3>
                 </div>
-                <img src="{{asset('images/Path2.png')}}" style="width: 1300px; height: 315px;position: relative">
+                <img src=" ../images/path2.png"class="background1">
                 <div class="paragrph">
-                    <p class="paragrph1">Share your handmade works in our website to get more sales from your university students.</p>
+                    <p class="paragrph1">Share your handmade works in our website to get more sales from your university
+                        students.</p>
                 </div>
 
             </div>
@@ -149,22 +151,23 @@
                     </div>
                 </center>
                 <div class="home">
-                    <label for="w3review">Description</label>
-                    <textarea id="w3review" name="description" rows="3" cols="55">
-                                </textarea>
-
                     <label for="w3review">TiTLe</label>
-                    <textarea id="w3review" name="title" rows="2" cols="55">
+                    <textarea id="w3review" name="title" rows="1.500" cols="55" style="border-radius: 5px;">
                                  </textarea>
 
                     <label for="w3review">Phone</label>
-                    <textarea id="w3review" name="phone" rows="1.500" cols="55">
+                    <textarea id="w3review" name="phone" rows="1.500" cols="55" style="border-radius: 5px;">
                                  </textarea>
                     <label for="w3review">facebook</label>
-                    <textarea id="w3review" name="facebook" rows="2" cols="55">
+                    <textarea id="w3review" name="facebook" rows="1.500" cols="55" style="border-radius: 5px;">
                                      </textarea>
                     <label for="w3review">Price</label>
-                    <input type="number" name="price" style="width: 430px;">
+                    <input type="number" name="price" style="width: 430px;background: white;border:1px solid rgb(118,118,118) ">
+                    <br>
+                    <br>
+                    <label for="w3review" style="margin-top: 10px">Description</label>
+                    <textarea id="w3review" name="description" rows="3" cols="55">
+                                </textarea>
                     <br>
                     <input class="submit" type="submit" value="save">
                 </div>
@@ -177,61 +180,98 @@
 
 
 <!--start products-->
-@foreach($products as $item)
-    @if($loop->first||$new_row)
-        <div class="cotainer" @if($new_row)
-        @php($new_row=false)
-        style="{{$container_style}}"
-            @endif>
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+{{--@foreach($products as $item)--}}
+{{--    @if($loop->first||$new_row)--}}
+{{--        <div class="cotainer" @if($new_row)--}}
+{{--        @php($new_row=false)--}}
+{{--        style="{{$container_style}}"--}}
+{{--            @endif>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">--}}
+{{--                    <div class="items1">--}}
+{{--                        <div class="imgbox">--}}
+{{--                            <a href="{{url('/products/'.$item->id)}}">--}}
+{{--                                <img src="{{url('/storage/products/'.$item->image)}}" title="engineering tools">--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="dateils">--}}
+{{--                            <h4 style="margin-top: 10px;--}}
+{{--                               margin-left: 13px;--}}
+{{--                               font-size: 20px;--}}
+{{--                                height: 50px;--}}
+{{--                                overflow: hidden;"--}}
+{{--                                title="{{$item->title}}">{{$item->title}}</h4>--}}
+{{--                            <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                @else--}}
+{{--                    <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" style="{{$first_product_style}}">--}}
+{{--                        <div class="items1">--}}
+{{--                            <div class="imgbox">--}}
+{{--                                <a href="{{url('/products/'.$item->id)}}">--}}
+{{--                                    <img src="{{url('storage/products/'.$item->image)}}">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                            <div class="dateils">--}}
+{{--                                <h4 style="margin-top: 10px;--}}
+{{--                               margin-left: 13px;--}}
+{{--                               font-size: 20px;--}}
+{{--                               height: 50px;--}}
+{{--                               overflow: hidden;"--}}
+{{--                                    title="{{$item->title}}">{{$item->title}}</h4>--}}
+{{--                                <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--                @if($loop->iteration%4==0||$loop->last)--}}
+{{--                    @php($new_row=true)--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    @endif--}}
+{{--@endforeach--}}
+
+@foreach($data as $container)
+    <div class="cotainer" id="{{$loop->iteration !== 1?'marg-top':''}}">
+        <div class="row">
+            @foreach($container as $product)
+                <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12"
+                @switch($loop->iteration)
+                    @case(1)
+                        {{''}}
+                        @break
+                        @case(2)
+                        {{'id=marg-left-2'}}
+                        @break
+                        @case(3)
+                        {{'id=marg-left-3'}}
+                        @break
+                        @case(4)
+                        {{'id=marg-left-4'}}
+                        @break
+                    @endswitch
+                >
                     <div class="items1">
+                        <a href="{{url('/products/'.$product->id)}}">
                         <div class="imgbox">
-                            <a href="{{url('/products/'.$item->id)}}">
-                                <img src="{{url('/storage/products/'.$item->image)}}" title="engineering tools">
-                            </a>
+                            <img src="{{url('storage/products/'.$product->image)}}">
                         </div>
+                        </a>
                         <div class="dateils">
-                            <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                                height: 50px;
-                                overflow: hidden;"
-                                title="{{$item->title}}">{{$item->title}}</h4>
-                            <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
+                            <h4 id="name">{{$product->title}}</h4>
+                            <div class="price">{{$product->price>0?$product->price.' LE':"Free"}}</div>
                         </div>
                     </div>
                 </div>
-                @else
-                    <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12" style="{{$first_product_style}}">
-                        <div class="items1">
-                            <div class="imgbox">
-                                <a href="{{url('/products/'.$item->id)}}">
-                                    <img src="{{url('storage/products/'.$item->image)}}">
-                                </a>
-                            </div>
-                            <div class="dateils">
-                                <h4 style="margin-top: 10px;
-                               margin-left: 13px;
-                               font-size: 20px;
-                               height: 50px;
-                               overflow: hidden;"
-                                    title="{{$item->title}}">{{$item->title}}</h4>
-                                <div class="price">{{$item->price>0?$item->price.' LE':"Free"}}</div>
-                            </div>
-                        </div>
-                    </div>
-                @endif
-                @if($loop->iteration%4==0||$loop->last)
-                    @php($new_row=true)
-            </div>
+            @endforeach
         </div>
-    @endif
+    </div>
+
+    <br>
 @endforeach
-
-
-
-{{$products->links('vendor.pagination.default')}}
+@php($margin=450)
+{{$products->links('vendor.pagination.default',['margin'=>$margin])}}
 <!--end products-->
 <!--start endwebsite-->
 <div class="end" style="margin-top: 50px">

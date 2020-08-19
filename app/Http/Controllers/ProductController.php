@@ -19,12 +19,17 @@ class ProductController extends Controller
             $products=Product::filter($modelFilters)->paginate(20);
         else
             $products=Product::latest()->paginate(20);
+        $data = array_chunk($products->items(),4);
         return view('handmade',[
             'products'=>$products,
-            'first_product_style'=>"margin-left: 70px",
-            'container_style'=>"margin-top: 350px",
-            'new_row'=>false
+            'data'=>$data
         ]);
+//        return view('handmade',[
+//            'products'=>$products,
+//            'first_product_style'=>"margin-left: 70px",
+//            'container_style'=>"margin-top: 350px",
+//            'new_row'=>false
+//        ]);
     }
     public function show(product $product)
     {

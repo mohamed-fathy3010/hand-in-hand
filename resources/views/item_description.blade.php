@@ -136,26 +136,27 @@
                         </div>
                     </center>
                     <div class="home">
-                        <label for="w3review">Description</label>
-                        <textarea id="w3review" name="description" rows="3" cols="55">
-                            {{$item->description}}
-                  </textarea>
-
                         <label for="w3review">Title</label>
-                        <textarea id="w3review" name="title" rows="2" cols="55">
+                        <textarea id="w3review" name="title" rows="1.500" cols="55">
                             {{$item->title}}
                   </textarea>
 
                         <label for="w3review">Phone</label>
-                        <textarea id="w3review" name="phone" rows="2" cols="55">
+                        <textarea id="w3review" name="phone" rows="1.500" cols="55">
                             {{$item->phone}}
                      </textarea>
                         <label for="w3review">facebook</label>
-                        <textarea id="w3review" name="facebook" rows="2" cols="55">
+                        <textarea id="w3review" name="facebook"  rows="1.500" cols="55">
                             {{$item->facebook}}
                        </textarea>
                         <label for="w3review">Price</label>
-                        <input type="number" name="price" style="width: 430px;" value="{{$item->price}}">
+                        <input type="number" name="price" style="width: 430px;background: white;border:1px solid rgb(118,118,118) " value="{{$item->price}}">
+                        <br>
+                        <br>
+                        <label for="w3review" style="margin-top: 10px">Description</label>
+                        <textarea id="w3review" name="description"  rows="3" cols="55">
+                            {{$item->description}}
+                  </textarea>
                         <br>
                         <input class="submit" type="submit" value="save">
                     </div>

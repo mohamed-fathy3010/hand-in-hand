@@ -19,9 +19,6 @@ cursor: pointer
 clear: both
 }
 
-.burger{
-    margin-top: -25px;
-}
 
 /* Start Navbar*/
 
@@ -240,7 +237,7 @@ float: right;
   margin-left: 910px;
   margin-top: 0px;
   position: absolute;
-
+  
 }
 .navbar form input{
  border: none;
@@ -261,7 +258,7 @@ margin-left: 185px;
   border: 1px solid #ccc;
    box-shadow: 3px 2px 10px  #E4E4E4,
                -3px -2px 10px  #E4E4E4
-            ;
+            ; 
 
 }
 
@@ -275,7 +272,7 @@ margin-left: 185px;
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 
 .menu>.toggl >ul>li>span {
@@ -286,14 +283,14 @@ margin-left: 185px;
   background: #00363d;
   /**haver backgrounf**/ margin-left: 50px;
   margin-bottom: 3px;
-
+  
 }
 .menu .toggl ul{
 	list-style: none;
 	margin-left: -30px;
 	cursor: pointer;
-
-
+ 
+	
 }
 .toggl ul li{
 	text-decoration: none;
@@ -333,17 +330,16 @@ hr{
  background-color: #Ff0000;
  margin-left: 25px;
  width: 200px;
-
+ 
 }
 .toggl ul li:hover >ul{
 	display: block;
-	background-color: #00363d;
+	background-color: #fff;
     width: 230px;
     height: 200px;
      margin-left: -160px;
    border-radius: 20px;
-
-
+   border: 3px solid #eee;
 }
 #link-nav{
     display:none;
@@ -402,7 +398,7 @@ input {
 
 .login-form-email{
   position: relative;
-
+ 
 }
 .input1,.input5 {
   width: 80%;
@@ -514,7 +510,7 @@ color: rgba(255, 255, 255, 0.795);
   width: 80%;
   height: 3vh;
   margin: auto;
-
+  
   padding-right: 8px;
 }
 

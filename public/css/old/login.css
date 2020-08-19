@@ -1,0 +1,539 @@
+html {
+  height: 100%;
+
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  top: 0px;
+  margin: 0px;
+}
+
+input,
+button {
+cursor: pointer
+}
+
+.clearfix {
+clear: both
+}
+
+.burger{
+    margin-top: -25px;
+}
+
+/* Start Navbar*/
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+color: #fff;
+}
+
+.navbar {
+margin-top: 0px;
+height: 60px;
+background-color: #fff;
+z-index: 1;
+width: 100%;
+border-bottom: 3px solid #eee;
+}
+
+.navbar-header {
+padding: 0 0;
+}
+
+.navbar-brand {
+
+padding: 0 40px 0px 20px;
+height: 20px;
+margin-top: -12px;
+margin-left: -80px;
+line-height: 60px;
+display: block;
+position: absolute;
+}
+
+.navbar-brand img {
+width: 55px;
+height: 55px;
+}
+
+.toggle {
+float: right;
+width: 57px;
+height: 40px;
+padding-top: 2px;
+position: relative;
+border-radius: 5px;
+margin-top: 15px;
+margin-right:-300px;
+background-color: #ddd;
+cursor: pointer;
+}
+
+.toggle:hover {
+background: #fff;
+}
+
+.toggle:active {
+background: #fff;
+}
+
+.toggle:focus {
+outline: none;
+}
+
+.toggle > span {
+display: block;
+border-radius: 2px;
+height: 5px;
+width: 34px;
+background: #fff;
+margin: auto;
+margin-bottom: 3px;
+}
+
+.navlist {
+height: 0;
+float: right;
+overflow: hidden;
+background: #fff;
+padding: 0 ;
+transition: height .5s;
+padding-left: 0px;
+border-radius: 0 0 10px;
+position: relative;
+z-index: 1;
+text-align: center;
+top: auto;
+}
+
+.nav > li:first-child {
+padding-top: 5px;
+}
+
+.nav > li {
+list-style: none;
+display: block;
+ text-align: center;
+}
+
+.nav > li > a {
+text-align: center;
+margin-left: 15px;
+line-height: 30px;
+background: #fff;
+text-align: right;
+color: #00363d;
+font-weight: bold;
+display: block;
+height: 35px;
+text-decoration: none;
+transition: all 1s ease;
+
+}
+.nav > li > a:hover{
+font-size: 20px;
+font-weight: bolder;
+}
+
+@media(min-width:768px) {
+.navbar {
+  height: 60px;
+  background-color: #fff;
+}
+.navbar-header {
+  float: left;
+}
+.toggle {
+  display: none;
+}
+.navlist {
+  display: block;
+  height: 0 !important;
+  padding-bottom:25px !important;
+  background: transparent !important;
+  width: auto;
+  margin: 0px 100px;
+  padding: 0;
+  overflow: visible;
+  top:0
+}
+.nav {
+  margin: 0;
+  padding: 0;
+}
+.nav > li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+}
+.nav > li > a {
+  border-radius: 5px !important;
+  background: transparent;
+  padding: 0 15px;
+  border: none;
+}
+
+
+.show {
+height: 220px;
+float: right;
+}
+#links{
+ margin-left:450px;
+ margin-top: 10px;
+ position: absolute;
+}
+
+/* Start Navbar*/
+
+
+/****************** Start Media Querry ******************/
+
+
+/*  Mobile & Tablet */
+
+@media (max-width:767px) {
+.navlist {
+  position: absolute;
+  bottom: 44px;
+  right: 0;
+  top: auto;
+}
+.navbar {
+  position: relative;
+}
+}
+
+
+/* Small Screen */
+
+@media (min-width:768px) {
+.container {
+  width: 780px;
+}
+}
+
+
+/* Mudium Screen */
+
+@media (min-width:992px) {
+.container {
+  width: 970px;
+}
+}
+
+
+/* Large Screen */
+
+@media (min-width:1200px) {
+.container {
+  width: 1170px;
+}
+}
+.navbar form{
+  margin-left: 910px;
+  margin-top: 0px;
+  position: absolute;
+
+}
+.navbar form input{
+ border: none;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+  position: absolute;
+}
+.navbar form i{
+  width: 40px;
+  height: 32px;
+color: #Ff0000;
+text-align: center;
+padding-top: 5px;
+margin-top: 1px;
+margin-left: 185px;
+  border-radius:5px;
+  border: 1px solid #ccc;
+   box-shadow: 3px 2px 10px  #E4E4E4,
+               -3px -2px 10px  #E4E4E4
+            ;
+
+}
+
+.menu .toggl {
+  float: right;
+  padding-top: 2px;
+  position: relative;
+  margin-top: -3px;
+  margin-left: 1120px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 20px;
+
+}
+
+.menu>.toggl >ul>li>span {
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 25px;
+  background: #00363d;
+  /**haver backgrounf**/ margin-left: 50px;
+  margin-bottom: 3px;
+
+}
+.menu .toggl ul{
+	list-style: none;
+	margin-left: -30px;
+	cursor: pointer;
+
+
+}
+.toggl ul li{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #1a1a1a;
+	float: left;
+margin-left: -30px;
+
+}
+.toggl ul ul{
+	display: none;
+	margin-top: 10px;
+	position: absolute;
+padding-right: 80px;
+ width: 60px;
+}
+.toggl ul ul li{
+	font-size: 15px;
+	color: #0052cc;
+margin-top: -5px;
+margin-left: -60px;
+transition: all 2s ease;
+
+}
+.toggl ul ul li a{
+	display: block;
+	text-decoration: none;
+	color: #ff0000;
+	margin-top: 20px;
+ margin-left: 50px;
+
+}
+hr{
+ background-color: #Ff0000;
+ margin-left: 25px;
+ width: 200px;
+
+}
+.toggl ul li:hover >ul{
+	display: block;
+	background-color: #00363d;
+    width: 230px;
+    height: 200px;
+     margin-left: -160px;
+   border-radius: 20px;
+
+
+}
+#link-nav{
+    display:none;
+}
+#cont {
+margin-top:10px;
+padding-bottom:35px ;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/*login*/
+
+.login-form {
+  width: 45%;
+  height: 68vh;
+  background-color:#ffffff20;
+  position: relative;
+  margin-top: -30px;
+  margin-left: 20px;
+  padding-top:21px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.validate-form{
+margin-top: 30px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+.login-form form input{
+
+  display: block;
+  margin-top: 24px;
+
+
+}
+
+/*---------------------------------*/
+
+.login-form-email{
+  position: relative;
+
+}
+.input1,.input5 {
+  width: 80%;
+  height: 8vh;
+  margin: auto;
+  font-size: 16px;
+  padding:5px 0;
+  border: 1px solid#fff;
+  color: #fff;
+  border-radius: 5px;
+  background: transparent;
+
+
+}
+
+/*==================================================================
+  [ Focus input ]*/
+.focus-input {
+font-family: arial;
+position: absolute;
+display: block;
+width: 100%;
+top: 17px;
+left: 0;
+padding:5px 70px;
+font-size: 16px;
+color: rgba(255, 255, 255, 0.795);
+pointer-events: none;
+
+transition: all 0.4s;
+
+}
+/*email*/
+.input1:focus ~ .focus-input,
+.input1:valid ~ .focus-input,
+.input5:focus ~ .focus-input,
+.input5:valid ~ .focus-input {
+top: -25px;
+left: 0;
+}
+/* password*/
+
+/*------------------------------*/
+
+.login-form-password{   /* div home pass*/
+  position: relative;
+    margin-top: 12px;
+  }
+
+
+/*----------------------- show pass----------------------------------------------------*/
+.icone{
+float: right;
+}
+.field-icon {
+float: right;
+padding-right:100px;
+margin-top: -40px;
+color: rgb(255, 13, 13);
+display: flex;
+position: relative;
+width: 10px;
+z-index: 2;
+}
+/*--------------------------------------------------*/
+.forget-pass{
+
+  width: 80%;
+  display: block;
+  height: 5vh;
+  margin: auto;
+  margin-top: -14px;
+  padding-right: 19px;
+  margin-bottom: -10px;
+
+}
+
+span>a {
+  color: rgba(255, 255, 255, 0.795);
+  font-family: Arial;
+  font-size: 19px;
+}
+span>a:hover{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.795);
+  font-family: Arial;
+  font-size: 19px;
+}
+
+
+.login-form-button {
+  width: 83%;
+  height:9vh;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background:#Ff0000;
+  border:#Ff0000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #000;
+  padding:0px 9px 0px  3px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.new-account {
+  width: 80%;
+  height: 3vh;
+  margin: auto;
+
+  padding-right: 8px;
+}
+
+.new-account p {
+  color: rgba(255, 255, 255, 0.795);
+  font-family: Arial;
+}
+
+.Register a {
+  color:#fff;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+}
+.Register a:hover{
+color:#fff;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+}

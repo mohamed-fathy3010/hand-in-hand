@@ -147,19 +147,22 @@ padding: 50px;/* Location of the box */
 .content{
 height: 100%;
 width: 50%;
-background-color:#00363d; 
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
 display: flex;
+border-radius: 20px;
 flex-direction: column;}
 
 .contentreport{
 height: 50%;
 width: 50%;
-background-color:#00363d; 
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
 display: flex;
+border-radius: 20px;
+margin-top: 80px;
 ;}
 /* The Close Button */
 /* The Close Button */
@@ -212,17 +215,16 @@ position: absolute;
 .inputfile + label {
 font-size: 1.25em;
 font-weight: 20px;
-color: white;
-background:#b3b3b3;
+color: #ff0000;
 display: inline-block;
 }
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-background-color: red;
+background-color:;
 }
 .home{
-  margin-top: -40px;
+  margin-top: 0px;
 }
 .homereport{
  margin-left: 50px;
@@ -231,7 +233,7 @@ background-color: red;
 label{
   color: #ff0000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   display: block;
 }
 textarea,
@@ -264,9 +266,9 @@ position: absolute;
    width:100px;
    position: absolute;
    font-size: 20px;
-   margin-left:40px;
+   margin-left:160px;
    text-align: center;
-    margin-top:40px;
+    margin-top:20px;
 }
 /********************** end dialog*************************************/
 

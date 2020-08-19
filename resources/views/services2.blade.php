@@ -44,7 +44,7 @@
             <div class="navbar-header">
                 <a href="{{url('/')}}" class="navbar-brand"><img src="/images/HandInHand.png"></a>
                 @auth
-                    <i id="bell"class="fa fa-bell" aria-hidden="true"></i>
+                    <i id="bell" class="fa fa-bell" aria-hidden="true"></i>
                 @endauth
                 <div class="language">
                     <!-- select from 2 option-->
@@ -60,29 +60,32 @@
             <ul class="nav navlist" id="links">
                 <li class="active">
                     <a href="{{url('/items')}}" data-value="about" class="effect">Items</a></li>
-                <li><a href="{{url('/services')}}" data-value="port"class="effect">Services</a></li>
-                <li><a href="{{url('/events')}}" data-value="foll"class="effect">Events</a></li>
-                <li><a href="{{url('/products')}}" data-value="cont"class="effect">Handmade</a></li>
+                <li><a href="{{url('/services')}}" data-value="port" class="effect">Services</a></li>
+                <li><a href="{{url('/events')}}" data-value="foll" class="effect">Events</a></li>
+                <li><a href="{{url('/products')}}" data-value="cont" class="effect">Handmade</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <input type="text" placeholder="Search">
                 <i class="fa fa-search"></i>
             </form>
-            <!-- menu-->         <div class="menu">
+            <!-- menu-->
+            <div class="menu">
                 <button class="toggl">
                     <ul>
                         <li><span></span>
                             <span></span>
                             <span></span>
-                            <ul >
-                                <li >
-                                    <a href="{{url('/items')}}" data-value="about" id="link-nav" class="effect">Items</a>
+                            <ul>
+                                <li>
+                                    <a href="{{url('/items')}}" data-value="about" id="link-nav"
+                                       class="effect">Items</a>
                                     <hr id="link-nav">
-                                    <a href="{{url('/services')}}" data-value="port" id="link-nav"class="effect">Services</a>
+                                    <a href="{{url('/services')}}" data-value="port" id="link-nav" class="effect">Services</a>
                                     <hr id="link-nav">
-                                    <a href="{{url('/events')}}" data-value="foll" id="link-nav"class="effect">Events</a>
+                                    <a href="{{url('/events')}}" data-value="foll" id="link-nav"
+                                       class="effect">Events</a>
                                     <hr id="link-nav">
-                                    <a href="{{url('/products')}}" data-value="cont" id="link-nav"class="effect">Handmade</a>
+                                    <a href="{{url('/products')}}" data-value="cont" id="link-nav" class="effect">Handmade</a>
                                     <hr id="link-nav">
                                     @guest
                                         <a href="{{url('/login')}}">login</a>
@@ -93,9 +96,10 @@
 
                                         <a href="{{url('/profile')}}">profile</a>
                                         <hr>
-                                        <a href="{{url('/logout')}}"  onclick="event.preventDefault();
+                                        <a href="{{url('/logout')}}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">log out</a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                              style="display: none;">
                                             @csrf
                                         </form>
                                     @endauth
@@ -114,20 +118,21 @@
 <!-- End Navbar -->
 
 
-
 <div class="cotainer">
-    <div class="row" >
+    <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="service">
             <div class="items">
                 <div class="image">
-                    <img src="../images/undraw_collab_8oes.png" class="ig1"style="width: 40%;height: 110%;transform: rotateY(180deg);position: absolute;margin: -1px 0 0 0px;" >
+                    <img src="../images/undraw_collab_8oes.png" class="ig1"
+                         style="width: 40%;height: 110%;transform: rotateY(180deg);position: absolute;margin: -1px 0 0 0px;">
                     <h3>SERVICE</h3>
                 </div>
-                <img src="../images/path2.png"class="background1">
+                <img src="../images/path2.png" class="background1">
 
                 <div class="paragrph">
 
-                    <p class="paragrph2">Help other students by Offer services you can do or ask other stubents for help.</p>
+                    <p class="paragrph2">Help other students by Offer services you can do or ask other stubents for
+                        help.</p>
                 </div>
 
             </div>
@@ -136,43 +141,43 @@
 </div>
 
 
-
 <!--start fileter-->
 <div class="filter">
     <button><i class="fa fa-filter"></i>Filter</button>
     <!-- Trigger/Open The Modal -->
     <button id="myBtn">Add</button>
     <!-- The Modal -->
-    <div id="myModal" class="modal"  >
+    <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="content">
             <span class="close" style=" font-size: 35px;color: #ff0000;">&times;</span>
             <form class="edit-item" action="{{url('/services')}}" method="post">
                 @csrf
-                <center>
-                <div class="home">
-                    <label for="w3review">Description</label>
-                    <textarea id="w3review" name="description" rows="3" cols="55">
-                          </textarea>
+                <div class="home" style="margin-top: 35px;">
 
                     <label for="w3review">TiTLe</label>
-                    <textarea id="w3review" name="title" rows="2" cols="55">
+                    <textarea id="w3review" name="title" rows="1.500" cols="55" style="border-radius: 5px;">
                           </textarea>
 
                     <label for="w3review">Target</label>
-                    <textarea id="w3review" name="target" rows="2" cols="55">
+                    <textarea id="w3review" name="target" rows="1.500" cols="55" style="border-radius: 5px;">
                              </textarea>
                     <label for="w3review">Price</label>
-                    <input type="number" name="price" style="width: 430px;">
-                    <div  class="goal">
+                    <input type="number" name="price"
+                           style="width: 425px;background-color: #fff; border: 1px solid #737373;">
+                    <div class="goal" style="margin-top: 35px;">
                         <label for="w3review">goal</label>
-                        <input type="number" name="goal" style="width: 430px;">
+                        <input type="number" name="goal"
+                               style="width: 425px;background-color: #fff; border: 1px solid #737373;">
                     </div>
+                    <br>
+                    <label style="margin-top: 30px;" for="w3review">Description</label>
+                    <textarea id="w3review" name="description" rows="3" cols="55">
+                          </textarea>
                     <br>
                     <input class="submit" type="submit" value="save">
                     <!---- end dialog from-->
                 </div>
-                </center>
             </form>
         </div>
 
@@ -180,28 +185,35 @@
 </div>
 
 
-
-
-
 <!--start service-->
 @foreach($services as $service)
-<center>
-    <div class="interest" style="margin-top:{{$margin.'px'}}">
-        <h3>{{$service->title}}</h3>
-        <h4>
-            @if ($service->created_at->diffInDays() > 30)
-           {{$service->created_at->toFormattedDateString()}}
-            @else
-           {{$service->created_at->diffForHumans()}}
-            @endif
-        </h4>
-        <a style="text-decoration: none" href="{{url('/services/'.$service->id)}}"><p>{{$service->description}}</p></a>
-        <span></span>
-        <br>
-        <br>
-        <a id="star-link" style="text-decoration: none;color: #ff0000" href="" onclick="interest({{$service->id}})"><i id="star" class="fa fa-star-o"></i><br>Interest</a>
-    </div>
-</center>
+    <center>
+        <div class="interest" style="margin-top:{{$margin.'px'}}">
+            <h3>{{$service->title}}</h3>
+            <h4>
+                @if ($service->created_at->diffInDays() > 30)
+                    {{$service->created_at->toFormattedDateString()}}
+                @else
+                    {{$service->created_at->diffForHumans()}}
+                @endif
+            </h4>
+            <a style="text-decoration: none" href="{{url('/services/'.$service->id)}}"><p>{{$service->description}}</p>
+            </a>
+            <span></span>
+            <br>
+            <br>
+            <i id="star{{$service->id}}" style="color:{{$service->is_interested?'#ff0000':'#000'}}; cursor: pointer"
+               class="{{$service->is_interested?'fa fa-star':'fa fa-star-o'}}"
+               @auth
+               onclick="interest({{$service->id}})"
+            @endauth></i><br>
+            <a id="star-link{{$service->id}}" style="text-decoration: none; color: black" href=""
+              @auth
+              onclick="interest({{$service->id}})"
+            @endauth>{{$service->is_interested?'interested':'interest'}}</a>
+
+        </div>
+    </center>
     @php($margin = $margin + $margin_counter)
 @endforeach
 <!--end item-->
@@ -232,24 +244,22 @@
 <!--end endwebsite-->
 
 <script src="{{asset('js/jquery-1.12.4.min.js')}}"></script>
-<script src="../js/itemdes.js"> </script>
-<script >
-    var star= document.getElementById('star');
-    var starLink=document.getElementById('star-link')
-    function interest(serviceId) {
-        event.preventDefault();
-        // console.log(starLink.innerText)
-        axios.post('/services/' + serviceId + '/interest');
-        if (starLink.innerText == 'Interest')
-        {
-            console.log('interest')
-            starLink.innerText= 'Interested'
-            star.className='fa fa-star'
-        }
-        else{
-            starLink.innerText= 'Interest'
-            star.className='fa fa-star-o'
+<script src="../js/itemdes.js"></script>
+<script>
 
+    function interest(serviceId) {
+        var star = document.getElementById('star' + serviceId);
+        var starLink = document.getElementById('star-link' + serviceId);
+        event.preventDefault();
+        axios.post('/services/' + serviceId + '/interest');
+        if (starLink.innerText === 'interest') {
+            starLink.innerText = 'interested';
+            star.style.color = '#ff0000';
+            star.className = 'fa fa-star';
+        } else {
+            starLink.innerText = 'interest';
+            star.className = 'fa fa-star-o';
+            star.style.color = '#000';
         }
     }
 </script>

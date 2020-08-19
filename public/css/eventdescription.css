@@ -6,7 +6,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-
+ 
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   padding: 0px;
   margin: 0px;
-
+   
 }
 
 input,
@@ -38,8 +38,8 @@ button {
  margin-top: 0px;
 
  margin: 20px 0 0px 20px;
-
-
+ 
+ 
 }
 #event{
 width: 100%;
@@ -59,7 +59,7 @@ border-radius: 10px;
     height:500px;
     position: absolute;
     margin-top: 0px;
-
+    
 }
 .item .ponts i{
 font-size: 25px;
@@ -112,7 +112,7 @@ width: 300px;
 .item .words h5{
   color: #fff;
   font-size: 23px;
-
+  
 }
 #star{
 margin:-50px 0 0 1220px ;
@@ -122,96 +122,85 @@ font-size: 45px;
 }
 /********** (edit button)**********************************/
 #myBtn{
-  font-size: 20px;
-  width: 100px;
-  height: 45px;
-  color:#fff;
-  background: #ff0000;
-  float: right;
-  margin-right: -900px;
-  margin-top: 40px;
-  border: none;
+font-size: 20px;
+width: 100px;
+height: 45px;
+color:#fff;
+background: #ff0000;
+text-align: center;
+margin-left: 1080px;
+margin-top: 40px;
+padding: 10px;
+border: none;
+border-radius: 4px;
+letter-spacing: 1.5px;
 }
-
-
 /**********************(start daliag)***********************/
 /* The Modal (background) */
 .modal {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top:10px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+display: flex;
+flex-direction: column;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .content{
-    height: 98.5%;
-    width: 50%;
-    background-color:#fff;
-    margin: auto;
-    border: 3px solid #eee;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;}
+height: 98.5%;
+width: 50%;
+background-color:#fff; 
+margin: auto;
+border: 3px solid #eee;
+border-radius: 20px;
+display: flex;
+flex-direction: column;}
 /* The Close Button */
+.close {
+float: right;
+font-weight: bold;
+}
 .contentreport{
-  height: 50%;
-  width: 50%;
-  background-color:#00363d;
-  margin: auto;
-  border: 1px solid #888;
-  display: flex;
-  flex-direction: column;}
-/* The Close Button */
-/* The Close Button */
-.close , .closereport{
-
-  float: right;
-  font-weight: bold;
-}
-#myModalete{
-  padding: 50px;
-}
-
+height: 50%;
+width: 50%;
+background-color:#fff; 
+margin: auto;
+border: 3px solid #eee;
+border-radius: 20px;
+display: flex;
+margin-top: 120px;
+;}
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.closereport:hover,
-.closereport:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+color: #000;
+text-decoration: none;
+cursor: pointer;
 }
 .edit-item{
-  margin: auto;
-  margin-left:100px;
+margin-left:100px;
 }
 /* photo profile**********************************/
 .photo{
-  margin-left:20px;
+margin-left:20px;
 }
 
 #blah{
-    max-width:300px;
-    max-height: 100px;
-    border-radius: 20px;
-    position: relative;
-    width: 120px;
+max-width:300px;
+max-height: 100px;
+border-radius: 20px;
+position: relative;
+width: 120px;
 }
 
 .update-photo{
-  margin-top: 2px;
+margin-top: 2px;
 }
 
 .inputfile {
@@ -225,35 +214,44 @@ position: absolute;
 .inputfile + label {
 font-size: 1.25em;
 font-weight: 20px;
-color: white;
-background:#b3b3b3;
+color: #ff0000;
 display: inline-block;
 }
 
-
-.home{
-    margin-top: 0px;
-    margin-left: 20px;
+.inputfile:focus + label,
+.inputfile + label:hover {
+background-color: ;
 }
-.homereport{
- margin-left: 50px;
- margin-top: 40px;
+.home{
+margin-top: 0px;
+margin-left: 20px;
 }
 label{
-    color: #ff0000;
-    font-weight: bold;
-    font-size: 17px;
-    display: block;
+color: #ff0000;
+font-weight: bold;
+font-size: 17px;
+display: block;
 }
 textarea,
 input{
-  display: block;
-  padding: 2px 10px ;
+display: block;
+padding: 2px 10px ;
+}
+.submit{
+ width:100px; 
+ font-size: 20px;
+ margin-left:150px;
+ text-align: center;
+  margin-top:30px;
+  background-color: #ff0000;
+  border: none;
+  color: #ffff;
+  border-radius: 4px;
 }
 .spam-inappropriate{
 margin-left: 100px;
 position: absolute;
-
+margin-top: 30px;
 }
 
 #spam {
@@ -269,16 +267,7 @@ position: absolute;
 .inappropriate{
  margin-top: 20px;
 }
-.submit{
-  background-color: #ff0000;
-    color: aliceblue;
-   width:100px;
-   position: absolute;
-   font-size: 20px;
-   margin-left:40px;
-   text-align: center;
-    margin-top:40px;
-}
+
 /********************** end dialog*************************************/
 .About{
   position: absolute;
@@ -291,7 +280,7 @@ position: absolute;
   font-size: 22px;
   height: 20px;
   color: #5B5959;
-
+  
 }
 
 #line-2{
@@ -303,7 +292,7 @@ margin: 650px 0 0 450px;
 }
 .description{
     position: absolute;
-    margin: 650px 0 0 20px ;
+    margin: 650px 0 0 20px ; 
 }
 .description h1{
     font-size: 35px;
@@ -312,7 +301,7 @@ margin: 650px 0 0 450px;
     font-size: 22px;
     height: 20px;
     color: #5B5959;
-
+    
 }
 #line-2{
 width: 400px;
@@ -326,13 +315,13 @@ margin: 830px 0 0 500px;
     margin: 850px 0 0 20px ;
 }
 .location h1{
-    font-size: 35px;
+    font-size: 35px; 
 }
 .location p{
     font-size: 22px;
     height: 20px;
     color: #5B5959;
-
+    
 }
 #map , #calender ,#clock{
  padding-right: 5px;
@@ -349,7 +338,7 @@ margin: 830px 0 0 500px;
   margin: 1000px 0 0 20px ;
 }
 .Time h1{
-font-size: 35px;
+font-size: 35px; 
 }
 .Time p{
 font-size: 22px;
@@ -368,7 +357,7 @@ color: #5B5959;
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-left: -410px;
+  margin-left: -500px;
   position: absolute;
   margin-top: 1160px;
   border: none;
@@ -382,7 +371,7 @@ color: #5B5959;
   background: #ff0000;
   float: right;
   border-radius: 5px;
-  margin-left: 800px;
+  margin-left: 900px;
   position: absolute;
   margin-top: 1170px;
   border: none;
@@ -394,7 +383,7 @@ color: #5B5959;
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-left: -700px;
+  margin-left: -250px;
   position: absolute;
   margin-top: 1160px;
   border: none;

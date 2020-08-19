@@ -1,0 +1,336 @@
+/*****************Global Css *******************/
+
+/*****************Global Css *******************/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+ 
+}
+
+body {
+  font-family: 'arial', sans-serif;
+  outline: none;
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+   
+}
+
+input,
+button {
+  cursor: pointer
+}
+
+.clearfix {
+  clear: both
+}
+
+
+
+/**start item**/
+.item{
+   position: absolute;
+   width: 97%;
+   height: 500px;
+   margin-top: 0px;
+  
+   margin: 20px 0 0px 20px;
+   
+   
+}
+.item .imge{
+       width:100%;
+      height:500px;
+      position: absolute;
+      margin-top: 0px;
+      
+}
+#profile{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ margin: 0px 0 0 0;
+ border-radius: 10px;
+}
+#linecolor{
+ width: 100%;
+ height: 300px;
+ position: relative;
+ margin: 200px 0 0 0;
+ border-radius: 10px;"
+}
+.item .ponts{
+ position: absolute;
+}
+#point{
+ width:10px;
+ margin: 30px 0px 0 0;
+ padding-left: 60px;
+}
+.item .ponts .point {
+  float: right;
+  padding-top: 0px;
+  position: absolute;
+  margin-top:0px;
+  margin-left: 1225px;
+  cursor: pointer;
+  background: none;
+  border: none;
+ 
+}
+
+.item .ponts .point >ul>li{
+margin: -25px 1000px 0 0 ;
+
+}
+
+.item .ponts .point >ul>li>span {
+  display: block;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background: #fff;
+  /**haver backgrounf**/ margin-left:1170px;
+  margin-bottom: 3px;
+  
+  
+}
+.item .words{
+ position: absolute;
+ margin: 450px 0 0 20px;
+ width: 300px;
+}
+.item .words h5{
+    color: #fff;
+    font-size: 23px;
+    
+}
+
+.Details{
+  position: absolute;
+  margin: 530px 0 0 20px ;
+}
+.Details h1{
+  font-size: 35px;
+  float: left;
+}
+.Details h3{
+  font-size: 25px;
+  font-weight:bold ;
+  height: 20px;
+  color: #ff0000;
+  float: right;
+  margin-left: 1100px;
+  
+}
+
+/* .detailsedit{
+  margin: 520px 0 0 0px ;
+}
+.detailsedit .Details{
+    float: left;
+}
+.detailsedit .Edit{
+  float: right;
+}*/
+ 
+.description{
+    position: absolute;
+    margin: 580px 0 0 20px ; 
+}
+.description p{
+    font-size: 22px;
+    height: 20px;
+    color: #5B5959;
+    
+}
+#line{
+ width: 400px;
+ height: 3px;
+ background:#5B5959;
+ position: absolute;
+ margin: 730px 0 0 500px;
+}
+.location{
+        position: absolute;
+    margin: 770px 0 0 20px ;
+}
+.location h1{
+    font-size: 35px; 
+}
+.location p{
+    font-size: 22px;
+    height: 20px;
+    color: #5B5959;
+    
+
+
+}
+.location .links{
+margin-left: 50px;
+}
+.location .links button{
+ border: none;
+ width: 200px;
+ height: 40px;
+ color: #fff;
+ background-color: #b3b3b3;
+ font-size: 20px;
+ font-weight: bold;
+ border-radius: 40px;
+ margin: 20px 0 0 80px;
+}
+ .location .links button:hover{
+  background-color: #Ff0000;
+ }
+/**start items**/
+.cotainer{
+width: 100%;
+margin-left: -20px;
+}
+/**start items**/
+ .cotainer .row .items1{
+	position:absolute;
+	left: 200px;
+	top: 1070px;
+	transform: translate(-50%,-50%);
+	width: 210px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	border-radius: 5px;
+	overflow: hidden;
+}
+#marg-top{
+ margin-top: 350px;
+}
+.items1 .imgbox{
+	height: 100%;
+	box-sizing: border-box;
+}
+#marg-left-1{
+ margin-left: 80px;
+}
+#marg-left-2{
+ margin-left: 60px;
+}
+#marg-left-3{
+ margin-left: 60px;
+}
+#marg-left-4{
+ margin-left: 60px;
+}
+ .items1 .imgbox img{
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+ height: 200px;
+}
+.dateils{
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	background: #fff;
+	padding:  0 10px 10px 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 rgba(0,0,0,0); 
+ height: 40px;
+ margin-top: -60px;
+}
+#name{
+ margin-top: 8px;
+ margin-left: 11px;
+font-size: 17px;
+height: 67px;
+overflow: hidden;
+}
+
+.dateils .price{
+	position: absolute;
+	top: 73px;
+ margin-left: 11px;
+	font-weight: bold;
+	color: #ff0000;
+	font-size: 17px;
+}
+/**end items**/
+
+
+
+/** start social**/
+.end{
+ width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 1350px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+
+}
+.end .imag{
+  background-image: url('../images/backtoschool-07Converted.png');
+   width:100%;
+ height: 100%;
+ background-size:cover;
+ position: absolute;
+ margin-top: 0px;
+ overflow: hidden;
+}
+
+.end .imag .image1 img{
+ width: 100%;
+  position: absolute;
+  overflow: hidden;
+ margin-top: 100px;
+}
+
+.end .imag .image2 img{
+ width: 11%;
+ margin-top: 70px;
+ position: absolute;
+ margin-left: 350px;
+}
+.end .imag .image3 img{
+ width: 11%;
+margin-top: 180px;
+position: absolute;
+ margin-left:180px;
+}
+.end .link li{
+ list-style: none;
+}
+.end .link li a{
+ color: #000;
+ font-size: 25px;
+}
+.end .link li .link1{
+ margin: 110px 0 0 320px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link li .link2{
+ margin: 210px 0 0 160px;
+ position: absolute;
+ text-decoration: none;
+}
+.end .link .social i{
+ font-size: 45px;
+}
+.end .link .social .social1{
+  margin: 150px 0 0 930px;
+ position: absolute;
+}
+.end .link .social .social2{
+  margin: 390px 0 0 955px;
+ position: absolute;
+}
+.end .link .social  p{
+ color: #fff;
+ margin-top: 520px;
+  margin-left:500px;
+  font-size: 18px;
+ position: absolute;
+}
+/** end social**/

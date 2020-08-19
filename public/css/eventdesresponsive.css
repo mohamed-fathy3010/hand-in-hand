@@ -119,21 +119,24 @@
 /* Modal Content */
 .content{
 height: 100%;
-width: 100%;
-background-color:#00363d; 
+  width: 90%;
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
 display: flex;
 flex-direction: column;}
 /* The Close Button */
 .contentreport{
   height: 50%;
   width: 60%;
-  background-color:#00363d; 
+  background-color:#fff; 
   margin: auto;
-  border: 1px solid #888;
+  border: 3px solid #eee;
   display: flex;
+  border-radius: 20px;
+  margin-top: 80px;
   flex-direction: column;}
+  
 .close {
   
   float: right;
@@ -148,7 +151,7 @@ flex-direction: column;}
 }
 /* photo profile**********************************/
 .photo{
-  margin-left:20px;
+  margin-left:-60px;
   }
   
   #blah{
@@ -173,14 +176,13 @@ flex-direction: column;}
   .inputfile + label {
   font-size: 1.25em;
   font-weight: 20px;
-  color: white;
-  background:#b3b3b3;
+  color:#ff0000;
   display: inline-block;
   }
   
   .inputfile:focus + label,
   .inputfile + label:hover {
-  background-color: red;
+  background-color: ;
   }
 
 .edit-item{
@@ -188,11 +190,13 @@ flex-direction: column;}
   margin-left:50px;
 }
 .home{
-  margin-top:-40px;}
+  margin-top:0px;
+  margin-left: -50px;
+  }
 label{
   color: #ff0000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   display: block;
 }
 textarea,
@@ -208,9 +212,11 @@ input{
     color: aliceblue;
    width:100px; 
    font-size: 20px;
-   margin-left:150px;
+   margin-left: 150px;
    text-align: center;
-    margin-top:35px;
+    margin-top: -135px;
+    
+    
 }
        
        .About{
@@ -294,7 +300,7 @@ input{
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-left: -50px;
+  margin-left: -5px;
   position: absolute;
   margin-top: 1160px;
   border: none;
@@ -307,7 +313,7 @@ input{
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-left: 300px;
+  margin-left: 350px;
   position: absolute;
   margin-top: 1170px;
   border: none;
@@ -320,15 +326,16 @@ input{
   color:#fff;
   background: #ff0000;
   float: right;
-  margin-left: -200px;
+  margin-left: -150px;
   position: absolute;
   margin-top: 1160px;
   border: none;
 }
 /**end item**/
 .spam-inappropriate{
-margin-left: -50px;
+margin-left: 10px;
 position: absolute;
+margin-top: 60px;
 
 }
 #spam {
@@ -342,7 +349,7 @@ position: absolute;
 }
 .spam,.inappropriate{
  padding-left: 25px;
-
+ padding-top: 5px;
 }
 .inappropriate{
  margin-top: 20px;
@@ -554,10 +561,10 @@ position: absolute;
       /* Modal Content */
       .content{
       height: 100%;
-      width: 80%;
-      background-color:#00363d; 
-      margin: auto;
-      border: 1px solid #888;
+     width: 80%;
+background-color:#fff; 
+margin: auto;
+border: 3px solid #eee;
       display: flex;
       flex-direction: column;}
       /* The Close Button */
@@ -605,21 +612,21 @@ position: absolute;
   .inputfile + label {
   font-size: 1.25em;
   font-weight: 20px;
-  color: white;
-  background:#b3b3b3;
+  color:#ff0000;
   display: inline-block;
   }
   
   .inputfile:focus + label,
   .inputfile + label:hover {
-  background-color: red;
+  background-color: ;
   }
       .home{
-        margin-top:-40px;}
+        margin-top:0px;
+        }
       label{
         color: #ff0000;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 17px;
         display: block;
       }
       textarea,
@@ -754,9 +761,9 @@ position: absolute;
 }
 /**end item**/
 .spam-inappropriate{
-margin-left: -50px;
+margin-left: 10px;
 position: absolute;
-
+margin-top: 40px;
 }
 #spam {
  margin-top: 5px;
@@ -769,7 +776,7 @@ position: absolute;
 }
 .spam,.inappropriate{
  padding-left: 25px;
-
+padding-top: 5px;
 }
 .inappropriate{
  margin-top: 20px;
@@ -957,7 +964,7 @@ position: absolute;
         color:#fff;
         background: #ff0000;
         float: right;
-        margin-right: -700px;
+        margin-right: -600px;
         margin-top: 40px;
       }
       /**********************(start daliag)***********************/
@@ -980,10 +987,10 @@ position: absolute;
       /* Modal Content */
       .content{
       height: 100%;
-      width: 50%;
-      background-color:#00363d; 
-      margin: auto;
-      border: 1px solid #888;
+     width: 80%;
+background-color:#fff; 
+margin: auto;
+border: 3px solid #eee;
       display: flex;
       flex-direction: column;}
       /* The Close Button */
@@ -1001,7 +1008,7 @@ position: absolute;
       }
       /* photo profile**********************************/
 .photo{
-  margin-left:20px;
+  margin-left:150px;
   }
   
   #blah{
@@ -1026,26 +1033,27 @@ position: absolute;
   .inputfile + label {
   font-size: 1.25em;
   font-weight: 20px;
-  color: white;
-  background:#b3b3b3;
+  color:#ff0000;
   display: inline-block;
   }
   
   .inputfile:focus + label,
   .inputfile + label:hover {
-  background-color: red;
+  background-color: ;
   }
       
       .edit-item{
         margin: auto;
-        margin-left:50px;
+        margin-left:70px;
       }
       .home{
-        margin-top:-40px;}
+        margin-top:-10px;
+        margin-left: 100px;
+        }
       label{
         color: #ff0000;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 17px;
         display: block;
       }
       textarea,
@@ -1382,7 +1390,7 @@ position: absolute;
     color:#fff;
     background: #ff0000;
     float: right;
-    margin-right: -900px;
+    margin-right: -800px;
     margin-top: 40px;
   }
   /**********************(start daliag)***********************/
@@ -1406,9 +1414,9 @@ position: absolute;
   .content{
   height: 100%;
   width: 50%;
-  background-color:#00363d; 
+  background-color:#fff; 
   margin: auto;
-  border: 1px solid #888;
+  border: 1px solid #eee;
   display: flex;
   flex-direction: column;}
   /* The Close Button */
@@ -1451,14 +1459,13 @@ position: absolute;
   .inputfile + label {
   font-size: 1.25em;
   font-weight: 20px;
-  color: white;
-  background:#b3b3b3;
+  color: #ff0000;
   display: inline-block;
   }
   
   .inputfile:focus + label,
   .inputfile + label:hover {
-  background-color: red;
+  background-color: ;
   }
   
   .edit-item{
@@ -1466,11 +1473,13 @@ position: absolute;
     margin-left:50px;
   }
   .home{
-    margin-top:-40px;}
+    margin-top:0px;
+    margin-left: 20px;
+    }
   label{
     color: #ff0000;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     display: block;
   }
   textarea,

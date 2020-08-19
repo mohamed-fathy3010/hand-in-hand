@@ -10,7 +10,7 @@ $factory->define(Product::class, function (Faker $faker) {
     return [
         //
         'user_id'=>$faker->numberBetween(1,50),
-        'title'=>$faker->title(),
+        'title'=>$faker->name(),
         'description'=>$faker->sentence(),
         'price'=>$faker->randomFloat(2,0,99999),
         'phone'=>$faker->randomNumber(),

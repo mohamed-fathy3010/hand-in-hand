@@ -16,7 +16,7 @@ form{
    margin-left: 210px;
    margin-top: 7px;
    position: absolute;
-
+   
 }
 form input{
   border: none;
@@ -40,7 +40,7 @@ form i{
    border: 1px solid #ccc;
     box-shadow: 3px 2px 10px  #E4E4E4,
                 -3px -2px 10px  #E4E4E4
-             ;
+             ; 
 
 }
 .menu .toggl {
@@ -53,7 +53,7 @@ form i{
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 
 .menu>.toggl >ul>li>span {
@@ -64,14 +64,14 @@ form i{
   background: #00363d;
   /**haver backgrounf**/ margin-left: 50px;
   margin-bottom: 3px;
-
+  
 }
 .menu .toggl ul{
 	list-style: none;
 	margin-left: -30px;
 	cursor: pointer;
-
-
+ 
+	
 }
 .toggl ul li{
 	text-decoration: none;
@@ -112,11 +112,12 @@ padding-left: 80px;
 }
 .toggl ul li:hover >ul{
 	display: block;
-	background-color: #00363d;
+	background-color: #fff;
     height: 430px;
     width: 300px;
     margin-left: -230px;
    border-radius: 20px;
+   border: 3px solid #eee;
 
 }
 hr{
@@ -127,7 +128,7 @@ hr{
 }
 #link-nav{
     display: block;
-
+    
 }
 #cont {
  margin-top:10px;
@@ -166,39 +167,40 @@ hr{
    margin-left: -280px;
 
  }
-
+ 
  #blah{
    max-width:300px;
    max-height: 100px;
    border-radius:20px;
    position: relative;
  }
-
+ 
  .update-photo{
    margin-top: 2px;
-
+   
  }
-
+ 
  .inputfile {
  width: 0.1px;
  height: 0.1px;
  opacity: 0;
  overflow: hidden;
  position: absolute;
-
+ 
  }
  .inputfile + label {
  font-size: 1.25em;
+ font-weight: 20px;
  color: white;
  background:#b3b3b3;
  display: inline-block;
  }
-
+ 
  .inputfile:focus + label,
  .inputfile + label:hover {
  background-color: red;
  }
-
+ 
  /*login*/
 .validate-form{
  top: 0;
@@ -220,7 +222,7 @@ input{
 /*---------------------------------*/
 
 .login-form-username,
-.login-form-educationGrade,
+.login-form-educationGrade,  
 .login-form-Email,
 .login-form-password{
    position: relative;
@@ -228,7 +230,7 @@ input{
    height: 13vh;
    margin: auto;
    margin-left: -180px;
-
+   
 }
 .login-form-educationGrade{
 margin-top: -1px;
@@ -247,7 +249,7 @@ margin-top: -21px;
 .SecondName{
    width: 45%;
    float: right;
-
+   
 }
 .login-form-gender{
 display: none;
@@ -263,7 +265,7 @@ display: none;
    color: #fff;
    border-radius: 5px;
    background: transparent;
-
+ 
 }
 
 
@@ -281,13 +283,13 @@ display: none;
 }
 .input3 ,.input4 ,.input5 {
    width: 400px;
-
+   
 }
 #gender{
    margin: 40px 0 0 -230px;
    width: 500px;
 }
-.login-form-educationGrade,
+.login-form-educationGrade,  
 .login-form-Email,
 .login-form-password{
    margin-top: 5px;
@@ -295,7 +297,7 @@ display: none;
 
 select{
    width: 45%;
-
+   
    }
    select option{
 background: transparent;
@@ -304,7 +306,7 @@ color: #000;
 
   /* [ Focus input ]*/
 .focus-input {
-
+ 
 font-family: arial;
  position: absolute;
  display: block;
@@ -335,7 +337,7 @@ font-family: arial;
 /********************************- show pass-----------------------**/
  .icone{
    float: right;
-
+   
  }
  .field-icon {
    float: right;
@@ -347,7 +349,7 @@ font-family: arial;
    z-index: 2;
  }
 
-
+ 
 /*-------------------------------------------*/
 
 
@@ -357,7 +359,7 @@ font-family: arial;
    height: 10vh;
    margin: auto;
    margin: -20px 0 0 -180px;
-
+   
 }
 select{
 width: 80%;
@@ -557,7 +559,7 @@ margin-left: 160px;
     margin-left: 440px;
     margin-top: 7px;
     position: absolute;
-
+    
 }
 #search input{
    border: none;
@@ -580,7 +582,7 @@ margin-left: 160px;
     border-radius:5px;
     border: 1px solid #ccc;
      box-shadow: 3px 2px 10px  #E4E4E4,
-                 -3px -2px 10px  #E4E4E4;
+                 -3px -2px 10px  #E4E4E4; 
 
 }
 #links{
@@ -596,7 +598,7 @@ margin-left: 160px;
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 
 .menu>.toggl >ul>li>span {
@@ -607,14 +609,14 @@ margin-left: 160px;
   background: #00363d;
   /**haver backgrounf**/ margin-left: 50px;
   margin-bottom: 3px;
-
+  
 }
 .menu .toggl ul{
 	list-style: none;
 	margin-left: -30px;
 	cursor: pointer;
-
-
+ 
+	
 }
 .toggl ul li{
 	text-decoration: none;
@@ -655,12 +657,12 @@ padding-left: 80px;
 }
 .toggl ul li:hover >ul{
 	display: block;
-	background-color: #00363d;
+	background-color: #fff;
     height: 430px;
     width: 300px;
     margin-left: -230px;
    border-radius: 20px;
-
+   border: 3px solid #eee;
 }
 hr{
  background-color: #Ff0000;
@@ -670,7 +672,7 @@ hr{
 }
 #link-nav{
     display:block;
-
+    
 }
 }
 @media(min-width:992px) and (max-width:1200px){
@@ -694,7 +696,7 @@ hr{
     margin-left: 680px;
     margin-top: 7px;
     position: absolute;
-
+    
 }
 #search input{
    border: none;
@@ -717,7 +719,7 @@ hr{
     border-radius:5px;
     border: 1px solid #ccc;
      box-shadow: 3px 2px 10px  #E4E4E4,
-                 -3px -2px 10px  #E4E4E4;
+                 -3px -2px 10px  #E4E4E4; 
 
 }
 #links{
@@ -733,7 +735,7 @@ hr{
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 }
 @media(min-width:1201px) and (max-width:1300px){
@@ -757,7 +759,7 @@ hr{
     margin-left: 840px;
     margin-top: 7px;
     position: absolute;
-
+    
 }
 #search input{
    border: none;
@@ -780,7 +782,7 @@ hr{
     border-radius:5px;
     border: 1px solid #ccc;
      box-shadow: 3px 2px 10px  #E4E4E4,
-                 -3px -2px 10px  #E4E4E4;
+                 -3px -2px 10px  #E4E4E4; 
 
 }
 #links{
@@ -796,6 +798,6 @@ hr{
   background: none;
   border: none;
   width: 20px;
-
+ 
 }
 }

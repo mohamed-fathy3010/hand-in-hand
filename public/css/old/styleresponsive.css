@@ -1,0 +1,1204 @@
+/** mobile & tablet**/
+@media(max-width:767px){
+ 
+ 
+ 
+ 
+ 
+    /** start hand image**/
+   .landing{
+    
+       width: 100%;
+       height:50%;
+       max-width:767px;
+   }
+   .landing-image{
+       position: absolute;
+       background-image: url('../images/home-image.jpg');
+       width: 100%;
+       height:50%;
+       background-size:cover;
+      
+   
+   }
+       
+   #path-1{
+       fill:#00363d;
+       fill-opacity:0.91;
+   }
+   
+   .curve-layer1 {
+   
+       width: 120%;
+       height: 100%;
+   overflow: hidden;
+   }
+   .curve-layer1-img{
+      width:70%; 
+   }
+     .landing .landing-image .hand .imagelogo{
+    width: 90%;
+    height:130%;
+    margin: -348px 255px;
+    position: absolute;
+   transform: rotatez(0deg);
+     }
+      .landing .landing-image .hand .imagehand{
+     width: 70%;
+     height:50%;
+     margin: -470px 20px;
+     position: absolute;
+     }
+   .hand{
+       position: absolute;
+       float: right;
+       width: 26%;
+       height: 30%;
+       padding-top:100px;
+       padding-left:1px ;
+     
+   }
+   .landing .text{
+    width: 400px;
+    height: ;
+    margin: -420px 20px;
+   }
+   .landing .text h1{
+    font-size: 20px;
+   }
+   .landing .text h1 ,h2{
+    color: #fff;
+   }
+   .landing .text h2{
+    width: 250px;
+    padding-top: 0px;
+    font-size: 15px;
+    color: #fff;
+      line-height: 19px;
+   }
+   .landing .text a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    padding: 3px 20px 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 5px;
+    text-decoration: none;
+    position: relative;
+    margin:-20px 50px ;
+    text-align: center;
+   }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       
+    .cotainer{
+    margin-top: -100px;
+    margin-left: 40px;
+    padding-right:30px;
+   
+    
+   }
+   
+   
+   .cotainer .row .items{
+    border:  2.4px solid #ccc;
+    border-radius: 6px;
+     position: absolute;
+    
+     
+   }
+   .cotainer .row .image .ig1{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background1{
+    width: 400px;
+    height: 270px;
+    position: relative;
+   }
+   .cotainer .row .image .ig2{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    margin: 280px 0 0 0;
+    
+   }
+   .cotainer .row .items .background2{
+    width: 400px;
+    height: 270px;
+    position: relative;
+    margin-top: 270px;
+    
+   }
+   #two_row{
+    margin-top: 543px;
+   }
+   .cotainer .row .image .ig3{
+    width: 40%;
+    height: 50%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 50px 0 0 0;
+   }
+   .cotainer .row .items .background3{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    margin-top: 0px;
+   }
+   .cotainer .row .image .ig4{
+   width: 40%;
+   height: 50%;
+   position: absolute;
+   margin: 250px 0 0 0;
+   }
+   .cotainer .row .items .background4{
+   width: 400px;
+   height: 250px;
+   position: relative;
+   margin-top: 270px;
+   }
+   .cotainer .row .image h3{
+    position: absolute;
+    color: #Ff0000;
+     font-family: good times;
+     font-weight: bold;
+    font-size: 40px;
+    margin: 40px 0 0 110px;
+   }
+       @font-face {
+           font-family: "paraaminobenzoic";
+           src: url("paraaminobenzoic.otf");
+       }
+       h3.custom_font {
+           font-family: "paraaminobenzoic";
+       }
+       .cotainer .row .image .h_service{
+        margin-top: 310px;
+       }
+     .cotainer .row .image .h_handmade{
+        margin-top: 290px;
+        margin-left: 125px;
+       }
+   .cotainer .row .paragrph{
+    position: absolute;
+   }
+   .cotainer .row .paragrph a{
+    position: absolute;
+    text-align: center;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px 4px  10px;
+   margin: -100px 0 0 255px;
+   width: 130px;
+   }
+   .cotainer .row .paragrph p{
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    margin: -42px 0 0 143px;
+    width: 260px;
+    
+   }
+   .cotainer .row .paragrph .paragrph1{
+    margin: -42px 0 0 143px;
+   }
+   .cotainer .row .paragrph .paragrph3{
+    margin: -42px 0 0 143px;
+   }
+   .cotainer .row .paragrph .paragrph2{
+    margin: -42px 0 0 143px;
+   }
+   #path-2{
+    position: absolute;
+     fill:#00363d;
+     fill-opacity:0.91;
+   }
+   /** end items**/   
+       
+       
+       
+       
+       
+       
+       
+       
+     /** start social**/
+   .end{
+    width:485px;
+    max-width:767px;
+    height: 60%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 600px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+     width:485px;
+    max-width:767px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 18%;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 110px;
+   }
+   .end .imag .image3 img{
+    width: 18%;
+   margin-top: 130px;
+   position: absolute;
+    margin-left:60px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 16px;
+   }
+   .end .link li .link1{
+    margin: 65px 0 0 75px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 140px 0 0 30px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 25px;
+   }
+   .end .link .social .social1{
+     margin: 102px 0 0 330px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 190px 0 0 340px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 300px;
+     margin-left:60px;
+     font-size: 15px;
+    position: absolute;
+   }
+     
+   }
+   
+   
+   
+   @media(min-width:768px) and (max-width:991px){
+    
+    
+     /** start hand image**/
+   .landing{
+    
+       width: 100%;
+       height:80%;
+       max-width:991px;
+   }
+   .landing-image{
+       position: absolute;
+       background-image: url('../images/home-image.jpg');
+       width: 100%;
+       height:80%;
+       background-size:cover;
+      
+   
+   }
+       
+   #path-1{
+       fill:#00363d;
+       fill-opacity:0.91;
+   }
+   
+   .curve-layer1 {
+   
+       width: 120%;
+       height: 100%;
+   overflow: hidden;
+   }
+   .curve-layer1-img{
+      width:70%; 
+   }
+     .landing .landing-image .hand .imagelogo{
+    width: 90%;
+    height:130%;
+    margin: -288px 405px;
+    position: absolute;
+   transform: rotatez(0deg);
+     }
+      .landing .landing-image .hand .imagehand{
+     width: 90%;
+     height:80%;
+     margin: -460px 20px;
+     position: absolute;
+     }
+   .hand{
+       position: absolute;
+       float: right;
+       width: 26%;
+       height: 30%;
+       padding-top:0px;
+       padding-left:1px ;
+       margin-top: -90px;
+     
+   }
+   .landing .text{
+    width: 400px;
+    height: ;
+    margin: -340px 20px;
+   }
+   .landing .text h1{
+    font-size: 26px;
+   }
+   .landing .text h1 ,h2{
+    color: #fff;
+   }
+   .landing .text h2{
+    width: 350px;
+    padding-top: 0px;
+    font-size: 20px;
+    color: #fff;
+      line-height: 23px;
+   }
+   .landing .text a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    padding: 3px 20px 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 5px;
+    text-decoration: none;
+    position: relative;
+    margin:-25px 80px ;
+    text-align: center;
+   }
+    
+    
+   /** start items**/
+   .cotainer{
+    margin-top: 550px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+   }
+   #two_row{
+    margin-top: 300px;
+   }
+   
+   .cotainer .row .items{
+    border:  2.4px solid #ccc;
+    border-radius: 6px;
+     position: absolute;
+     
+   }
+   .cotainer .row .image .ig1{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background1{
+    width: 350px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig2{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    margin: 10px 0 0 0;
+   }
+   .cotainer .row .items .background2{
+    width: 350px;
+    height: 250px;
+    position: relative;
+   }
+   
+   .cotainer .row .image .ig3{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background3{
+    width: 350px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig4{
+   width: 40%;
+   height: 90%;
+   position: absolute;
+   margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background4{
+   width: 350px;
+   height: 250px;
+   position: relative;
+   }
+   .cotainer .row .image h3{
+    position: absolute;
+    color: #Ff0000;
+     font-family: good times;
+     font-weight: bold;
+    font-size: 30px;
+    margin: 40px 0 0 132px;
+   }
+       @font-face {
+           font-family: "paraaminobenzoic";
+           src: url("paraaminobenzoic.otf");
+       }
+       h3.custom_font {
+           font-family: "paraaminobenzoic";
+       }
+    
+   .cotainer .row .paragrph{
+    position: absolute;
+   }
+   .cotainer .row .paragrph a{
+    position: absolute;
+    text-align: center;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px 4px  10px;
+   margin: -100px 0 0 230px;
+   width: 110px;
+   }
+   .cotainer .row .paragrph p{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    margin: -42px 0 0 123px;
+    width: 220px;
+    
+   }
+   .cotainer .row .paragrph .paragrph1{
+    margin: -42px 0 0 123px;
+   }
+   .cotainer .row .paragrph .paragrph3{
+    margin: -42px 0 0 123px;
+   }
+   .cotainer .row .paragrph .paragrph2{
+    margin: -42px 0 0 123px;
+   }
+   #path-2{
+    position: absolute;
+     fill:#00363d;
+     fill-opacity:0.91;
+   }
+   /** end items**/
+    
+    
+    .end{
+    width:755px;
+    max-width:991px;
+    height: 65%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 350px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+     width:755px;
+    max-width:991px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 15%;
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 130px;
+   }
+   .end .imag .image3 img{
+    width: 15%;
+   margin-top: 130px;
+   position: absolute;
+    margin-left:60px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 19px;
+   }
+   .end .link li .link1{
+    margin: 55px 0 0 100px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 153px 0 0 35px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 30px;
+   }
+   .end .link .social .social1{
+     margin: 116px 0 0 518px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 255px 0 0 530px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 320px;
+     margin-left:150px;
+     font-size: 18px;
+    position: absolute;
+   }
+   
+   }
+   
+   @media(min-width:992px) and (max-width:1200px){
+    
+    
+      /** start hand image**/
+   .landing{
+    
+       width: 100%;
+       height:80%;
+       max-width:991px;
+   }
+   .landing-image{
+       position: absolute;
+       background-image: url('../images/home-image.jpg');
+       width: 100%;
+       height:80%;
+       background-size:cover;
+      
+   
+   }
+       
+   #path-1{
+       fill:#00363d;
+       fill-opacity:0.91;
+   }
+   
+   .curve-layer1 {
+   
+       width: 120%;
+       height: 100%;
+   overflow: hidden;
+   }
+   .curve-layer1-img{
+      width:70%; 
+   }
+     .landing .landing-image .hand .imagelogo{
+    width: 90%;
+    height:130%;
+    margin: -298px 505px;
+    position: absolute;
+   transform: rotatez(0deg);
+     }
+      .landing .landing-image .hand .imagehand{
+     width: 90%;
+     height:80%;
+     margin: -560px 20px;
+     position: absolute;
+     }
+   .hand{
+       position: absolute;
+       float: right;
+       width: 26%;
+       height: 30%;
+       padding-top:0px;
+       padding-left:1px ;
+       margin-top: -150px;
+     
+   }
+   .landing .text{
+    width: 400px;
+    height: ;
+    margin: -430px 20px;
+   }
+   .landing .text h1{
+    font-size: 26px;
+   }
+   .landing .text h1 ,h2{
+    color: #fff;
+   }
+   .landing .text h2{
+    width: 350px;
+    padding-top: 0px;
+    font-size: 20px;
+    color: #fff;
+      line-height: 23px;
+   }
+   .landing .text a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    padding: 3px 20px 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 5px;
+    text-decoration: none;
+    position: relative;
+    margin:-25px 80px ;
+    text-align: center;
+   }
+    
+    
+   /** start items**/
+   .cotainer{
+    margin-top: 550px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+   }
+   #two_row{
+    margin-top: 300px;
+   }
+   
+   .cotainer .row .items{
+    border:  2.4px solid #ccc;
+    border-radius: 6px;
+     position: absolute;
+     
+   }
+   .cotainer .row .image .ig1{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background1{
+    width: 450px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig2{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    margin: 10px 0 0 0;
+   }
+   .cotainer .row .items .background2{
+    width: 450px;
+    height: 250px;
+    position: relative;
+   }
+   
+   .cotainer .row .image .ig3{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background3{
+    width: 450px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig4{
+   width: 40%;
+   height: 90%;
+   position: absolute;
+   margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background4{
+   width: 450px;
+   height: 250px;
+   position: relative;
+   }
+   .cotainer .row .image h3{
+    position: absolute;
+    color: #Ff0000;
+     font-family: good times;
+     font-weight: bold;
+    font-size: 30px;
+    margin: 40px 0 0 182px;
+   }
+       @font-face {
+           font-family: "paraaminobenzoic";
+           src: url("paraaminobenzoic.otf");
+       }
+       h3.custom_font {
+           font-family: "paraaminobenzoic";
+       }
+    
+   .cotainer .row .paragrph{
+    position: absolute;
+   }
+   .cotainer .row .paragrph a{
+    position: absolute;
+    text-align: center;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px 4px  10px;
+   margin: -100px 0 0 310px;
+   width: 110px;
+   }
+   .cotainer .row .paragrph p{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    margin: -42px 0 0 163px;
+    width: 290px;
+    
+   }
+   .cotainer .row .paragrph .paragrph1{
+    margin: -42px 0 0 163px;
+   }
+   .cotainer .row .paragrph .paragrph3{
+    margin: -42px 0 0 163px;
+   }
+   .cotainer .row .paragrph .paragrph2{
+    margin: -42px 0 0 163px;
+   }
+   #path-2{
+    position: absolute;
+     fill:#00363d;
+     fill-opacity:0.91;
+   }
+    
+    
+    
+    
+   .end{
+    width:965px;
+    max-width:1200px;
+    height: 85%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 350px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+     width:965px;
+    max-width:1200px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 13%;
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 230px;
+   }
+   .end .imag .image3 img{
+    width: 13%;
+   margin-top: 130px;
+   position: absolute;
+    margin-left:120px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 23px;
+   }
+   .end .link li .link1{
+    margin: 60px 0 0 195px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 155px 0 0 90px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 40px;
+   }
+   .end .link .social .social1{
+     margin: 126px 0 0 660px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 300px 0 0 680px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 430px;
+     margin-left:250px;
+     font-size: 20px;
+    position: absolute;
+   }
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   @media(min-width:1201px) and (max-width:1300px){
+    
+    
+      /** start hand image**/
+   .landing{
+    
+       width: 100%;
+       height:110%;
+       max-width:991px;
+   }
+   .landing-image{
+       position: absolute;
+       background-image: url('../images/home-image.jpg');
+       width: 100%;
+       height:110%;
+       background-size:cover;
+      
+   
+   }
+       
+   #path-1{
+       fill:#00363d;
+       fill-opacity:0.91;
+   }
+   
+   .curve-layer1 {
+   
+       width: 120%;
+       height: 100%;
+   overflow: hidden;
+   }
+   .curve-layer1-img{
+      width:70%; 
+   }
+     .landing .landing-image .hand .imagelogo{
+    width: 90%;
+    height:130%;
+    margin: -198px 655px;
+    position: absolute;
+   transform: rotatez(0deg);
+     }
+      .landing .landing-image .hand .imagehand{
+     width: 110%;
+     height:80%;
+     margin: -560px 20px;
+     position: absolute;
+     }
+   .hand{
+       position: absolute;
+       float: right;
+       width: 26%;
+       height: 30%;
+       padding-top:0px;
+       padding-left:1px ;
+       margin-top: -390px;
+     
+   }
+   .landing .text{
+    width: 460px;
+    height: ;
+    margin: -390px 20px;
+   }
+   .landing .text h1{
+    font-size: 32px;
+   }
+   .landing .text h1 ,h2{
+    color: #fff;
+   }
+   .landing .text h2{
+    width: 380px;
+    padding-top: 0px;
+    font-size: 23px;
+    color: #fff;
+      line-height: 34px;
+   }
+   .landing .text a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    padding: 3px 20px 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    top: 5px;
+    text-decoration: none;
+    position: relative;
+    margin:-15px 120px ;
+    text-align: center;
+   }
+    
+    
+   /** start items**/
+   .cotainer{
+    margin-top: 700px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+   }
+   #two_row{
+    margin-top: 300px;
+   }
+   
+   .cotainer .row .items{
+    border:  2.4px solid #ccc;
+    border-radius: 6px;
+     position: absolute;
+     
+   }
+   .cotainer .row .image .ig1{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background1{
+    width: 610px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig2{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    margin: 10px 0 0 0;
+   }
+   .cotainer .row .items .background2{
+    width: 610px;
+    height: 250px;
+    position: relative;
+   }
+   
+   .cotainer .row .image .ig3{
+    width: 40%;
+    height: 90%;
+    transform: rotatey(180deg);
+    position: absolute;
+    margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background3{
+    width: 610px;
+    height: 250px;
+    position: relative;
+   }
+   .cotainer .row .image .ig4{
+   width: 40%;
+   height: 90%;
+   position: absolute;
+   margin: 0px 0 0 0;
+   }
+   .cotainer .row .items .background4{
+   width: 610px;
+   height: 250px;
+   position: relative;
+   }
+   .cotainer .row .image h3{
+    position: absolute;
+    color: #Ff0000;
+     font-family: good times;
+     font-weight: bold;
+    font-size: 38px;
+    margin: 40px 0 0 232px;
+   }
+       @font-face {
+           font-family: "paraaminobenzoic";
+           src: url("paraaminobenzoic.otf");
+       }
+       h3.custom_font {
+           font-family: "paraaminobenzoic";
+       }
+    
+   .cotainer .row .paragrph{
+    position: absolute;
+   }
+   .cotainer .row .paragrph a{
+    position: absolute;
+    text-align: center;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px 4px  10px;
+   margin: -100px 0 0 430px;
+   width: 140px;
+   }
+   .cotainer .row .paragrph p{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    margin: -52px 0 0 243px;
+    width: 390px;
+    
+   }
+   .cotainer .row .paragrph .paragrph1{
+    margin: -52px 0 0 243px;
+   }
+   .cotainer .row .paragrph .paragrph3{
+    margin: -52px 0 0 243px;
+   }
+   .cotainer .row .paragrph .paragrph2{
+    margin: -52px 0 0 243px;
+   }
+   #path-2{
+    position: absolute;
+     fill:#00363d;
+     fill-opacity:0.91;
+   }
+    
+    
+    
+    
+   .end{
+    width:1300px;
+    max-width:1300px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 350px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61));
+   
+   }
+   .end .imag{
+     background-image: url('../images/backtoschool-07Converted.png');
+     width:1300px;
+    max-width:1300px;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    margin-top: 0px;
+    overflow: hidden;
+   }
+   
+   .end .imag .image1 img{
+    width: 100%;
+     position: absolute;
+     overflow: hidden;
+    margin-top: 100px;
+   }
+   
+   .end .imag .image2 img{
+    width: 13%;
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 350px;
+   }
+   .end .imag .image3 img{
+    width: 13%;
+   margin-top: 130px;
+   position: absolute;
+    margin-left:200px;
+   }
+   .end .link li{
+    list-style: none;
+   }
+   .end .link li a{
+    color: #000;
+    font-size: 27px;
+   }
+   .end .link li .link1{
+    margin: 70px 0 0 325px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link li .link2{
+    margin: 170px 0 0 185px;
+    position: absolute;
+    text-decoration: none;
+   }
+   .end .link .social i{
+    font-size: 45px;
+   }
+   .end .link .social .social1{
+     margin: 146px 0 0 895px;
+    position: absolute;
+   }
+   .end .link .social .social2{
+     margin: 380px 0 0 920px;
+    position: absolute;
+   }
+   .end .link .social  p{
+    color: #fff;
+    margin-top: 520px;
+     margin-left:370px;
+     font-size: 23px;
+    position: absolute;
+   }
+   }
+   
+   

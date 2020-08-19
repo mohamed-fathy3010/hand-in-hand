@@ -92,18 +92,21 @@ button {
 .content{
 height: 100%;
 width: 50%;
-background-color:#00363d; 
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
+border-radius: 20px;
 display: flex;
 flex-direction: column;}
 .contentreport{
 height: 50%;
 width: 50%;
-background-color:#00363d; 
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
 display: flex;
+border-radius: 20px;
+margin-top: 70px;
 flex-direction: column;}
 /* The Close Button */
 /* The Close Button */

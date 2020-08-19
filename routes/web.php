@@ -56,7 +56,7 @@ Route::middleware('auth')->group(function () {
     Route::post('products/{product}/report','ProductController@report');
     Route::post('products/{product}/request','ProductController@request');
 
-    Route::post('/events','EventController@store');
+    Route::post('/events','EventController@store')->middleware('trusted');
     Route::delete('/events/{event}','EventController@destroy');
     Route::patch('/events/{event}','EventController@update');
     Route::post('events/{event}/report','EventController@report');

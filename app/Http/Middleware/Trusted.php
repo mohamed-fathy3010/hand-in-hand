@@ -20,6 +20,7 @@ class Trusted
             if ($request->expectsJson()){
                 return response()->json('Untrusted',401);
             }
+            return abort(401);
         }
         return $next($request);
     }

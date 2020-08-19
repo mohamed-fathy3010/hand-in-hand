@@ -139,26 +139,27 @@ $(".toggle").click(function () {
                             </div>
                         </center>
                         <div class="home">
-                            <label for="w3review">Description</label>
-                            <textarea id="w3review" name="description" rows="3" cols="55">
-                            {{$product->description}}
-                  </textarea>
-
                             <label for="w3review">Title</label>
-                            <textarea id="w3review" name="title" rows="2" cols="55">
+                            <textarea id="w3review" name="title" rows="1.500" cols="55">
                             {{$product->title}}
                   </textarea>
 
                             <label for="w3review">Phone</label>
-                            <textarea id="w3review" name="phone" rows="2" cols="55">
+                            <textarea id="w3review" name="phone" rows="1.500" cols="55">
                             {{$product->phone}}
                      </textarea>
                             <label for="w3review">facebook</label>
-                            <textarea id="w3review" name="facebook" rows="2" cols="55">
+                            <textarea id="w3review" name="facebook"  rows="1.500" cols="55">
                             {{$product->facebook}}
                        </textarea>
                             <label for="w3review">Price</label>
-                            <input type="number" name="price" style="width: 430px;" value="{{$product->price}}">
+                            <input type="number" name="price" style="width: 430px;background: white;border:1px solid rgb(118,118,118) " value="{{$product->price}}">
+                            <br>
+                            <br>
+                            <label for="w3review" style="margin-top: 10px">Description</label>
+                            <textarea id="w3review" name="description"  rows="3" cols="55">
+                            {{$product->description}}
+                  </textarea>
                             <br>
                             <input class="submit" type="submit" value="save">
                         </div>

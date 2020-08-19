@@ -1,0 +1,24 @@
+@media screen and (max-width: 1030px) {
+  #itemscont{
+  grid-template-columns: 250px 250px  250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #itemscont{
+  grid-template-columns: 250px 250px ;
+  }
+}
+@media screen and (max-width: 520px) {
+  #itemscont{
+  grid-template-columns: 250px;
+  }
+}
+@media screen and (min-width: 1210px) {
+  
+  #container{
+    max-width: 1300px;
+    margin: 0px auto;
+  }
+  
+}

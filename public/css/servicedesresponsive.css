@@ -48,10 +48,11 @@
 .content{
 height: 100%;
 width: 100%;
-background-color:#00363d; 
+background-color:#fff; 
 margin: auto;
-border: 1px solid #888;
+border: 3px solid #eee;
 display: flex;
+border-radius: 20px;
 flex-direction: column;}
 /* The Close Button */
 .close {
@@ -437,9 +438,10 @@ background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61
     .content{
     height: 100%;
     width: 80%;
-    background-color:#00363d; 
+    background-color:#fff; 
     margin: auto;
-    border: 1px solid #888;
+    border: 3px solid #eee;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;}
     /* The Close Button */
@@ -827,10 +829,11 @@ background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61
     .content{
     height: 100%;
     width: 50%;
-    background-color:#00363d; 
+    background-color:#fff; 
     margin: auto;
-    border: 1px solid #888;
+    border: 3px solid #eee;
     display: flex;
+    border-radius: 20px;
     flex-direction: column;}
     /* The Close Button */
     .close {
@@ -1215,9 +1218,10 @@ background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61
     .content{
     height: 100%;
     width: 50%;
-    background-color:#00363d; 
+    background-color:#fff; 
     margin: auto;
-    border: 1px solid #888;
+    border: 3px solid #eee;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;}
     /* The Close Button */
@@ -1239,7 +1243,9 @@ background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 54, 61
       margin-left:50px;
     }
     .home{
-      margin-top:20px;}
+      margin-top:20px;
+      margin-left: 50px;
+      }
     label{
       color: #ff0000;
       font-weight: bold;
@@ -1472,7 +1478,7 @@ background-color: #ff0000;
  width:100px;
  position: absolute;
  font-size: 20px;
- margin-left:40px;
+ margin-left:150px;
  text-align: center;
   margin-top:40px;
 }

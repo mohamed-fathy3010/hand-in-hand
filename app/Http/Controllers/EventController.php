@@ -20,10 +20,11 @@ class EventController extends Controller
 
     public function show(Event $event){
         $eventRelations= $event->load('interestable.user.info');
+        $is_reported=$this->isReported($event->id);
         $interesters=$eventRelations->interestable->pluck('user.info');
         $event->unsetRelation('interestable');
         $event->interesters =$interesters;
-        return view('event_description',['event' => $event]);
+        return view('event_description',['event' => $event,'is_reported'=>$is_reported]);
     }
 
     public function store(Request $request){
@@ -42,6 +43,7 @@ class EventController extends Controller
             $imagePath = time() . '.' . $request->image->getClientOriginalExtension();
             $request->image->storeAs('events', $imagePath);
         }
+        $validator['image']=$imagePath;
         auth()->user()->events()->create($validator);
 
         return redirect('/events');
@@ -115,7 +117,7 @@ class EventController extends Controller
         if($event->is_interested){
             $event->decrement('interests');
             $event->interestable()->where('user_id',auth()->id())->delete();
-        }
+            return redirect('/events/'.$event->id);}
         else {
             $sender = User::with('info')->find(auth()->id());
             $eventInfo = $event->load('user.info');
@@ -137,6 +139,7 @@ class EventController extends Controller
             ]);
             $notification = $this->makeNotification($sender, $eventInfo->user, $event, $message);
             NotificationWasPushed::dispatch($notification);
+            return redirect('/events/'.$event->id);
         }
     }
 
